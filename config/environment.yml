@@ -2,10 +2,11 @@ name: gcc1734
 channels:
   - conda-forge
 dependencies:
-- anaconda::matplotlib=3.6
+- anaconda::python
+- anaconda::matplotlib
 - anaconda::numpy
 - anaconda::pandas
-- anaconda::python=3.11
 - anaconda::scikit-learn
 - anaconda::scipy
-- anaconda::seaborn=0.12.0
+- anaconda::seaborn
+- anaconda::gymnasium
