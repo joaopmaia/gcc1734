@@ -3,7 +3,6 @@ channels:
   - conda-forge
 dependencies:
 - anaconda::matplotlib=3.6
-- anaconda::minisat
 - anaconda::numpy
 - anaconda::pandas
 - anaconda::python=3.11
