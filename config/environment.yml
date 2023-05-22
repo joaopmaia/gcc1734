@@ -1,12 +1,18 @@
 name: gcc1734
 channels:
+  - pytorch
+  - anaconda
   - conda-forge
+  - defaults
 dependencies:
-- anaconda::python
-- anaconda::matplotlib
-- anaconda::numpy
-- anaconda::pandas
-- anaconda::scikit-learn
-- anaconda::scipy
-- anaconda::seaborn
-- anaconda::gymnasium
+    - pip
+    - pip:    
+      - python
+      - matplotlib
+      - numpy
+      - pandas
+      - scikit-learn
+      - scipy
+      - seaborn
+      - gymnasium
+      - minisat
