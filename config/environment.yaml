@@ -1,0 +1,12 @@
+name: gcc1734
+channels:
+  - conda-forge
+dependencies:
+- anaconda::matplotlib=3.6
+- anaconda::minisat=2.2.0
+- anaconda::numpy=1.21.0
+- anaconda::pandas=2.0
+- anaconda::python=3.11
+- anaconda::scikit-learn=0.18.1
+- anaconda::scipy=1.10
+- anaconda::seaborn=0.12.0
