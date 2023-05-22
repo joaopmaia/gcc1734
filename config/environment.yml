@@ -7,7 +7,6 @@ channels:
 dependencies:
     - pip
     - pip:    
-      - python
       - matplotlib
       - numpy
       - pandas
