@@ -1,9 +1,5 @@
 from timeit import default_timer as timer
-import argparse
 import numpy as np
-import gymnasium as gym
-import matplotlib.pyplot as plt
-from scipy.signal import savgol_filter
 import pickle
 
 class QLearningAgentTabular:
