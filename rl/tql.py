@@ -7,7 +7,7 @@ from scipy.signal import savgol_filter
 import pickle
 
 class QLearningAgentTabular:
-  
+
   def __init__(self, 
                env, 
                decay_rate = 0.0001, 

@@ -4,11 +4,11 @@ from tql import QLearningAgentTabular
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--filename", type=str, help="Path to the agent file")
+    parser.add_argument("--env_name", type=str, default="Taxi-v3", help="Environment name")
     parser.add_argument("--num_episodes", type=int, help="Number of episodes")
     args = parser.parse_args()
 
-    agent = QLearningAgentTabular.load_agent(args.filename)
+    agent = QLearningAgentTabular.load_agent(args.env_name + "-tql.pkl")
 
     total_actions, total_penalties = 0, 0
     NUM_EPISODES = args.num_episodes
