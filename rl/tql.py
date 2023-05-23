@@ -10,9 +10,9 @@ class QLearningAgentTabular:
 
   def __init__(self, 
                env, 
-               decay_rate = 0.0001, 
-               learning_rate = 0.7, 
-               gamma = 0.618):
+               decay_rate, 
+               learning_rate, 
+               gamma):
     self.env = env
     self.q_table = np.zeros((env.observation_space.n, env.action_space.n))
     self.epsilon = 1.0
