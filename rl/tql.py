@@ -1,7 +1,10 @@
+from timeit import default_timer as timer
+import argparse
 import numpy as np
 import gymnasium as gym
 import matplotlib.pyplot as plt
 from scipy.signal import savgol_filter
+import pickle
 
 class QLearningAgentTabular:
   
@@ -41,22 +44,25 @@ class QLearningAgentTabular:
   def train(self, num_episodes):
     rewards = []
 
+    start_time = timer()  # Record the start time
+    
     for episode in range(num_episodes):
+  
       terminated = False
       truncated = False
 
-      state, _ = env.reset()
+      state, _ = self.env.reset()
 
       rewards_per_episode = []
-        
+      
       while not (terminated or truncated):
           
         action = self.choose_action(state)
 
         # transição
-        new_state, reward, terminated, truncated, info = env.step(action)
+        new_state, reward, terminated, truncated, info = self.env.step(action)
 
-        agent.update(state, action, reward, new_state)
+        self.update(state, action, reward, new_state)
 
         if (terminated or truncated):
           # Reduce epsilon to decrease the exploration over time
@@ -72,22 +78,30 @@ class QLearningAgentTabular:
       rewards.append(mean_reward)
 
       if episode % 1000 == 0:
+        end_time = timer()  # Record the end time
+        execution_time = end_time - start_time
         n_actions = len(rewards_per_episode)
-        print(f"Stats for episode {episode}:\n \tn_actions = {n_actions}\n \tmean_reward = {mean_reward:#.2f}")
+        print(f"Stats for episode {episode}/{num_episodes}:\n \tn_actions = {n_actions}\n \tmean_reward = {mean_reward:#.2f}\n \texecution_time = {execution_time:.2f}s")
+        start_time = end_time
 
     return rewards
 
+  def save(self, filename):
+    # open a file, where you ant to store the data
+    file = open(filename, 'wb')
 
-if __name__ == "__main__":
-  env = gym.make("Taxi-v3").env
-  agent = QLearningAgentTabular(env)
-  rewards = agent.train(num_episodes=60000)
+    # dump information to that file
+    pickle.dump(self, file)
 
-  print(len(rewards))
+    # close the file
+    file.close()
 
-  plt.plot(savgol_filter(rewards, 1001, 2))
-  #plt.plot(rewards)
-  plt.title("Curva de aprendizado suavizada")
-  plt.xlabel('Episódio');
-  plt.ylabel('Recompensa total');
-  plt.savefig("tabular_qlearning.png")
+  @staticmethod
+  def load_agent(filename):
+    # open a file, where you stored the pickled data
+    file = open(filename, 'rb')
+
+    # dump information to that file
+    agent = pickle.load(file)
+
+    return agent

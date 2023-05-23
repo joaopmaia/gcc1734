@@ -1,0 +1,2 @@
+python tql_train.py --num_episodes 60000 --env_name Taxi-v3 --filename taxi_agent.pkl
+python tql_test.py --filename taxi_agent.pkl --num_episodes 200 
