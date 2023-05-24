@@ -7,7 +7,7 @@ if __name__ == "__main__":
     parser.add_argument("--num_episodes", type=int, help="Number of episodes")
     args = parser.parse_args()
 
-    agent = QLearningAgentTabular.load_agent(args.env_name + "-tql.pkl")
+    agent = QLearningAgentTabular.load_agent(args.env_name + "-tql-agent.pkl")
 
     total_actions, total_penalties = 0, 0
     NUM_EPISODES = args.num_episodes

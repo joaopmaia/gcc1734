@@ -29,6 +29,8 @@ if __name__ == "__main__":
     )
     rewards = agent.train(num_episodes)
 
+    agent.save(args.env_name + "-tql-agent.pkl")
+
     plt.plot(savgol_filter(rewards, 1001, 2))
     plt.title(f"Curva de aprendizado suavizada ({args.env_name})")
     plt.xlabel('Episódio')
