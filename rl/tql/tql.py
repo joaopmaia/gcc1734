@@ -37,8 +37,8 @@ class QLearningAgentTabular:
       self.learning_rate * (reward + self.gamma * \
         np.max(self.q_table[next_state, :]) - self.q_table[state, action])
 
-  def train(self, num_episodes):
-    rewards = []
+  def train(self, num_episodes: int):
+    rewards_per_episode = []
 
     start_time = timer()  # Record the start time
     
@@ -49,7 +49,7 @@ class QLearningAgentTabular:
 
       state, _ = self.env.reset()
 
-      rewards_per_episode = []
+      rewards_in_episode = []
       
       while not (terminated or truncated):
           
@@ -57,6 +57,10 @@ class QLearningAgentTabular:
 
         # transição
         new_state, reward, terminated, truncated, info = self.env.step(action)
+        assert (not truncated)
+
+        if reward == -10:
+            total_penalties += 1
 
         self.update(state, action, reward, new_state)
 
@@ -68,19 +72,19 @@ class QLearningAgentTabular:
         
         state = new_state
             
-        rewards_per_episode.append(reward)
+        rewards_in_episode.append(reward)
 
-      mean_reward = np.mean(rewards_per_episode)
-      rewards.append(mean_reward)
+      mean_reward = np.mean(rewards_in_episode)
+      rewards_per_episode.append(mean_reward)
 
       if episode % 1000 == 0:
         end_time = timer()  # Record the end time
         execution_time = end_time - start_time
-        n_actions = len(rewards_per_episode)
+        n_actions = len(rewards_in_episode)
         print(f"Stats for episode {episode}/{num_episodes}:\n \tn_actions = {n_actions}\n \tmean_reward = {mean_reward:#.2f}\n \texecution_time = {execution_time:.2f}s")
         start_time = end_time
 
-    return rewards
+    return rewards_per_episode
 
   def save(self, filename):
     # open a file, where you ant to store the data
