@@ -3,16 +3,16 @@ import gymnasium as gym
 from lql import QLearningAgentLinear
 import matplotlib.pyplot as plt
 from scipy.signal import savgol_filter
-import numpy as np
+from gymnasium.wrappers import TimeLimit
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--num_episodes", type=int, default=10000, help="Number of episodes")
-    parser.add_argument("--max_steps", type=int, default=100, help="Maximum number of steps per training episode")
+    parser.add_argument("--max_steps", type=int, default=200, help="Maximum number of steps per training episode")
     parser.add_argument("--env_name", type=str, default="Taxi-v3", help="Environment name")
     parser.add_argument("--decay_rate", type=float, default=0.0001, help="Decay rate")
-    parser.add_argument("--learning_rate", type=float, default=0.7, help="Learning rate")
-    parser.add_argument("--gamma", type=float, default=0.99, help="Gamma")
+    parser.add_argument("--learning_rate", type=float, default=0.0007, help="Learning rate")
+    parser.add_argument("--gamma", type=float, default=0.618, help="Gamma")
     args = parser.parse_args()
 
     num_episodes = args.num_episodes
@@ -22,11 +22,11 @@ if __name__ == "__main__":
     learning_rate = args.learning_rate
     gamma = args.gamma
 
-    env = gym.make(env_name).env
-    # env = gym.make("Taxi-v3")
+    env = gym.make(env_name)
+    env = TimeLimit(env, max_episode_steps=args.max_steps)
 
-    agent = QLearningAgentLinear(env, learning_rate = learning_rate, gamma = gamma)
-    penalties_per_episode, rewards_per_episode = agent.train(num_episodes, max_steps)
+    agent = QLearningAgentLinear(env, learning_rate = learning_rate, decay_rate = decay_rate, gamma = gamma)
+    penalties_per_episode, rewards_per_episode = agent.train(num_episodes)
     agent.save(args.env_name + "-lql-agent.pkl")
 
     plt.subplot(1, 2, 1)
