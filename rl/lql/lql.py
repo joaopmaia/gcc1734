@@ -13,21 +13,25 @@ class QLearningAgentLinear:
 
   def __init__(self, 
                env, 
-               decay_rate, 
+               epsilon_decay_rate, 
                learning_rate, 
                gamma):
     self.env = env
     env_name = env.unwrapped.spec.id
     self.fex = feature_extractors_dict[env_name](env)
-    self.w = np.random.rand(self.fex.get_num_features())
+
+    self.w = np.random.rand(self.fex.get_num_features() + self.fex.get_num_actions() + 1)
+    # self.w = np.random.rand(43)
     
-    self.epsilon = 1.0
-    self.max_epsilon = 1.0
-    self.min_epsilon = 0.01
-    self.decay_rate = decay_rate
+    self.steps = 0
+
+    self.epsilon = .5
+    self.max_epsilon = 0.5
+    self.min_epsilon = 0.1
+    self.epsilon_decay_rate = epsilon_decay_rate
     self.learning_rate = learning_rate
     self.gamma = gamma 
-    self.epsilons_ = []
+    self.epsilon_history = []
 
   def choose_action(self, state, is_in_exploration_mode = True):
     exploration_tradeoff = np.random.uniform(0, 1)
@@ -51,17 +55,24 @@ class QLearningAgentLinear:
       q_values[action]  = self.get_qvalue(state, action)
     return q_values
 
-  def get_features_as_array(self, state, action):
+  def get_features(self, state, action):
     feature_vector = self.fex.get_features(state, action)
     feature_vector = feature_vector.reshape(1, -1)
     feature_vector = feature_vector.flatten()    
+    
     # constant feature corresponding to the bias term
     feature_vector[0] = 1.0
+
+    action_vector = self.fex.get_action_one_hot_encoded(action)
+    feature_vector = np.concatenate([feature_vector, action_vector])
+
+    steps_feature = np.array([np.log10(self.steps+1)])
+    feature_vector = np.concatenate([feature_vector, steps_feature])
 
     return feature_vector
     
   def get_qvalue(self, state, action):
-    features = self.get_features_as_array(state, action)
+    features = self.get_features(state, action)
     return np.dot(self.w, features)
 
   def __get_action_and_value(self, state):
@@ -75,8 +86,12 @@ class QLearningAgentLinear:
     return [best_action, max_qvalue]
 
   def update(self, state, action, reward, next_state):
+    next_state_value = self.get_value(next_state)
+    if next_state in self.fex.get_terminal_states():
+      next_state_value = 0
+      # print(f"Value of terminal state: {next_state_value}")
     # print('Weights before:', self.get_weights())
-    difference = (reward + (self.gamma * self.get_value(next_state))) - self.get_qvalue(state, action)
+    difference = (reward + (self.gamma * next_state_value)) - self.get_qvalue(state, action)
     # print('Q(s,a):', self.get_qvalue(state, action))
     # print('max Q(s,a):', self.get_value(next_state))
     # print('reward:', reward)
@@ -85,8 +100,13 @@ class QLearningAgentLinear:
        difference = -100
     if difference > 100:
        difference = 100
-    features = self.get_features_as_array(state, action)
-    self.w = self.w + self.learning_rate * difference * features
+    features = self.get_features(state, action)
+    new_w = self.w + self.learning_rate * difference * features
+    # if next_state in [0, 85, 410, 475]:
+    #   print("Features:\n", features)
+    #   print("Old w:\n", self.w)
+    #   print("New w:\n", new_w)
+    self.w = new_w
 
   def train(self, num_episodes: int):
 
@@ -94,6 +114,7 @@ class QLearningAgentLinear:
 
     rewards_per_episode = []
     penalties_per_episode = []
+    cumulative_successful_episodes = []
 
     start_time = timer()  # Record the start time
 
@@ -104,12 +125,12 @@ class QLearningAgentLinear:
       state, _ = self.env.reset()
 
       total_rewards = 0
-      steps = 0
+      self.steps = 0
 
       total_penalties = 0
 
       while not (terminated or truncated):
-        steps += 1
+        self.steps += 1
         action = self.choose_action(state)
         new_state, reward, terminated, truncated, _ = self.env.step(action)
 
@@ -125,30 +146,33 @@ class QLearningAgentLinear:
         if (terminated or truncated):
           # Reduce epsilon to decrease the exploration over time
           self.epsilon = self.min_epsilon + (self.max_epsilon - self.min_epsilon) * \
-            np.exp(-self.decay_rate * episode)
-          self.epsilons_.append(self.epsilon)
+            np.exp(-self.epsilon_decay_rate * episode)
+          self.epsilon_history.append(self.epsilon)
           if terminated:
+            assert reward == +20
+            assert new_state in [0, 85, 410, 475]
             successful_episodes += 1
         
         state = new_state
 
       rewards_per_episode.append(total_rewards)
       penalties_per_episode.append(total_penalties)
+      cumulative_successful_episodes.append(successful_episodes)
 
       if episode % 50 == 0:
         end_time = timer()  # Record the end time
         execution_time = end_time - start_time
-        print("Episode# %d/%d (%d successful)" % (episode+1, num_episodes, successful_episodes))
-        print(f"\tElapsed time = {execution_time:.2f}s")
+        print("Episode# %d/%d (%d successful)" % (episode, num_episodes, successful_episodes))
+        print(f"\tElapsed time (from first episode): {execution_time:.2f}s")
         print("\tTotal rewards %d" % total_rewards)
-        print("\tTotal steps: %d" % steps)
+        print("\tTotal steps: %d" % self.steps)
         print("\tCurrent epsilon: %.4f" % self.epsilon)
         print("\tTotal penalties: %d" % total_penalties)
         print("\tw:", self.w)
         # print("\tCurrent weights: %s" % self.get_weights())
         print()
 
-    return penalties_per_episode, rewards_per_episode
+    return penalties_per_episode, rewards_per_episode, cumulative_successful_episodes
 
   def get_weights(self):
     return self.w

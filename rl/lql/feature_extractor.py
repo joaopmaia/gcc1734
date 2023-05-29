@@ -6,6 +6,14 @@ class FeatureExtractor(ABC):
 
     @abstractmethod
     def get_num_features(self):
-      pass
+        pass
+
+    @abstractmethod
+    def get_action_one_hot_encoded(self):
+        pass
+
+    @abstractmethod
+    def get_terminal_states():
+        pass
 
 

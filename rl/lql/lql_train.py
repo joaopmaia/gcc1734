@@ -10,30 +10,44 @@ if __name__ == "__main__":
     parser.add_argument("--num_episodes", type=int, default=10000, help="Number of episodes")
     parser.add_argument("--max_steps", type=int, default=200, help="Maximum number of steps per training episode")
     parser.add_argument("--env_name", type=str, default="Taxi-v3", help="Environment name")
-    parser.add_argument("--decay_rate", type=float, default=0.0001, help="Decay rate")
-    parser.add_argument("--learning_rate", type=float, default=0.0007, help="Learning rate")
-    parser.add_argument("--gamma", type=float, default=0.618, help="Gamma")
+    parser.add_argument("--epsilon_decay_rate", type=float, default=0.0001, help="Decay rate for the exploration rate")
+    parser.add_argument("--learning_rate", type=float, default=0.1, help="Learning rate")
+    parser.add_argument("--gamma", type=float, default=0.9, help="Gamma")
     args = parser.parse_args()
 
     num_episodes = args.num_episodes
     max_steps = args.max_steps
     env_name = args.env_name
-    decay_rate = args.decay_rate
+    epsilon_decay_rate = args.epsilon_decay_rate
     learning_rate = args.learning_rate
     gamma = args.gamma
 
     env = gym.make(env_name)
     env = TimeLimit(env, max_episode_steps=args.max_steps)
 
-    agent = QLearningAgentLinear(env, learning_rate = learning_rate, decay_rate = decay_rate, gamma = gamma)
-    penalties_per_episode, rewards_per_episode = agent.train(num_episodes)
+    agent = QLearningAgentLinear(env, learning_rate = learning_rate, epsilon_decay_rate = epsilon_decay_rate, gamma = gamma)
+    penalties_per_episode, rewards_per_episode, cumulative_successful_episodes = agent.train(num_episodes)
     agent.save(args.env_name + "-lql-agent.pkl")
 
-    plt.subplot(1, 2, 1)
+    # labels = ["student 1", "student 2"]    
+    # # Add title to subplot
+    # fig.suptitle(' Student marks in different subjects ', fontsize=30)
+
+    plt.subplot(2, 2, 1)
     plt.plot(savgol_filter(penalties_per_episode, 111, 2))
     plt.title(f"Penalties ({args.env_name})")
-    plt.subplot(1, 2, 2)
+
+    plt.subplot(2, 2, 2)
     plt.plot(savgol_filter(rewards_per_episode, 111, 2))
     plt.title(f"Rewards ({args.env_name})")
-    plt.savefig(args.env_name + "-lql-penalties_and_rewards_per_episode.png")
+
+    plt.subplot(2, 2, 3)
+    plt.plot(cumulative_successful_episodes)
+    plt.title(f"Successful episodes ({args.env_name})")
+
+    plt.subplot(2, 2, 4)
+    plt.plot(agent.epsilon_history)
+    plt.title(f"Epsilon ({args.env_name})")
+
+    plt.savefig(args.env_name + "-lql-results.png")
     plt.close()

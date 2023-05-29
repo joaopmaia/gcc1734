@@ -1,0 +1,3006 @@
+Episode# 0/300000 (0 successful)
+	Elapsed time (from first episode): 0.04s
+	Total rewards -821
+	Total steps: 200
+	Current epsilon: 1.0000
+	Total penalties: 69
+	w: [0.20997187 0.10083283 0.85661023 0.35418459 0.12821713 0.92935935
+ 0.37752643 0.86498802 0.12408277 0.807927   0.29559034 0.87171293
+ 0.42308853]
+
+Episode# 1000/300000 (51 successful)
+	Elapsed time (from first episode): 37.59s
+	Total rewards -866
+	Total steps: 200
+	Current epsilon: 0.9901
+	Total penalties: 74
+	w: [-4.99634138  1.4894248   1.46031362  2.23178453 -0.04148222  0.52913054
+  2.62159147  2.63200708  2.6127624   2.63568302 -6.20528397 -6.16124576
+ -4.21729939]
+
+Episode# 2000/300000 (95 successful)
+	Elapsed time (from first episode): 75.24s
+	Total rewards -713
+	Total steps: 200
+	Current epsilon: 0.9804
+	Total penalties: 57
+	w: [-6.48082943  2.4739151   1.92929352  3.68920096 -0.10667383  0.58720531
+  2.37107667  2.37614895  2.37044525  2.37018162 -6.47038802 -6.36643828
+ -3.47216636]
+
+Episode# 3000/300000 (138 successful)
+	Elapsed time (from first episode): 113.22s
+	Total rewards -839
+	Total steps: 200
+	Current epsilon: 0.9707
+	Total penalties: 71
+	w: [-7.60163905  2.85645697  2.37735279  4.83518024 -0.32222826  0.68340612
+  2.21513429  2.18599237  2.17921019  2.21915461 -6.68085055 -6.58842436
+ -2.70002079]
+
+Episode# 4000/300000 (179 successful)
+	Elapsed time (from first episode): 151.19s
+	Total rewards -857
+	Total steps: 200
+	Current epsilon: 0.9612
+	Total penalties: 73
+	w: [-8.52796781  3.01202171  2.78986898  5.82714171 -0.60688824  0.77268761
+  2.04126781  2.04921394  2.03747816  2.05020803 -6.85481877 -6.71946136
+ -2.2228446 ]
+
+Episode# 5000/300000 (226 successful)
+	Elapsed time (from first episode): 189.40s
+	Total rewards -722
+	Total steps: 200
+	Current epsilon: 0.9517
+	Total penalties: 58
+	w: [-9.2855706   3.14069889  3.25517793  6.68406038 -0.92548242  0.93249443
+  1.93745615  1.90426671  1.90360663  1.93426772 -6.9838241  -6.84948809
+ -1.83507438]
+
+Episode# 6000/300000 (272 successful)
+	Elapsed time (from first episode): 227.71s
+	Total rewards -893
+	Total steps: 200
+	Current epsilon: 0.9423
+	Total penalties: 77
+	w: [-9.83433224  3.12048666  3.69934081  7.3572823  -1.21636934  1.08725272
+  1.84863471  1.82841335  1.82531866  1.85327318 -7.08905182 -6.9690647
+ -1.41498988]
+
+Episode# 7000/300000 (314 successful)
+	Elapsed time (from first episode): 266.77s
+	Total rewards -731
+	Total steps: 200
+	Current epsilon: 0.9331
+	Total penalties: 59
+	w: [-10.32861833   3.09362898   4.09811938   7.96234589  -1.43634141
+   1.23320893   1.77065742   1.74071429   1.74301706   1.76696983
+  -7.1755207   -7.04260062  -1.19003205]
+
+Episode# 8000/300000 (353 successful)
+	Elapsed time (from first episode): 305.56s
+	Total rewards -794
+	Total steps: 200
+	Current epsilon: 0.9239
+	Total penalties: 66
+	w: [-10.65182438   3.11756683   4.46196081   8.52331926  -1.62579703
+   1.35817738   1.71441468   1.67817745   1.68228124   1.71075524
+  -7.24269727  -7.0629001   -0.92037976]
+
+Episode# 9000/300000 (399 successful)
+	Elapsed time (from first episode): 344.42s
+	Total rewards -722
+	Total steps: 200
+	Current epsilon: 0.9148
+	Total penalties: 58
+	w: [-10.97819519   3.11841239   4.88302329   9.01730137  -1.7833938
+   1.54486062   1.64288778   1.6315416    1.63031724   1.64327496
+  -7.30492104  -7.08944012  -0.799679  ]
+
+Episode# 10000/300000 (463 successful)
+	Elapsed time (from first episode): 383.05s
+	Total rewards -731
+	Total steps: 200
+	Current epsilon: 0.9058
+	Total penalties: 59
+	w: [-11.1968916    3.35226789   5.45114148   9.45707576  -1.72760285
+   1.81651544   1.61027305   1.58266489   1.57658376   1.60792616
+  -7.36545039  -7.07703345  -0.62103949]
+
+Episode# 11000/300000 (509 successful)
+	Elapsed time (from first episode): 422.26s
+	Total rewards -623
+	Total steps: 200
+	Current epsilon: 0.8969
+	Total penalties: 47
+	w: [-11.40187152   3.44434341   5.84754818   9.74044835  -1.62058419
+   1.95160944   1.5817979    1.53845419   1.52283547   1.57944822
+  -7.42709247  -7.06545922  -0.58851325]
+
+Episode# 12000/300000 (568 successful)
+	Elapsed time (from first episode): 461.37s
+	Total rewards -695
+	Total steps: 200
+	Current epsilon: 0.8881
+	Total penalties: 55
+	w: [-11.49400763   3.65767895   6.34295367   9.90796241  -1.52028083
+   2.14556127   1.55608965   1.51317494   1.52020529   1.55369735
+  -7.46078277  -7.04453647  -0.45239233]
+
+Episode# 13000/300000 (621 successful)
+	Elapsed time (from first episode): 501.33s
+	Total rewards -758
+	Total steps: 200
+	Current epsilon: 0.8793
+	Total penalties: 62
+	w: [-11.69441719   3.83653788   6.77554188  10.01745584  -1.4836043
+   2.29484491   1.52328362   1.46582706   1.47083569   1.52869572
+  -7.50847444  -7.04272922  -0.4778832 ]
+
+Episode# 14000/300000 (647 successful)
+	Elapsed time (from first episode): 541.40s
+	Total rewards -650
+	Total steps: 200
+	Current epsilon: 0.8707
+	Total penalties: 50
+	w: [-11.77029166   3.83384867   6.98448023  10.07191589  -1.44266906
+   2.26686198   1.54000907   1.45326578   1.47829619   1.52655509
+  -7.51286833  -7.12369384  -0.37123618]
+
+Episode# 15000/300000 (688 successful)
+	Elapsed time (from first episode): 581.44s
+	Total rewards -713
+	Total steps: 200
+	Current epsilon: 0.8621
+	Total penalties: 57
+	w: [-11.86021735   3.97433393   7.30838087  10.10281849  -1.40848652
+   2.32170217   1.50932869   1.41858003   1.43432103   1.50794326
+  -7.5497234   -7.04881134  -0.3246647 ]
+
+Episode# 16000/300000 (729 successful)
+	Elapsed time (from first episode): 621.55s
+	Total rewards -641
+	Total steps: 200
+	Current epsilon: 0.8536
+	Total penalties: 49
+	w: [-11.9553539    4.01126393   7.62677213  10.11352965  -1.42039398
+   2.36878762   1.51715556   1.39288873   1.43650648   1.4962266
+  -7.55177324  -7.11450243  -0.33170272]
+
+Episode# 17000/300000 (768 successful)
+	Elapsed time (from first episode): 661.89s
+	Total rewards -668
+	Total steps: 200
+	Current epsilon: 0.8452
+	Total penalties: 52
+	w: [-12.0009892    3.84940116   7.92781081  10.11059412  -1.37122719
+   2.39484754   1.47647233   1.41910411   1.42213921   1.47581686
+  -7.56133755  -7.10132853  -0.3124367 ]
+
+Episode# 18000/300000 (807 successful)
+	Elapsed time (from first episode): 702.43s
+	Total rewards -337
+	Total steps: 97
+	Current epsilon: 0.8369
+	Total penalties: 29
+	w: [-11.98875771   3.91839985   8.22478328  10.10472692  -1.35314969
+   2.43967676   1.48533494   1.42544806   1.43198445   1.485374
+  -7.56219969  -7.12284385  -0.20490838]
+
+Episode# 19000/300000 (849 successful)
+	Elapsed time (from first episode): 743.09s
+	Total rewards -659
+	Total steps: 200
+	Current epsilon: 0.8287
+	Total penalties: 51
+	w: [-12.08565289   3.94671446   8.5400155   10.09149753  -1.35247992
+   2.47656959   1.45787662   1.39288294   1.41254164   1.45769994
+  -7.58552554  -7.08927287  -0.34286311]
+
+Episode# 20000/300000 (910 successful)
+	Elapsed time (from first episode): 783.42s
+	Total rewards -659
+	Total steps: 200
+	Current epsilon: 0.8205
+	Total penalties: 51
+	w: [-12.11208057   4.07568188   8.98585803  10.09696153  -1.41496065
+   2.65721832   1.4803132    1.38806478   1.41126131   1.45714272
+  -7.5782904   -7.13871657  -0.28971127]
+
+Episode# 21000/300000 (951 successful)
+	Elapsed time (from first episode): 824.37s
+	Total rewards -731
+	Total steps: 200
+	Current epsilon: 0.8125
+	Total penalties: 59
+	w: [-12.15124869   4.12073908   9.27994418  10.11645696  -1.45394943
+   2.71506626   1.4588786    1.38262263   1.39731796   1.4506722
+  -7.59030511  -7.11857936  -0.29534029]
+
+Episode# 22000/300000 (995 successful)
+	Elapsed time (from first episode): 865.32s
+	Total rewards -704
+	Total steps: 200
+	Current epsilon: 0.8045
+	Total penalties: 56
+	w: [-12.20952622   4.35712808   9.58766528  10.14272075  -1.55156841
+   2.82389966   1.44868994   1.36857505   1.40784532   1.43361325
+  -7.5896142   -7.14677996  -0.31682635]
+
+Episode# 23000/300000 (1053 successful)
+	Elapsed time (from first episode): 906.63s
+	Total rewards -722
+	Total steps: 200
+	Current epsilon: 0.7966
+	Total penalties: 58
+	w: [-12.26674564   4.47676047   9.98217007  10.18328841  -1.59396162
+   3.01926298   1.43765349   1.35113072   1.37535618   1.43284034
+  -7.60411139  -7.12775937  -0.28886031]
+
+Episode# 24000/300000 (1119 successful)
+	Elapsed time (from first episode): 947.51s
+	Total rewards -623
+	Total steps: 200
+	Current epsilon: 0.7888
+	Total penalties: 47
+	w: [-12.25978374   4.63408497  10.4186946   10.20930054  -1.58658919
+   3.24407754   1.40333002   1.30241598   1.34501453   1.40075462
+  -7.64686661  -6.93257668  -0.23364464]
+
+Episode# 25000/300000 (1155 successful)
+	Elapsed time (from first episode): 989.16s
+	Total rewards -740
+	Total steps: 200
+	Current epsilon: 0.7810
+	Total penalties: 60
+	w: [-12.28612939   4.56669244  10.65251578  10.23324787  -1.62045902
+   3.28740496   1.40441865   1.34269735   1.36130353   1.4073904
+  -7.62865004  -7.04143366  -0.17198779]
+
+Episode# 26000/300000 (1201 successful)
+	Elapsed time (from first episode): 1030.64s
+	Total rewards -641
+	Total steps: 200
+	Current epsilon: 0.7733
+	Total penalties: 49
+	w: [-12.35908544   4.38712723  10.94812938  10.25320036  -1.58826405
+   3.40053094   1.42544432   1.34393159   1.37846743   1.42137912
+  -7.61561671  -7.18083558  -0.25164506]
+
+Episode# 27000/300000 (1263 successful)
+	Elapsed time (from first episode): 1071.82s
+	Total rewards -623
+	Total steps: 200
+	Current epsilon: 0.7657
+	Total penalties: 47
+	w: [-12.41385347   4.38978669  11.33723403  10.25778349  -1.61561894
+   3.60567721   1.4200904    1.34448994   1.36993858   1.41073793
+  -7.62029797  -7.20695674  -0.26419636]
+
+Episode# 28000/300000 (1309 successful)
+	Elapsed time (from first episode): 1113.56s
+	Total rewards -668
+	Total steps: 200
+	Current epsilon: 0.7582
+	Total penalties: 52
+	w: [-12.36673217   4.41635275  11.620771    10.25965694  -1.56335508
+   3.7153106    1.39551241   1.31187617   1.33986537   1.3989481
+  -7.64806826  -7.03301035  -0.12422806]
+
+Episode# 29000/300000 (1354 successful)
+	Elapsed time (from first episode): 1155.44s
+	Total rewards -722
+	Total steps: 200
+	Current epsilon: 0.7508
+	Total penalties: 58
+	w: [-12.47972123   4.55181869  11.88954538  10.27273289  -1.65512049
+   3.78121336   1.38386083   1.31047866   1.33570912   1.38515138
+  -7.6546874   -7.10837821  -0.30036469]
+
+Episode# 30000/300000 (1403 successful)
+	Elapsed time (from first episode): 1197.22s
+	Total rewards -515
+	Total steps: 200
+	Current epsilon: 0.7434
+	Total penalties: 35
+	w: [-12.41082677   4.54186148  12.17822262  10.29716133  -1.67720352
+   3.8753784    1.39970172   1.2987813    1.32281923   1.39889019
+  -7.6485582   -7.05060539  -0.12773247]
+
+Episode# 31000/300000 (1439 successful)
+	Elapsed time (from first episode): 1239.44s
+	Total rewards -650
+	Total steps: 200
+	Current epsilon: 0.7361
+	Total penalties: 50
+	w: [-12.50822138   4.55904151  12.38591202  10.32377358  -1.71376782
+   3.91532742   1.37774518   1.29155954   1.3284465    1.38589686
+  -7.65456734  -7.10544649  -0.24174019]
+
+Episode# 32000/300000 (1474 successful)
+	Elapsed time (from first episode): 1282.03s
+	Total rewards -623
+	Total steps: 200
+	Current epsilon: 0.7289
+	Total penalties: 47
+	w: [-12.56640623   4.52607202  12.58588063  10.34207056  -1.68978771
+   3.98392658   1.35500524   1.26991009   1.29553648   1.35064551
+  -7.68689469  -7.01875325  -0.21420146]
+
+Episode# 33000/300000 (1512 successful)
+	Elapsed time (from first episode): 1324.49s
+	Total rewards -632
+	Total steps: 200
+	Current epsilon: 0.7217
+	Total penalties: 48
+	w: [-12.60947217   4.60458064  12.79853338  10.35266431  -1.72805985
+   4.02536401   1.33418899   1.26429121   1.30373262   1.33431918
+  -7.68827088  -7.02587769  -0.24527528]
+
+Episode# 34000/300000 (1560 successful)
+	Elapsed time (from first episode): 1366.93s
+	Total rewards -668
+	Total steps: 200
+	Current epsilon: 0.7147
+	Total penalties: 52
+	w: [-12.57219703   4.76098574  13.06279283  10.37986984  -1.79883885
+   4.16335668   1.38846202   1.27093111   1.31323708   1.38282626
+  -7.66388103  -7.13191683  -0.18945778]
+
+Episode# 35000/300000 (1597 successful)
+	Elapsed time (from first episode): 1409.71s
+	Total rewards -515
+	Total steps: 200
+	Current epsilon: 0.7076
+	Total penalties: 35
+	w: [-12.5966784    4.74514392  13.26339212  10.40078506  -1.83721399
+   4.26492883   1.36095926   1.30267497   1.32532718   1.35298579
+  -7.66823652  -7.13853345  -0.2775928 ]
+
+Episode# 36000/300000 (1633 successful)
+	Elapsed time (from first episode): 1452.46s
+	Total rewards -668
+	Total steps: 200
+	Current epsilon: 0.7007
+	Total penalties: 52
+	w: [-12.59275354   4.95294513  13.4534554   10.42394468  -1.85517893
+   4.32985615   1.35788503   1.25237515   1.31053692   1.35625357
+  -7.68406793  -7.05388067  -0.2718776 ]
+
+Episode# 37000/300000 (1670 successful)
+	Elapsed time (from first episode): 1495.54s
+	Total rewards -560
+	Total steps: 200
+	Current epsilon: 0.6938
+	Total penalties: 40
+	w: [-12.63714187   4.88630164  13.64535266  10.44705234  -1.85422342
+   4.36463363   1.37297051   1.26715727   1.31313266   1.35362138
+  -7.67713538  -7.1350327   -0.31471219]
+
+Episode# 38000/300000 (1711 successful)
+	Elapsed time (from first episode): 1538.57s
+	Total rewards -578
+	Total steps: 200
+	Current epsilon: 0.6870
+	Total penalties: 42
+	w: [-12.6219943    4.83020269  13.85625824  10.45876995  -1.83843832
+   4.44111158   1.36620319   1.28692657   1.29984668   1.34483188
+  -7.67813942  -7.10980758  -0.31698976]
+
+Episode# 39000/300000 (1753 successful)
+	Elapsed time (from first episode): 1581.70s
+	Total rewards -596
+	Total steps: 200
+	Current epsilon: 0.6803
+	Total penalties: 44
+	w: [-12.64903936   4.81649889  14.06897517  10.45438003  -1.79274195
+   4.50981678   1.31772141   1.25049567   1.28752633   1.30955481
+  -7.71363188  -6.9688501   -0.26194583]
+
+Episode# 40000/300000 (1800 successful)
+	Elapsed time (from first episode): 1624.88s
+	Total rewards -560
+	Total steps: 200
+	Current epsilon: 0.6736
+	Total penalties: 40
+	w: [-12.63501676   4.92078816  14.30137007  10.45680832  -1.82769753
+   4.59733393   1.31547873   1.22105382   1.26409044   1.31255794
+  -7.72380176  -6.89254032  -0.24294656]
+
+Episode# 41000/300000 (1842 successful)
+	Elapsed time (from first episode): 1668.19s
+	Total rewards -578
+	Total steps: 200
+	Current epsilon: 0.6670
+	Total penalties: 42
+	w: [-12.58934813   4.67761464  14.50819186  10.4596339   -1.78632033
+   4.69590183   1.35549124   1.27867443   1.31286784   1.35120728
+  -7.68176108  -7.07397222  -0.25749937]
+
+Episode# 42000/300000 (1877 successful)
+	Elapsed time (from first episode): 1711.80s
+	Total rewards -461
+	Total steps: 200
+	Current epsilon: 0.6605
+	Total penalties: 29
+	w: [-12.55210238   4.82224815  14.67790853  10.46232961  -1.85491414
+   4.71429202   1.34134625   1.25953433   1.30094348   1.3413255
+  -7.68617517  -6.97722116  -0.15298726]
+
+Episode# 43000/300000 (1906 successful)
+	Elapsed time (from first episode): 1755.58s
+	Total rewards -668
+	Total steps: 200
+	Current epsilon: 0.6540
+	Total penalties: 52
+	w: [-12.69012262   4.74043673  14.81657424  10.488564    -1.9033983
+   4.71176962   1.32930317   1.27888907   1.30239167   1.33469647
+  -7.6869177   -7.11662967  -0.33042033]
+
+Episode# 44000/300000 (1944 successful)
+	Elapsed time (from first episode): 1799.41s
+	Total rewards -659
+	Total steps: 200
+	Current epsilon: 0.6476
+	Total penalties: 51
+	w: [-12.61484627   4.69199282  14.99598972  10.50253953  -1.85160902
+   4.76679728   1.36763346   1.25727362   1.30696008   1.36335937
+  -7.68047844  -7.09773874  -0.2372071 ]
+
+Episode# 45000/300000 (1975 successful)
+	Elapsed time (from first episode): 1843.59s
+	Total rewards -623
+	Total steps: 200
+	Current epsilon: 0.6413
+	Total penalties: 47
+	w: [-12.62892357   4.78192643  15.14004109  10.51278595  -1.90412178
+   4.77574643   1.3367607    1.2855311    1.31712407   1.3335846
+  -7.68249873  -7.08756969  -0.2103944 ]
+
+Episode# 46000/300000 (2004 successful)
+	Elapsed time (from first episode): 1888.01s
+	Total rewards -587
+	Total steps: 200
+	Current epsilon: 0.6350
+	Total penalties: 43
+	w: [-12.66764742   4.55352775  15.27571     10.51798461  -1.87365227
+   4.80553381   1.3553428    1.28473107   1.31612913   1.35374057
+  -7.66986829  -7.17586709  -0.31635322]
+
+Episode# 47000/300000 (2045 successful)
+	Elapsed time (from first episode): 1932.27s
+	Total rewards -659
+	Total steps: 200
+	Current epsilon: 0.6288
+	Total penalties: 51
+	w: [-12.67405317   4.48580543  15.46577192  10.52137946  -1.83897965
+   4.84468155   1.32339288   1.26958183   1.28882926   1.32112005
+  -7.69809801  -7.04702357  -0.33441002]
+
+Episode# 48000/300000 (2079 successful)
+	Elapsed time (from first episode): 1976.88s
+	Total rewards -623
+	Total steps: 200
+	Current epsilon: 0.6226
+	Total penalties: 47
+	w: [-12.65972866   4.78063275  15.61937577  10.51591016  -1.8787275
+   4.9142559    1.30031493   1.23588213   1.26003484   1.29654231
+  -7.72841087  -6.89223638  -0.21961502]
+
+Episode# 49000/300000 (2108 successful)
+	Elapsed time (from first episode): 2021.76s
+	Total rewards -542
+	Total steps: 200
+	Current epsilon: 0.6165
+	Total penalties: 38
+	w: [-12.69842831   4.69465029  15.74862944  10.528126    -1.88871217
+   4.92101203   1.32889123   1.2639639    1.29304388   1.31844986
+  -7.70710502  -7.06381653  -0.23772806]
+
+Episode# 50000/300000 (2132 successful)
+	Elapsed time (from first episode): 2066.63s
+	Total rewards -596
+	Total steps: 200
+	Current epsilon: 0.6105
+	Total penalties: 44
+	w: [-12.7619319    4.67933252  15.85386502  10.53735833  -1.94513444
+   4.89406249   1.32083308   1.24765806   1.28642354   1.30571232
+  -7.70574277  -7.08496052  -0.31328286]
+
+Episode# 51000/300000 (2157 successful)
+	Elapsed time (from first episode): 2111.74s
+	Total rewards -551
+	Total steps: 200
+	Current epsilon: 0.6045
+	Total penalties: 39
+	w: [-12.7708201    4.64479117  15.96365627  10.55991961  -1.93947696
+   4.91123214   1.31067064   1.21183387   1.29286063   1.29166852
+  -7.71718363  -7.02881453  -0.31428616]
+
+Episode# 52000/300000 (2193 successful)
+	Elapsed time (from first episode): 2156.53s
+	Total rewards 12
+	Total steps: 9
+	Current epsilon: 0.5986
+	Total penalties: 0
+	w: [-12.70709798   4.78114076  16.11946129  10.57071689  -1.93687363
+   4.94503636   1.33326206   1.23372778   1.26749665   1.29499705
+  -7.71578954  -6.98893636  -0.14092197]
+
+Episode# 53000/300000 (2223 successful)
+	Elapsed time (from first episode): 2201.55s
+	Total rewards -578
+	Total steps: 200
+	Current epsilon: 0.5927
+	Total penalties: 42
+	w: [-12.77467686   4.75689191  16.24880711  10.57704838  -1.91308814
+   4.91385905   1.26075518   1.20439709   1.24388929   1.25728535
+  -7.75747677  -6.85167138  -0.20189994]
+
+Episode# 54000/300000 (2249 successful)
+	Elapsed time (from first episode): 2246.64s
+	Total rewards -524
+	Total steps: 200
+	Current epsilon: 0.5869
+	Total penalties: 36
+	w: [-12.73613575   4.69862828  16.35871604  10.5714271   -1.91601766
+   4.92122198   1.3299743    1.2400299    1.2890195    1.32310404
+  -7.70664313  -7.07976475  -0.1998399 ]
+
+Episode# 55000/300000 (2274 successful)
+	Elapsed time (from first episode): 2291.90s
+	Total rewards -497
+	Total steps: 200
+	Current epsilon: 0.5812
+	Total penalties: 33
+	w: [-12.75414523   4.60258932  16.46496149  10.56936552  -1.9256927
+   4.89655897   1.29719718   1.26891873   1.27551503   1.2940166
+  -7.70989024  -7.04804691  -0.28626302]
+
+Episode# 56000/300000 (2302 successful)
+	Elapsed time (from first episode): 2337.30s
+	Total rewards -524
+	Total steps: 200
+	Current epsilon: 0.5755
+	Total penalties: 36
+	w: [-12.7221661    4.64918663  16.58282973  10.57762431  -1.95658813
+   4.96287984   1.35304466   1.25122033   1.29538082   1.31741125
+  -7.70168185  -7.10568569  -0.15815349]
+
+Episode# 57000/300000 (2331 successful)
+	Elapsed time (from first episode): 2382.88s
+	Total rewards -551
+	Total steps: 200
+	Current epsilon: 0.5699
+	Total penalties: 39
+	w: [-12.76209524   4.62938478  16.70338287  10.58927735  -1.92301719
+   4.96493098   1.26992269   1.23768993   1.25232644   1.26808991
+  -7.73977125  -6.91849734  -0.21724672]
+
+Episode# 58000/300000 (2350 successful)
+	Elapsed time (from first episode): 2428.88s
+	Total rewards -569
+	Total steps: 200
+	Current epsilon: 0.5643
+	Total penalties: 41
+	w: [-12.79951998   4.67340483  16.78175059  10.60218104  -2.00325684
+   4.93491705   1.31237181   1.24976529   1.27941315   1.29369835
+  -7.71987813  -7.08303483  -0.21750355]
+
+Episode# 59000/300000 (2367 successful)
+	Elapsed time (from first episode): 2474.83s
+	Total rewards -686
+	Total steps: 200
+	Current epsilon: 0.5588
+	Total penalties: 54
+	w: [-12.7644726    4.73750829  16.85108651  10.61017556  -1.98904512
+   4.90554316   1.31072157   1.2264504    1.27017969   1.30336858
+  -7.72679073  -7.0165465   -0.18193924]
+
+Episode# 60000/300000 (2389 successful)
+	Elapsed time (from first episode): 2520.83s
+	Total rewards -578
+	Total steps: 200
+	Current epsilon: 0.5533
+	Total penalties: 42
+	w: [-12.77279112   4.80741835  16.93989168  10.62791078  -2.03225657
+   4.93580943   1.25795688   1.20613509   1.25306562   1.25342999
+  -7.74385969  -6.86766339  -0.19132693]
+
+Episode# 61000/300000 (2412 successful)
+	Elapsed time (from first episode): 2566.94s
+	Total rewards -524
+	Total steps: 200
+	Current epsilon: 0.5479
+	Total penalties: 36
+	w: [-12.79258667   4.61394229  17.03340497  10.65011976  -2.0076339
+   4.91276182   1.2958109    1.21770889   1.23755083   1.28340578
+  -7.7389937   -6.95621375  -0.26122799]
+
+Episode# 62000/300000 (2428 successful)
+	Elapsed time (from first episode): 2613.25s
+	Total rewards -425
+	Total steps: 200
+	Current epsilon: 0.5426
+	Total penalties: 25
+	w: [-12.73283688   4.59031932  17.09853789  10.65300628  -2.03660998
+   4.89972377   1.28498213   1.22061244   1.27447077   1.28417988
+  -7.71441832  -6.95080815  -0.1741909 ]
+
+Episode# 63000/300000 (2446 successful)
+	Elapsed time (from first episode): 2659.54s
+	Total rewards -524
+	Total steps: 200
+	Current epsilon: 0.5373
+	Total penalties: 36
+	w: [-12.75842602   4.47431329  17.172192    10.65470075  -1.99340417
+   4.83249625   1.27441471   1.22176907   1.25939337   1.27022901
+  -7.73437296  -6.9180036   -0.24773828]
+
+Episode# 64000/300000 (2472 successful)
+	Elapsed time (from first episode): 2705.81s
+	Total rewards -443
+	Total steps: 200
+	Current epsilon: 0.5320
+	Total penalties: 27
+	w: [-12.68275782   4.35035319  17.27858087  10.64659777  -1.95653241
+   4.82361226   1.31725382   1.26562475   1.27487275   1.29912349
+  -7.71131708  -6.99645993  -0.18611087]
+
+Episode# 65000/300000 (2498 successful)
+	Elapsed time (from first episode): 2752.02s
+	Total rewards -488
+	Total steps: 200
+	Current epsilon: 0.5268
+	Total penalties: 32
+	w: [-12.70063919   4.36264295  17.38357267  10.64465423  -1.96876981
+   4.79164127   1.32249469   1.24642076   1.27166193   1.30726495
+  -7.71690643  -6.99971948  -0.2542976 ]
+
+Episode# 66000/300000 (2513 successful)
+	Elapsed time (from first episode): 2798.71s
+	Total rewards -479
+	Total steps: 200
+	Current epsilon: 0.5217
+	Total penalties: 31
+	w: [-12.68335188   4.29073498  17.44452431  10.64121383  -1.98154406
+   4.73012175   1.31875171   1.27582826   1.30154082   1.31532002
+  -7.69181633  -7.07112074  -0.2159188 ]
+
+Episode# 67000/300000 (2545 successful)
+	Elapsed time (from first episode): 2845.07s
+	Total rewards -515
+	Total steps: 200
+	Current epsilon: 0.5166
+	Total penalties: 35
+	w: [-12.71179188   4.46122696  17.57148741  10.6526962   -2.02870872
+   4.78200448   1.2505426    1.24659308   1.24245919   1.26336435
+  -7.73021695  -6.85267853  -0.31029791]
+
+Episode# 68000/300000 (2570 successful)
+	Elapsed time (from first episode): 2891.82s
+	Total rewards -524
+	Total steps: 200
+	Current epsilon: 0.5116
+	Total penalties: 36
+	w: [-12.65155392   4.53751899  17.67028576  10.6600029   -2.05467343
+   4.81759184   1.30450114   1.24297092   1.28309349   1.2972757
+  -7.71080089  -6.93673867  -0.21879579]
+
+Episode# 69000/300000 (2599 successful)
+	Elapsed time (from first episode): 2938.35s
+	Total rewards -515
+	Total steps: 200
+	Current epsilon: 0.5066
+	Total penalties: 35
+	w: [-12.62980898   4.63406965  17.78160988  10.67547249  -2.09596753
+   4.83129041   1.37482963   1.27192878   1.31292841   1.33724125
+  -7.68039475  -7.1144867   -0.1960292 ]
+
+Episode# 70000/300000 (2615 successful)
+	Elapsed time (from first episode): 2985.36s
+	Total rewards -560
+	Total steps: 200
+	Current epsilon: 0.5016
+	Total penalties: 40
+	w: [-12.64135752   4.46908306  17.84336133  10.69265279  -2.05845704
+   4.78474575   1.29998633   1.23386179   1.28672566   1.29402906
+  -7.70749953  -6.91660521  -0.2261996 ]
+
+Episode# 71000/300000 (2657 successful)
+	Elapsed time (from first episode): 3032.27s
+	Total rewards -524
+	Total steps: 200
+	Current epsilon: 0.4967
+	Total penalties: 36
+	w: [-12.69986942   4.31624094  18.00700751  10.68185464  -1.9537643
+   4.84843095   1.29487249   1.24447254   1.24673038   1.26612396
+  -7.74403646  -6.87617671  -0.22632178]
+
+Episode# 72000/300000 (2677 successful)
+	Elapsed time (from first episode): 3079.45s
+	Total rewards -587
+	Total steps: 200
+	Current epsilon: 0.4919
+	Total penalties: 43
+	w: [-12.65391387   4.32281113  18.08428365  10.66692242  -1.94371928
+   4.83498537   1.26475218   1.24262378   1.25287414   1.25821194
+  -7.74440096  -6.79611933  -0.14671131]
+
+Episode# 73000/300000 (2692 successful)
+	Elapsed time (from first episode): 3127.00s
+	Total rewards -389
+	Total steps: 200
+	Current epsilon: 0.4871
+	Total penalties: 21
+	w: [-12.702699     4.17041285  18.14245505  10.65542903  -1.96418265
+   4.77962376   1.32435321   1.2431801    1.28185722   1.29792436
+  -7.71172071  -7.00643757  -0.22660207]
+
+Episode# 74000/300000 (2705 successful)
+	Elapsed time (from first episode): 3174.64s
+	Total rewards -488
+	Total steps: 200
+	Current epsilon: 0.4823
+	Total penalties: 32
+	w: [-12.68864492   4.09252733  18.19247444  10.64790218  -1.96698456
+   4.77184727   1.30064204   1.26621292   1.29670296   1.30056602
+  -7.70082473  -7.02008851  -0.19143768]
+
+Episode# 75000/300000 (2720 successful)
+	Elapsed time (from first episode): 3222.32s
+	Total rewards -542
+	Total steps: 200
+	Current epsilon: 0.4776
+	Total penalties: 38
+	w: [-12.69279467   4.14829451  18.25002658  10.65181902  -1.98405687
+   4.75730393   1.31796871   1.26248269   1.2781503    1.28083706
+  -7.7142306   -6.98614722  -0.20848274]
+
+Episode# 76000/300000 (2742 successful)
+	Elapsed time (from first episode): 3269.79s
+	Total rewards -470
+	Total steps: 200
+	Current epsilon: 0.4730
+	Total penalties: 30
+	w: [-12.66756372   4.25940975  18.33350409  10.66170153  -2.03773472
+   4.77694423   1.35432127   1.2603426    1.29325206   1.29599786
+  -7.70271814  -7.03690376  -0.17177177]
+
+Episode# 77000/300000 (2759 successful)
+	Elapsed time (from first episode): 3317.60s
+	Total rewards -497
+	Total steps: 200
+	Current epsilon: 0.4684
+	Total penalties: 33
+	w: [-12.69036642   4.15695818  18.39742776  10.68161148  -2.05217025
+   4.73888487   1.345848     1.26511583   1.30849633   1.32440773
+  -7.68213385  -7.12024484  -0.18392113]
+
+Episode# 78000/300000 (2776 successful)
+	Elapsed time (from first episode): 3365.65s
+	Total rewards -488
+	Total steps: 200
+	Current epsilon: 0.4638
+	Total penalties: 32
+	w: [-12.636611     4.02220591  18.4622935   10.68230099  -1.96175793
+   4.67790028   1.29770403   1.25151057   1.28294277   1.28741175
+  -7.71877159  -6.90555291  -0.11869886]
+
+Episode# 79000/300000 (2799 successful)
+	Elapsed time (from first episode): 3413.37s
+	Total rewards -488
+	Total steps: 200
+	Current epsilon: 0.4593
+	Total penalties: 32
+	w: [-12.72149045   4.0703915   18.54970764  10.68285301  -2.02065685
+   4.66205404   1.26251532   1.24361756   1.2574452    1.25276483
+  -7.73275448  -6.87322326  -0.25180015]
+
+Episode# 80000/300000 (2832 successful)
+	Elapsed time (from first episode): 3460.95s
+	Total rewards -407
+	Total steps: 200
+	Current epsilon: 0.4548
+	Total penalties: 23
+	w: [-12.66411201   3.90511317  18.6756257   10.68349144  -1.94864605
+   4.69978723   1.34958718   1.27382596   1.28999531   1.30006708
+  -7.70800582  -7.03772611  -0.16891144]
+
+Episode# 81000/300000 (2858 successful)
+	Elapsed time (from first episode): 3508.85s
+	Total rewards -461
+	Total steps: 200
+	Current epsilon: 0.4504
+	Total penalties: 29
+	w: [-12.62868955   3.8031121   18.77343092  10.67041749  -1.92354046
+   4.70082311   1.33111747   1.27731268   1.28609394   1.28626924
+  -7.71511277  -6.96251449  -0.16737956]
+
+Episode# 82000/300000 (2897 successful)
+	Elapsed time (from first episode): 3556.40s
+	Total rewards -362
+	Total steps: 200
+	Current epsilon: 0.4460
+	Total penalties: 18
+	w: [-12.6497342    3.99166928  18.91737975  10.65674283  -1.98128905
+   4.77496339   1.27773539   1.22961924   1.2365018    1.24135397
+  -7.74601286  -6.75707611  -0.21664905]
+
+Episode# 83000/300000 (2919 successful)
+	Elapsed time (from first episode): 3604.46s
+	Total rewards -416
+	Total steps: 200
+	Current epsilon: 0.4417
+	Total penalties: 24
+	w: [-12.65397436   3.99632822  18.9975001   10.66607532  -2.0035413
+   4.76587097   1.26156057   1.23653224   1.26107216   1.27001113
+  -7.7132024   -6.83809245  -0.20737304]
+
+Episode# 84000/300000 (2937 successful)
+	Elapsed time (from first episode): 3652.62s
+	Total rewards -425
+	Total steps: 200
+	Current epsilon: 0.4374
+	Total penalties: 25
+	w: [-12.63745388   4.1480039   19.06146205  10.68009459  -2.02650155
+   4.73897552   1.30515608   1.23800298   1.26835451   1.28129158
+  -7.7190622   -6.8793412   -0.22828943]
+
+Episode# 85000/300000 (2970 successful)
+	Elapsed time (from first episode): 3700.73s
+	Total rewards -497
+	Total steps: 200
+	Current epsilon: 0.4331
+	Total penalties: 33
+	w: [-12.56338756   3.93771149  19.1818      10.66869698  -1.92748032
+   4.80203587   1.28017321   1.26707373   1.28020247   1.2804974
+  -7.71290164  -6.82657712  -0.1082878 ]
+
+Episode# 86000/300000 (2995 successful)
+	Elapsed time (from first episode): 3749.27s
+	Total rewards -389
+	Total steps: 200
+	Current epsilon: 0.4289
+	Total penalties: 21
+	w: [-12.63262343   3.82614766  19.27166436  10.65757559  -1.9382732
+   4.74718114   1.30904391   1.23548331   1.24915326   1.27157677
+  -7.73155818  -6.83446688  -0.25692356]
+
+Episode# 87000/300000 (3017 successful)
+	Elapsed time (from first episode): 3797.92s
+	Total rewards -362
+	Total steps: 200
+	Current epsilon: 0.4248
+	Total penalties: 18
+	w: [-12.59322803   3.84926853  19.34979935  10.65351764  -1.94424117
+   4.75871289   1.29785383   1.25241373   1.27279582   1.2978648
+  -7.71322433  -6.86907625  -0.12711278]
+
+Episode# 88000/300000 (3040 successful)
+	Elapsed time (from first episode): 3846.53s
+	Total rewards -407
+	Total steps: 200
+	Current epsilon: 0.4206
+	Total penalties: 23
+	w: [-12.64493172   4.04705933  19.43045384  10.6603416   -2.02116708
+   4.76571111   1.30227704   1.25773088   1.27239393   1.29039142
+  -7.70938109  -6.9264883   -0.15589673]
+
+Episode# 89000/300000 (3070 successful)
+	Elapsed time (from first episode): 3895.49s
+	Total rewards -362
+	Total steps: 200
+	Current epsilon: 0.4165
+	Total penalties: 18
+	w: [-12.68210859   4.15364309  19.53306861  10.68224159  -2.07144995
+   4.81235385   1.23757558   1.23223501   1.23773037   1.23763603
+  -7.73159545  -6.76383451  -0.16123633]
+
+Episode# 90000/300000 (3095 successful)
+	Elapsed time (from first episode): 3943.95s
+	Total rewards -362
+	Total steps: 200
+	Current epsilon: 0.4125
+	Total penalties: 18
+	w: [-12.60744363   3.94660859  19.61785445  10.69669451  -2.01904046
+   4.87406715   1.34937346   1.29682428   1.30836825   1.32037562
+  -7.68382358  -7.06670605  -0.15780514]
+
+Episode# 91000/300000 (3120 successful)
+	Elapsed time (from first episode): 3992.44s
+	Total rewards -443
+	Total steps: 200
+	Current epsilon: 0.4085
+	Total penalties: 27
+	w: [-12.64627525   3.84112322  19.70302187  10.69779323  -2.00799317
+   4.86584478   1.30378926   1.263793     1.2814444    1.28964444
+  -7.7128623   -6.94022843  -0.27618193]
+
+Episode# 92000/300000 (3139 successful)
+	Elapsed time (from first episode): 4041.19s
+	Total rewards -452
+	Total steps: 200
+	Current epsilon: 0.4045
+	Total penalties: 28
+	w: [-12.58096607   3.84272151  19.76809983  10.70242276  -2.00072149
+   4.82597504   1.29013474   1.27497406   1.28024393   1.29367735
+  -7.70977527  -6.87836527  -0.19961179]
+
+Episode# 93000/300000 (3165 successful)
+	Elapsed time (from first episode): 4089.95s
+	Total rewards -398
+	Total steps: 200
+	Current epsilon: 0.4006
+	Total penalties: 22
+	w: [-12.58911385   3.74399116  19.85745679  10.70191092  -1.99691995
+   4.83334947   1.3001322    1.28589108   1.28649818   1.30425682
+  -7.7019842   -6.93205232  -0.18154194]
+
+Episode# 94000/300000 (3197 successful)
+	Elapsed time (from first episode): 4138.55s
+	Total rewards -362
+	Total steps: 200
+	Current epsilon: 0.3967
+	Total penalties: 18
+	w: [-12.5467083    3.74543147  19.96574693  10.70009076  -1.97345411
+   4.84468565   1.28663784   1.25463037   1.27007805   1.28052381
+  -7.72405239  -6.78267036  -0.11214781]
+
+Episode# 95000/300000 (3212 successful)
+	Elapsed time (from first episode): 4187.85s
+	Total rewards -479
+	Total steps: 200
+	Current epsilon: 0.3929
+	Total penalties: 31
+	w: [-12.55590595   3.72812147  20.01606711  10.70252481  -2.00990865
+   4.77953616   1.32320194   1.26903531   1.3015135    1.31453986
+  -7.69231812  -6.94002282  -0.15571853]
+
+Episode# 96000/300000 (3251 successful)
+	Elapsed time (from first episode): 4236.94s
+	Total rewards -470
+	Total steps: 200
+	Current epsilon: 0.3891
+	Total penalties: 30
+	w: [-12.59264005   3.50970551  20.1502355   10.69061756  -1.93245296
+   4.83282163   1.27117076   1.26810739   1.26675916   1.26937118
+  -7.72065511  -6.81553782  -0.28139739]
+
+Episode# 97000/300000 (3290 successful)
+	Elapsed time (from first episode): 4285.77s
+	Total rewards -425
+	Total steps: 200
+	Current epsilon: 0.3853
+	Total penalties: 25
+	w: [-12.52073115   3.48969818  20.28133459  10.67080013  -1.89470976
+   4.91729703   1.32847251   1.28731517   1.29855755   1.30839924
+  -7.70381305  -6.90780695  -0.18183218]
+
+Episode# 98000/300000 (3313 successful)
+	Elapsed time (from first episode): 4335.39s
+	Total rewards -425
+	Total steps: 200
+	Current epsilon: 0.3816
+	Total penalties: 25
+	w: [-12.54984376   3.48545952  20.35783587  10.66142677  -1.91860605
+   4.91199876   1.29955431   1.28328481   1.28666098   1.29591417
+  -7.70346567  -6.87993676  -0.14338625]
+
+Episode# 99000/300000 (3351 successful)
+	Elapsed time (from first episode): 4384.44s
+	Total rewards -371
+	Total steps: 200
+	Current epsilon: 0.3779
+	Total penalties: 19
+	w: [-12.61755127   3.5638933   20.47951453  10.65763583  -1.94144072
+   4.94662987   1.26160609   1.26916291   1.26918575   1.26466628
+  -7.72606578  -6.82425091  -0.27080939]
+
+Episode# 100000/300000 (3383 successful)
+	Elapsed time (from first episode): 4433.81s
+	Total rewards -470
+	Total steps: 200
+	Current epsilon: 0.3742
+	Total penalties: 30
+	w: [-12.57039397   3.33349362  20.58488339  10.63863035  -1.82318188
+   4.94942352   1.29267642   1.26449572   1.26640891   1.28370658
+  -7.72410246  -6.82172352  -0.2140189 ]
+
+Episode# 101000/300000 (3414 successful)
+	Elapsed time (from first episode): 4483.07s
+	Total rewards -425
+	Total steps: 200
+	Current epsilon: 0.3706
+	Total penalties: 25
+	w: [-12.58430463   3.46703304  20.6842778   10.61849728  -1.90548959
+   4.9843737    1.33539498   1.26274948   1.28630668   1.29460328
+  -7.71111161  -6.92039182  -0.18510864]
+
+Episode# 102000/300000 (3441 successful)
+	Elapsed time (from first episode): 4532.43s
+	Total rewards -398
+	Total steps: 200
+	Current epsilon: 0.3670
+	Total penalties: 22
+	w: [-12.54705515   3.60858845  20.76940815  10.62696784  -1.94270642
+   4.99629477   1.29161969   1.23930306   1.2627617    1.27872647
+  -7.72907095  -6.75853951  -0.15642357]
+
+Episode# 103000/300000 (3472 successful)
+	Elapsed time (from first episode): 4581.64s
+	Total rewards -407
+	Total steps: 200
+	Current epsilon: 0.3634
+	Total penalties: 23
+	w: [-12.59401624   3.64553985  20.86496068  10.64650717  -2.0053004
+   5.02442431   1.27338767   1.25722543   1.25958599   1.26467665
+  -7.714629    -6.80240736  -0.22479414]
+
+Episode# 104000/300000 (3509 successful)
+	Elapsed time (from first episode): 4631.15s
+	Total rewards -371
+	Total steps: 200
+	Current epsilon: 0.3599
+	Total penalties: 19
+	w: [-12.62559925   3.44270776  20.978507    10.66263595  -1.89058576
+   5.05984703   1.2866666    1.2791318    1.2549075    1.29723668
+  -7.72951315  -6.88217305  -0.20656301]
+
+Episode# 105000/300000 (3553 successful)
+	Elapsed time (from first episode): 4680.51s
+	Total rewards -398
+	Total steps: 200
+	Current epsilon: 0.3564
+	Total penalties: 22
+	w: [-12.56734745   3.30665724  21.11451125  10.64211769  -1.81654782
+   5.16185796   1.34272712   1.2771449    1.28491008   1.28270307
+  -7.71436836  -6.90860865  -0.19267874]
+
+Episode# 106000/300000 (3574 successful)
+	Elapsed time (from first episode): 4730.45s
+	Total rewards -407
+	Total steps: 200
+	Current epsilon: 0.3530
+	Total penalties: 23
+	w: [-12.5942469    3.30581749  21.17865036  10.61868617  -1.87182496
+   5.14751354   1.3370597    1.26944896   1.28306397   1.29136285
+  -7.70911832  -6.93420846  -0.18971292]
+
+Episode# 107000/300000 (3599 successful)
+	Elapsed time (from first episode): 4780.18s
+	Total rewards -425
+	Total steps: 200
+	Current epsilon: 0.3496
+	Total penalties: 25
+	w: [-12.61116574   3.14566235  21.25432575  10.6215246   -1.82391759
+   5.13175942   1.29140703   1.28998417   1.29775845   1.32095314
+  -7.71137047  -6.96804245  -0.24418683]
+
+Episode# 108000/300000 (3634 successful)
+	Elapsed time (from first episode): 4829.91s
+	Total rewards -389
+	Total steps: 200
+	Current epsilon: 0.3462
+	Total penalties: 21
+	w: [-12.59343546   3.12290386  21.36077176  10.60653272  -1.8202169
+   5.18186665   1.27314741   1.29886627   1.27549004   1.2772595
+  -7.71234266  -6.87400039  -0.19572286]
+
+Episode# 109000/300000 (3655 successful)
+	Elapsed time (from first episode): 4880.16s
+	Total rewards -407
+	Total steps: 200
+	Current epsilon: 0.3429
+	Total penalties: 23
+	w: [-12.60181526   3.12055887  21.4242968   10.59178435  -1.84186821
+   5.16449728   1.28249254   1.2846609    1.29107652   1.28259823
+  -7.70527808  -6.90550977  -0.1879816 ]
+
+Episode# 110000/300000 (3698 successful)
+	Elapsed time (from first episode): 4929.81s
+	Total rewards -443
+	Total steps: 200
+	Current epsilon: 0.3395
+	Total penalties: 27
+	w: [-12.52644451   3.14144118  21.55324835  10.58910669  -1.8278151
+   5.23700632   1.29642227   1.28086719   1.28652861   1.29394018
+  -7.70745032  -6.84489682  -0.0598752 ]
+
+Episode# 111000/300000 (3727 successful)
+	Elapsed time (from first episode): 4979.80s
+	Total rewards -407
+	Total steps: 200
+	Current epsilon: 0.3363
+	Total penalties: 23
+	w: [-12.60843916   3.08396939  21.63795326  10.58723128  -1.819719
+   5.22281364   1.29566632   1.27685523   1.2783712    1.28063944
+  -7.71235667  -6.89575906  -0.21712649]
+
+Episode# 112000/300000 (3768 successful)
+	Elapsed time (from first episode): 5029.40s
+	Total rewards -353
+	Total steps: 200
+	Current epsilon: 0.3330
+	Total penalties: 17
+	w: [-12.59254924   3.06770553  21.75614159  10.58203771  -1.78772486
+   5.28743476   1.27747093   1.33839308   1.28302555   1.27931259
+  -7.71436201  -6.92453376  -0.22666375]
+
+Episode# 113000/300000 (3800 successful)
+	Elapsed time (from first episode): 5079.44s
+	Total rewards -254
+	Total steps: 200
+	Current epsilon: 0.3298
+	Total penalties: 6
+	w: [-12.53178026   3.05279186  21.84817557  10.55892414  -1.76107477
+   5.30904727   1.30818028   1.26787082   1.27226976   1.29039186
+  -7.72067827  -6.81795909  -0.11559923]
+
+Episode# 114000/300000 (3823 successful)
+	Elapsed time (from first episode): 5129.80s
+	Total rewards -371
+	Total steps: 200
+	Current epsilon: 0.3266
+	Total penalties: 19
+	w: [-12.56813531   3.16401473  21.91248721  10.55891298  -1.84122993
+   5.29157127   1.32115442   1.27915133   1.28782417   1.29654106
+  -7.70404068  -6.91690999  -0.165518  ]
+
+Episode# 115000/300000 (3862 successful)
+	Elapsed time (from first episode): 5179.72s
+	Total rewards -389
+	Total steps: 200
+	Current epsilon: 0.3235
+	Total penalties: 21
+	w: [-12.58964951   3.20625655  22.01989909  10.57312806  -1.88176569
+   5.34085301   1.30299408   1.28337613   1.29676523   1.31268751
+  -7.69386253  -6.95975431  -0.17375586]
+
+Episode# 116000/300000 (3899 successful)
+	Elapsed time (from first episode): 5229.94s
+	Total rewards -434
+	Total steps: 200
+	Current epsilon: 0.3204
+	Total penalties: 26
+	w: [-12.58843543   3.15893417  22.12115056  10.58805211  -1.86451122
+   5.36489737   1.29012484   1.26785504   1.26949182   1.28031422
+  -7.71225464  -6.8521111   -0.15916718]
+
+Episode# 117000/300000 (3926 successful)
+	Elapsed time (from first episode): 5280.14s
+	Total rewards -389
+	Total steps: 200
+	Current epsilon: 0.3173
+	Total penalties: 21
+	w: [-12.53087276   3.07140772  22.19473628  10.58819908  -1.7882864
+   5.35603443   1.27300081   1.27162958   1.27260082   1.28091087
+  -7.72051716  -6.77664206  -0.13340404]
+
+Episode# 118000/300000 (3960 successful)
+	Elapsed time (from first episode): 5330.33s
+	Total rewards -434
+	Total steps: 200
+	Current epsilon: 0.3142
+	Total penalties: 26
+	w: [-12.52787922   2.89137808  22.28656771  10.57661762  -1.7568607
+   5.39901267   1.37948898   1.30245736   1.30049827   1.31804044
+  -7.69231665  -7.00419202  -0.11554686]
+
+Episode# 119000/300000 (3990 successful)
+	Elapsed time (from first episode): 5380.79s
+	Total rewards -380
+	Total steps: 200
+	Current epsilon: 0.3112
+	Total penalties: 20
+	w: [-12.5258014    2.87110893  22.36723416  10.5667587   -1.75230358
+   5.46136222   1.28259709   1.29349417   1.29972275   1.29282624
+  -7.70348336  -6.85910266  -0.17426867]
+
+Episode# 120000/300000 (4022 successful)
+	Elapsed time (from first episode): 5431.43s
+	Total rewards -425
+	Total steps: 200
+	Current epsilon: 0.3082
+	Total penalties: 25
+	w: [-12.55657937   2.94286905  22.45255716  10.55693304  -1.78580444
+   5.47265036   1.25977058   1.27713837   1.26442333   1.26452497
+  -7.71615039  -6.77443062  -0.25451537]
+
+Episode# 121000/300000 (4063 successful)
+	Elapsed time (from first episode): 5481.92s
+	Total rewards -380
+	Total steps: 200
+	Current epsilon: 0.3052
+	Total penalties: 20
+	w: [-12.43834963   2.74502373  22.56427739  10.53416287  -1.67971384
+   5.54874385   1.29848877   1.29643969   1.29703983   1.29722161
+  -7.6953267   -6.80035721  -0.11346023]
+
+Episode# 122000/300000 (4092 successful)
+	Elapsed time (from first episode): 5532.47s
+	Total rewards -407
+	Total steps: 200
+	Current epsilon: 0.3023
+	Total penalties: 23
+	w: [-12.4876142    2.86089183  22.63872037  10.52649853  -1.76652775
+   5.57474132   1.30173128   1.29392879   1.29389289   1.29424318
+  -7.68342367  -6.85613105  -0.26607823]
+
+Episode# 123000/300000 (4124 successful)
+	Elapsed time (from first episode): 5583.30s
+	Total rewards -281
+	Total steps: 200
+	Current epsilon: 0.2994
+	Total penalties: 9
+	w: [-12.48134476   2.7349988   22.72124257  10.52989367  -1.73858469
+   5.58001347   1.3293407    1.29559517   1.2955667    1.29596149
+  -7.69317337  -6.87277984  -0.25818866]
+
+Episode# 124000/300000 (4155 successful)
+	Elapsed time (from first episode): 5634.18s
+	Total rewards -380
+	Total steps: 200
+	Current epsilon: 0.2965
+	Total penalties: 20
+	w: [-12.5030025    2.78081134  22.80079429  10.52671254  -1.75663728
+   5.58625513   1.27643625   1.27822614   1.2840362    1.27705841
+  -7.70616514  -6.78073875  -0.21499093]
+
+Episode# 125000/300000 (4183 successful)
+	Elapsed time (from first episode): 5684.72s
+	Total rewards -371
+	Total steps: 200
+	Current epsilon: 0.2936
+	Total penalties: 19
+	w: [-12.47051289   2.9063281   22.87025723  10.52914494  -1.80332746
+   5.5829232    1.33799354   1.26602764   1.27257946   1.29017487
+  -7.70364303  -6.80178975  -0.15963177]
+
+Episode# 126000/300000 (4217 successful)
+	Elapsed time (from first episode): 5735.52s
+	Total rewards -380
+	Total steps: 200
+	Current epsilon: 0.2908
+	Total penalties: 20
+	w: [-12.53145949   2.86097349  22.95433748  10.54537383  -1.80873034
+   5.57241141   1.2873954    1.25786337   1.26159851   1.27172679
+  -7.71858986  -6.75959808  -0.21845386]
+
+Episode# 127000/300000 (4260 successful)
+	Elapsed time (from first episode): 5786.22s
+	Total rewards -317
+	Total steps: 200
+	Current epsilon: 0.2880
+	Total penalties: 13
+	w: [-12.53340476   2.9416352   23.05993979  10.55536727  -1.81630211
+   5.63986327   1.28828278   1.27509787   1.27747027   1.27740113
+  -7.71503176  -6.80476944  -0.15078332]
+
+Episode# 128000/300000 (4278 successful)
+	Elapsed time (from first episode): 5837.49s
+	Total rewards -416
+	Total steps: 200
+	Current epsilon: 0.2853
+	Total penalties: 24
+	w: [-12.56495202   2.70151353  23.10498143  10.55496412  -1.75327266
+   5.59291528   1.31701723   1.30800558   1.30956598   1.31036244
+  -7.68041292  -6.99763472  -0.20022966]
+
+Episode# 129000/300000 (4325 successful)
+	Elapsed time (from first episode): 5887.97s
+	Total rewards -362
+	Total steps: 200
+	Current epsilon: 0.2825
+	Total penalties: 18
+	w: [-12.50660278   2.63318697  23.22232168  10.54120136  -1.71107883
+   5.65460567   1.33647338   1.29416978   1.30325549   1.31948131
+  -7.69365963  -6.93446748  -0.12185465]
+
+Episode# 130000/300000 (4348 successful)
+	Elapsed time (from first episode): 5939.13s
+	Total rewards -281
+	Total steps: 200
+	Current epsilon: 0.2798
+	Total penalties: 9
+	w: [-12.50732327   2.65545712  23.27830556  10.52994723  -1.72495739
+   5.64081257   1.29259772   1.28999884   1.29166911   1.29263567
+  -7.70445549  -6.8379135   -0.1616651 ]
+
+Episode# 131000/300000 (4387 successful)
+	Elapsed time (from first episode): 5989.99s
+	Total rewards -344
+	Total steps: 200
+	Current epsilon: 0.2771
+	Total penalties: 16
+	w: [-12.53656019   2.74565101  23.36976185  10.52519215  -1.7310677
+   5.69430791   1.26155526   1.26291009   1.25975792   1.27215069
+  -7.72042493  -6.7406536   -0.1892198 ]
+
+Episode# 132000/300000 (4413 successful)
+	Elapsed time (from first episode): 6041.24s
+	Total rewards -371
+	Total steps: 200
+	Current epsilon: 0.2745
+	Total penalties: 19
+	w: [-12.50506451   2.67033994  23.43186685  10.52080166  -1.71212324
+   5.67700941   1.28220366   1.28727129   1.28255107   1.28252151
+  -7.71026806  -6.79748836  -0.18802741]
+
+Episode# 133000/300000 (4441 successful)
+	Elapsed time (from first episode): 6092.73s
+	Total rewards -389
+	Total steps: 200
+	Current epsilon: 0.2718
+	Total penalties: 21
+	w: [-12.53262839   2.60086856  23.49820882  10.51871167  -1.71043721
+   5.68327299   1.29065847   1.29853668   1.28606458   1.31653609
+  -7.70719819  -6.88537041  -0.18406101]
+
+Episode# 134000/300000 (4468 successful)
+	Elapsed time (from first episode): 6144.26s
+	Total rewards -434
+	Total steps: 200
+	Current epsilon: 0.2692
+	Total penalties: 26
+	w: [-12.52994177   2.51962791  23.56223091  10.50938581  -1.67192004
+   5.65458979   1.27561498   1.27453374   1.27576251   1.28961129
+  -7.71153506  -6.80207362  -0.19022967]
+
+Episode# 135000/300000 (4504 successful)
+	Elapsed time (from first episode): 6195.61s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.2666
+	Total penalties: 5
+	w: [-12.4724663    2.46833286  23.64669612  10.48986082  -1.60763469
+   5.68587999   1.28545383   1.28546125   1.28365811   1.28546698
+  -7.71394159  -6.76670926  -0.07661209]
+
+Episode# 136000/300000 (4527 successful)
+	Elapsed time (from first episode): 6247.08s
+	Total rewards -335
+	Total steps: 200
+	Current epsilon: 0.2641
+	Total penalties: 15
+	w: [-12.49610688   2.46014372  23.70015358  10.48044043  -1.64338566
+   5.67167951   1.33695654   1.30897906   1.31507522   1.3204907
+  -7.68733549  -6.95841729  -0.12243202]
+
+Episode# 137000/300000 (4551 successful)
+	Elapsed time (from first episode): 6298.56s
+	Total rewards -326
+	Total steps: 200
+	Current epsilon: 0.2616
+	Total penalties: 14
+	w: [-12.48800744   2.4729449   23.75519224  10.47180969  -1.65413886
+   5.65728406   1.29555763   1.30081855   1.30083454   1.29892664
+  -7.69105293  -6.86123625  -0.13683289]
+
+Episode# 138000/300000 (4586 successful)
+	Elapsed time (from first episode): 6349.92s
+	Total rewards -389
+	Total steps: 200
+	Current epsilon: 0.2591
+	Total penalties: 21
+	w: [-12.50601513   2.5515409   23.83472806  10.47029253  -1.67772591
+   5.67039905   1.27327582   1.29332926   1.27533281   1.28369865
+  -7.71232135  -6.78747469  -0.17367599]
+
+Episode# 139000/300000 (4626 successful)
+	Elapsed time (from first episode): 6401.43s
+	Total rewards -308
+	Total steps: 200
+	Current epsilon: 0.2566
+	Total penalties: 12
+	w: [-12.52001783   2.47231103  23.92549961  10.46627417  -1.64744354
+   5.68977426   1.33284118   1.28049132   1.28130711   1.28291052
+  -7.70565319  -6.86005915  -0.13222071]
+
+Episode# 140000/300000 (4659 successful)
+	Elapsed time (from first episode): 6452.99s
+	Total rewards -362
+	Total steps: 200
+	Current epsilon: 0.2541
+	Total penalties: 18
+	w: [-12.51907185   2.57089838  23.99815788  10.46705417  -1.69173334
+   5.70283261   1.27540215   1.26735738   1.26779855   1.26778817
+  -7.7048978   -6.76066469  -0.11701769]
+
+Episode# 141000/300000 (4683 successful)
+	Elapsed time (from first episode): 6504.71s
+	Total rewards -317
+	Total steps: 200
+	Current epsilon: 0.2517
+	Total penalties: 13
+	w: [-12.5542203    2.51121228  24.05003863  10.4758172   -1.70672932
+   5.6868583    1.27833003   1.27999277   1.27624084   1.29137039
+  -7.70530761  -6.84299109  -0.19392705]
+
+Episode# 142000/300000 (4716 successful)
+	Elapsed time (from first episode): 6556.42s
+	Total rewards -308
+	Total steps: 200
+	Current epsilon: 0.2493
+	Total penalties: 12
+	w: [-12.52229423   2.44359     24.12271633  10.47881987  -1.67782558
+   5.72876139   1.27724135   1.27605695   1.27596146   1.29625501
+  -7.70434077  -6.81161261  -0.20405025]
+
+Episode# 143000/300000 (4752 successful)
+	Elapsed time (from first episode): 6608.12s
+	Total rewards -389
+	Total steps: 200
+	Current epsilon: 0.2469
+	Total penalties: 21
+	w: [-12.48869778   2.38967248  24.20155113  10.47299583  -1.64878315
+   5.74768019   1.3167243    1.29087781   1.29143806   1.29947982
+  -7.69882393  -6.85653822  -0.13087632]
+
+Episode# 144000/300000 (4783 successful)
+	Elapsed time (from first episode): 6660.03s
+	Total rewards -389
+	Total steps: 200
+	Current epsilon: 0.2446
+	Total penalties: 21
+	w: [-12.49696838   2.42779618  24.26795197  10.47466048  -1.68672266
+   5.75975427   1.29957396   1.28733831   1.2973684    1.29957252
+  -7.69228044  -6.85668551  -0.12312528]
+
+Episode# 145000/300000 (4811 successful)
+	Elapsed time (from first episode): 6712.10s
+	Total rewards -272
+	Total steps: 200
+	Current epsilon: 0.2422
+	Total penalties: 8
+	w: [-12.53408329   2.28463831  24.32825442  10.47874439  -1.65447005
+   5.74496105   1.29997485   1.31574914   1.31793129   1.31077595
+  -7.68923514  -6.95742378  -0.21911094]
+
+Episode# 146000/300000 (4840 successful)
+	Elapsed time (from first episode): 6763.98s
+	Total rewards -326
+	Total steps: 200
+	Current epsilon: 0.2399
+	Total penalties: 14
+	w: [-12.48124781   2.27024322  24.39179038  10.46584356  -1.62494239
+   5.77166754   1.32251165   1.29501847   1.30079262   1.30454729
+  -7.69348607  -6.87877616  -0.12260846]
+
+Episode# 147000/300000 (4879 successful)
+	Elapsed time (from first episode): 6815.94s
+	Total rewards -344
+	Total steps: 200
+	Current epsilon: 0.2376
+	Total penalties: 16
+	w: [-12.51758383   2.31657669  24.47348122  10.45964315  -1.64063
+   5.80030481   1.32819611   1.26993657   1.27516342   1.28309174
+  -7.7058541   -6.83626195  -0.20431071]
+
+Episode# 148000/300000 (4908 successful)
+	Elapsed time (from first episode): 6867.93s
+	Total rewards -326
+	Total steps: 200
+	Current epsilon: 0.2354
+	Total penalties: 14
+	w: [-12.49232488   2.24873128  24.53412046  10.4563062   -1.59403498
+   5.83318398   1.3051873    1.30367886   1.2947472    1.31748263
+  -7.70091121  -6.88065404  -0.17609199]
+
+Episode# 149000/300000 (4934 successful)
+	Elapsed time (from first episode): 6919.84s
+	Total rewards -308
+	Total steps: 200
+	Current epsilon: 0.2331
+	Total penalties: 12
+	w: [-12.4292911    2.19779974  24.58848028  10.44382797  -1.54568446
+   5.82958594   1.32387701   1.31098765   1.31637572   1.31945721
+  -7.68946105  -6.87867202  -0.1065724 ]
+
+Episode# 150000/300000 (4974 successful)
+	Elapsed time (from first episode): 6971.93s
+	Total rewards -326
+	Total steps: 200
+	Current epsilon: 0.2309
+	Total penalties: 14
+	w: [-12.44870863   2.24447402  24.67139819  10.43066132  -1.58357201
+   5.85005579   1.31462797   1.30284503   1.29981102   1.30892035
+  -7.6948453   -6.84821207  -0.10598328]
+
+Episode# 151000/300000 (5002 successful)
+	Elapsed time (from first episode): 7024.11s
+	Total rewards -299
+	Total steps: 200
+	Current epsilon: 0.2287
+	Total penalties: 11
+	w: [-12.4783807    2.11731171  24.72958238  10.42223206  -1.55369389
+   5.82332382   1.33146131   1.30037714   1.30065896   1.31127973
+  -7.6861064   -6.90419582  -0.16677588]
+
+Episode# 152000/300000 (5036 successful)
+	Elapsed time (from first episode): 7076.22s
+	Total rewards -344
+	Total steps: 200
+	Current epsilon: 0.2265
+	Total penalties: 16
+	w: [-12.44618416   2.25268962  24.79821341  10.41465507  -1.59140441
+   5.85986902   1.32233378   1.30243694   1.30131336   1.31451666
+  -7.69020058  -6.8647287   -0.09821928]
+
+Episode# 153000/300000 (5065 successful)
+	Elapsed time (from first episode): 7128.71s
+	Total rewards -254
+	Total steps: 200
+	Current epsilon: 0.2244
+	Total penalties: 6
+	w: [-12.43631174   2.03195135  24.85673379  10.40694269  -1.48983136
+   5.81730934   1.3035186    1.32032805   1.29647679   1.31088125
+  -7.70356769  -6.83209312  -0.13474698]
+
+Episode# 154000/300000 (5095 successful)
+	Elapsed time (from first episode): 7181.03s
+	Total rewards -281
+	Total steps: 200
+	Current epsilon: 0.2222
+	Total penalties: 9
+	w: [-12.40682455   2.07784429  24.91744145  10.38905182  -1.49372412
+   5.82657003   1.30788358   1.31574094   1.3073776    1.30783464
+  -7.6927521   -6.82105359  -0.08564584]
+
+Episode# 155000/300000 (5130 successful)
+	Elapsed time (from first episode): 7233.10s
+	Total rewards -389
+	Total steps: 200
+	Current epsilon: 0.2201
+	Total penalties: 21
+	w: [-12.42691186   2.07261311  24.98673385  10.37314825  -1.5006081
+   5.81466481   1.31295695   1.29999537   1.30310124   1.30916233
+  -7.69831704  -6.82195509  -0.12325421]
+
+Episode# 156000/300000 (5155 successful)
+	Elapsed time (from first episode): 7285.51s
+	Total rewards -299
+	Total steps: 200
+	Current epsilon: 0.2180
+	Total penalties: 11
+	w: [-12.42882847   2.01255044  25.03609859  10.36221038  -1.46545153
+   5.78921312   1.34370695   1.30378104   1.30389663   1.3051363
+  -7.69170597  -6.86178781  -0.11752905]
+
+Episode# 157000/300000 (5187 successful)
+	Elapsed time (from first episode): 7337.85s
+	Total rewards -308
+	Total steps: 200
+	Current epsilon: 0.2160
+	Total penalties: 12
+	w: [-12.44290055   1.91868692  25.10059886  10.35109792  -1.43085808
+   5.78815999   1.31741962   1.31741324   1.3174079    1.31741909
+  -7.68294852  -6.89775626  -0.13825601]
+
+Episode# 158000/300000 (5219 successful)
+	Elapsed time (from first episode): 7390.35s
+	Total rewards -335
+	Total steps: 200
+	Current epsilon: 0.2139
+	Total penalties: 15
+	w: [-12.43367026   2.0005131   25.16449822  10.33919003  -1.46194159
+   5.81542212   1.32435878   1.31731744   1.31665395   1.31719194
+  -7.6839882   -6.89334855  -0.13241094]
+
+Episode# 159000/300000 (5246 successful)
+	Elapsed time (from first episode): 7442.86s
+	Total rewards -335
+	Total steps: 200
+	Current epsilon: 0.2119
+	Total penalties: 15
+	w: [-12.46510437   2.05275481  25.21641617  10.32912956  -1.48746236
+   5.78792125   1.3230929    1.28737104   1.28957288   1.29304978
+  -7.70042398  -6.82591136  -0.18086946]
+
+Episode# 160000/300000 (5274 successful)
+	Elapsed time (from first episode): 7495.45s
+	Total rewards -272
+	Total steps: 200
+	Current epsilon: 0.2099
+	Total penalties: 8
+	w: [-12.47399747   1.8723901   25.2704312   10.32567233  -1.41800086
+   5.76452996   1.30623424   1.30384504   1.30253511   1.32419819
+  -7.701199    -6.87775543  -0.18306738]
+
+Episode# 161000/300000 (5313 successful)
+	Elapsed time (from first episode): 7547.88s
+	Total rewards -317
+	Total steps: 200
+	Current epsilon: 0.2079
+	Total penalties: 13
+	w: [-12.46429758   1.79943902  25.34865736  10.31083433  -1.38122099
+   5.77055687   1.31987651   1.31619394   1.31628567   1.31649245
+  -7.68515498  -6.91613555  -0.08144448]
+
+Episode# 162000/300000 (5348 successful)
+	Elapsed time (from first episode): 7600.29s
+	Total rewards -344
+	Total steps: 200
+	Current epsilon: 0.2059
+	Total penalties: 16
+	w: [-12.479549     1.79813925  25.41669619  10.30038779  -1.37701479
+   5.77150842   1.30932441   1.32683212   1.32647918   1.33536651
+  -7.69290552  -6.95279007  -0.16269549]
+
+Episode# 163000/300000 (5388 successful)
+	Elapsed time (from first episode): 7652.59s
+	Total rewards -353
+	Total steps: 200
+	Current epsilon: 0.2040
+	Total penalties: 17
+	w: [-12.47437671   1.95701823  25.49269203  10.28520805  -1.42417269
+   5.80145691   1.27582896   1.28683976   1.27571644   1.27631398
+  -7.70907216  -6.74814808  -0.16386988]
+
+Episode# 164000/300000 (5406 successful)
+	Elapsed time (from first episode): 7705.54s
+	Total rewards -254
+	Total steps: 200
+	Current epsilon: 0.2020
+	Total penalties: 6
+	w: [-12.45075699   1.90138499  25.52672989  10.28168872  -1.41698707
+   5.75433315   1.33253246   1.31282106   1.30453324   1.32692717
+  -7.68872678  -6.90698853  -0.13064623]
+
+Episode# 165000/300000 (5437 successful)
+	Elapsed time (from first episode): 7758.03s
+	Total rewards -290
+	Total steps: 200
+	Current epsilon: 0.2001
+	Total penalties: 10
+	w: [-12.44603789   1.84849648  25.58568109  10.2740049   -1.3919309
+   5.74889489   1.28088205   1.28160888   1.30737124   1.28754557
+  -7.7007207   -6.77086931  -0.16036554]
+
+Episode# 166000/300000 (5473 successful)
+	Elapsed time (from first episode): 7810.90s
+	Total rewards -308
+	Total steps: 200
+	Current epsilon: 0.1982
+	Total penalties: 12
+	w: [-12.42529063   1.86767897  25.6535202   10.26483422  -1.39105858
+   5.78321838   1.30733863   1.30706711   1.30529007   1.31087978
+  -7.68821683  -6.83579377  -0.09256725]
+
+Episode# 167000/300000 (5498 successful)
+	Elapsed time (from first episode): 7863.79s
+	Total rewards -299
+	Total steps: 200
+	Current epsilon: 0.1964
+	Total penalties: 11
+	w: [-12.44285895   1.81196148  25.69867659  10.26108504  -1.3733025
+   5.75629036   1.29826978   1.3418429    1.3058968    1.31381642
+  -7.68727077  -6.88355846  -0.20490671]
+
+Episode# 168000/300000 (5528 successful)
+	Elapsed time (from first episode): 7916.60s
+	Total rewards -308
+	Total steps: 200
+	Current epsilon: 0.1945
+	Total penalties: 12
+	w: [-12.35104467   1.73977202  25.75659426  10.24481279  -1.30051348
+   5.75915356   1.31678021   1.31167638   1.31153524   1.31180793
+  -7.67816272  -6.79282609  -0.06032854]
+
+Episode# 169000/300000 (5559 successful)
+	Elapsed time (from first episode): 7969.19s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.1927
+	Total penalties: 5
+	w: [-12.35247926   1.69784872  25.81462778  10.22940515  -1.29370793
+   5.75660679   1.33631439   1.3293603    1.331356     1.3332438
+  -7.66937719  -6.88152094  -0.10740343]
+
+Episode# 170000/300000 (5591 successful)
+	Elapsed time (from first episode): 8021.95s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.1909
+	Total penalties: 4
+	w: [-12.36421975   1.59206071  25.87543179  10.2100288   -1.25562315
+   5.74972416   1.32941889   1.32783457   1.32942205   1.3294332
+  -7.66567959  -6.88279326  -0.14013852]
+
+Episode# 171000/300000 (5624 successful)
+	Elapsed time (from first episode): 8074.78s
+	Total rewards -362
+	Total steps: 200
+	Current epsilon: 0.1891
+	Total penalties: 18
+	w: [-12.39839811   1.71098349  25.93523767  10.19368254  -1.30177418
+   5.7384949    1.29285686   1.29264537   1.2908487    1.30118727
+  -7.68414773  -6.75993295  -0.17097421]
+
+Episode# 172000/300000 (5654 successful)
+	Elapsed time (from first episode): 8127.54s
+	Total rewards -308
+	Total steps: 200
+	Current epsilon: 0.1873
+	Total penalties: 12
+	w: [-12.38156203   1.70753326  25.9901711   10.18376415  -1.29755109
+   5.73946945   1.3496663    1.29895148   1.29949845   1.30398041
+  -7.68034308  -6.82145997  -0.129895  ]
+
+Episode# 173000/300000 (5669 successful)
+	Elapsed time (from first episode): 8180.66s
+	Total rewards -308
+	Total steps: 200
+	Current epsilon: 0.1855
+	Total penalties: 12
+	w: [-12.39165026   1.71600324  26.01690763  10.18323671  -1.31564442
+   5.69165636   1.3246551    1.3422442    1.37067565   1.33262058
+  -7.66499108  -6.9649991   -0.15552385]
+
+Episode# 174000/300000 (5712 successful)
+	Elapsed time (from first episode): 8233.34s
+	Total rewards -308
+	Total steps: 200
+	Current epsilon: 0.1838
+	Total penalties: 12
+	w: [-12.36491435   1.78239212  26.0940525   10.1792266   -1.32673499
+   5.75672068   1.33553835   1.33302961   1.33324584   1.33327969
+  -7.66287565  -6.90527658  -0.09773029]
+
+Episode# 175000/300000 (5737 successful)
+	Elapsed time (from first episode): 8286.67s
+	Total rewards -281
+	Total steps: 200
+	Current epsilon: 0.1820
+	Total penalties: 9
+	w: [-12.38111235   1.62371354  26.13902358  10.17642441  -1.27300775
+   5.71293112   1.3575717    1.30868156   1.3110526    1.31121102
+  -7.68247764  -6.85529596  -0.13014348]
+
+Episode# 176000/300000 (5764 successful)
+	Elapsed time (from first episode): 8339.71s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.1803
+	Total penalties: 4
+	w: [-12.35614224   1.72191361  26.18664299  10.17189531  -1.31664337
+   5.72386015   1.31629275   1.31666979   1.32162675   1.31637164
+  -7.66968905  -6.8255585   -0.07724111]
+
+Episode# 177000/300000 (5789 successful)
+	Elapsed time (from first episode): 8392.91s
+	Total rewards -299
+	Total steps: 200
+	Current epsilon: 0.1786
+	Total penalties: 11
+	w: [-12.36262051   1.44605529  26.23288857  10.1660662   -1.22620487
+   5.68050963   1.36167154   1.3402888    1.3413932    1.34244925
+  -7.65054831  -6.96601938  -0.1353866 ]
+
+Episode# 178000/300000 (5809 successful)
+	Elapsed time (from first episode): 8446.20s
+	Total rewards -263
+	Total steps: 200
+	Current epsilon: 0.1770
+	Total penalties: 7
+	w: [-12.37615499   1.38955073  26.26979058  10.1566395   -1.20074379
+   5.64281157   1.36246922   1.36752109   1.36753887   1.3702758
+  -7.64441524  -7.06768912  -0.143306  ]
+
+Episode# 179000/300000 (5861 successful)
+	Elapsed time (from first episode): 8498.76s
+	Total rewards -353
+	Total steps: 200
+	Current epsilon: 0.1753
+	Total penalties: 17
+	w: [-12.32975231   1.58228333  26.36208478  10.14220238  -1.25296828
+   5.72358392   1.31006256   1.30742175   1.3080733    1.30962456
+  -7.66377272  -6.76930615  -0.11520865]
+
+Episode# 180000/300000 (5889 successful)
+	Elapsed time (from first episode): 8551.88s
+	Total rewards -353
+	Total steps: 200
+	Current epsilon: 0.1736
+	Total penalties: 17
+	w: [-12.34178073   1.58100712  26.41013645  10.13808468  -1.25078568
+   5.69444025   1.31372648   1.31371893   1.31049456   1.31409093
+  -7.68144808  -6.78050793  -0.12649119]
+
+Episode# 181000/300000 (5919 successful)
+	Elapsed time (from first episode): 8605.05s
+	Total rewards -290
+	Total steps: 200
+	Current epsilon: 0.1720
+	Total penalties: 10
+	w: [-12.38786463   1.58450581  26.46131836  10.13482536  -1.2570496
+   5.70592073   1.33226236   1.33159479   1.34083654   1.33454409
+  -7.66904848  -6.92619831  -0.18791076]
+
+Episode# 182000/300000 (5945 successful)
+	Elapsed time (from first episode): 8658.32s
+	Total rewards -272
+	Total steps: 200
+	Current epsilon: 0.1704
+	Total penalties: 8
+	w: [-12.34937405   1.49751571  26.50652565  10.12909144  -1.2234027
+   5.69026604   1.33426826   1.32837098   1.32721659   1.33068701
+  -7.66072809  -6.87733319  -0.10725424]
+
+Episode# 183000/300000 (5965 successful)
+	Elapsed time (from first episode): 8711.91s
+	Total rewards -317
+	Total steps: 200
+	Current epsilon: 0.1688
+	Total penalties: 13
+	w: [-12.36577967   1.48220779  26.54168581  10.12169576  -1.21539904
+   5.623612     1.32621725   1.32158208   1.3216358    1.32173123
+  -7.66683056  -6.85825985  -0.13331611]
+
+Episode# 184000/300000 (5990 successful)
+	Elapsed time (from first episode): 8765.23s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.1672
+	Total penalties: 5
+	w: [-12.36443891   1.47039997  26.58381947  10.12069338  -1.21654032
+   5.60590958   1.33389429   1.33803016   1.36096747   1.35371946
+  -7.65910739  -6.96008728  -0.12904522]
+
+Episode# 185000/300000 (6027 successful)
+	Elapsed time (from first episode): 8818.53s
+	Total rewards -317
+	Total steps: 200
+	Current epsilon: 0.1657
+	Total penalties: 13
+	w: [-12.37358358   1.50829424  26.64652471  10.11531191  -1.22493505
+   5.61727406   1.31794133   1.31735227   1.32530188   1.31877321
+  -7.67050824  -6.85058841  -0.11731659]
+
+Episode# 186000/300000 (6052 successful)
+	Elapsed time (from first episode): 8872.05s
+	Total rewards -299
+	Total steps: 200
+	Current epsilon: 0.1641
+	Total penalties: 11
+	w: [-12.36295362   1.36017398  26.68952583  10.11227405  -1.15963043
+   5.59778384   1.3500657    1.36709141   1.3624013    1.37694041
+  -7.65291738  -7.03467945  -0.10467765]
+
+Episode# 187000/300000 (6076 successful)
+	Elapsed time (from first episode): 8925.41s
+	Total rewards -254
+	Total steps: 200
+	Current epsilon: 0.1626
+	Total penalties: 6
+	w: [-12.37031779   1.31884909  26.7321217   10.09860851  -1.13689147
+   5.56519627   1.32809085   1.33150409   1.35751665   1.33134839
+  -7.65548884  -6.93143332  -0.14101679]
+
+Episode# 188000/300000 (6093 successful)
+	Elapsed time (from first episode): 8979.26s
+	Total rewards -290
+	Total steps: 200
+	Current epsilon: 0.1611
+	Total penalties: 10
+	w: [-12.35407093   1.25673902  26.76285399  10.08675401  -1.11299536
+   5.52637994   1.35856369   1.35913592   1.36556309   1.35921835
+  -7.6373302   -7.02736617  -0.09863222]
+
+Episode# 189000/300000 (6136 successful)
+	Elapsed time (from first episode): 9032.49s
+	Total rewards -281
+	Total steps: 200
+	Current epsilon: 0.1596
+	Total penalties: 9
+	w: [-12.33561731   1.39779263  26.83749417  10.07374242  -1.15641569
+   5.58891465   1.35757636   1.34397543   1.34186121   1.34380432
+  -7.64593002  -6.945049    -0.07493611]
+
+Episode# 190000/300000 (6181 successful)
+	Elapsed time (from first episode): 9085.48s
+	Total rewards -353
+	Total steps: 200
+	Current epsilon: 0.1581
+	Total penalties: 17
+	w: [-12.32957876   1.50015762  26.91106463  10.06419425  -1.16952589
+   5.62224627   1.30842618   1.30215136   1.30115084   1.30329601
+  -7.67471578  -6.73803176  -0.08083146]
+
+Episode# 191000/300000 (6205 successful)
+	Elapsed time (from first episode): 9138.95s
+	Total rewards -290
+	Total steps: 200
+	Current epsilon: 0.1566
+	Total penalties: 10
+	w: [-12.32799676   1.56848506  26.94798573  10.06170616  -1.21042973
+   5.62897903   1.32560059   1.31529308   1.3174088    1.32660581
+  -7.67240684  -6.80864258  -0.10625967]
+
+Episode# 192000/300000 (6227 successful)
+	Elapsed time (from first episode): 9193.07s
+	Total rewards -254
+	Total steps: 200
+	Current epsilon: 0.1551
+	Total penalties: 6
+	w: [-12.3636711    1.41124463  26.98267727  10.06638855  -1.18341322
+   5.60524797   1.35645924   1.35911713   1.36049234   1.36359356
+  -7.64732945  -7.0241483   -0.12771682]
+
+Episode# 193000/300000 (6254 successful)
+	Elapsed time (from first episode): 9246.86s
+	Total rewards -308
+	Total steps: 200
+	Current epsilon: 0.1537
+	Total penalties: 12
+	w: [-12.36776284   1.4410527   27.02576035  10.06637742  -1.19453654
+   5.60363054   1.32768227   1.33054485   1.36390216   1.33121622
+  -7.65993456  -6.92931815  -0.12850025]
+
+Episode# 194000/300000 (6285 successful)
+	Elapsed time (from first episode): 9300.52s
+	Total rewards -281
+	Total steps: 200
+	Current epsilon: 0.1523
+	Total penalties: 9
+	w: [-12.34698076   1.33190743  27.07721766  10.06195129  -1.14513982
+   5.60397959   1.32813312   1.32857535   1.32718032   1.34174424
+  -7.65276572  -6.88799245  -0.08498058]
+
+Episode# 195000/300000 (6307 successful)
+	Elapsed time (from first episode): 9354.33s
+	Total rewards -308
+	Total steps: 200
+	Current epsilon: 0.1509
+	Total penalties: 12
+	w: [-12.37776728   1.39865859  27.11200044  10.05666316  -1.16937122
+   5.58624058   1.32486145   1.33155327   1.33307829   1.33061238
+  -7.66561962  -6.90039743  -0.1634817 ]
+
+Episode# 196000/300000 (6331 successful)
+	Elapsed time (from first episode): 9408.12s
+	Total rewards -263
+	Total steps: 200
+	Current epsilon: 0.1494
+	Total penalties: 7
+	w: [-12.34622238   1.31139667  27.15160899  10.05208513  -1.11522468
+   5.5501332    1.36235491   1.33361757   1.33322072   1.33578438
+  -7.6537028   -6.92564154  -0.06943663]
+
+Episode# 197000/300000 (6352 successful)
+	Elapsed time (from first episode): 9462.11s
+	Total rewards -290
+	Total steps: 200
+	Current epsilon: 0.1481
+	Total penalties: 10
+	w: [-12.35386841   1.2718384   27.18618916  10.04463684  -1.10026204
+   5.50875754   1.34326592   1.35714812   1.36726933   1.35190116
+  -7.65243151  -6.98916581  -0.10177832]
+
+Episode# 198000/300000 (6372 successful)
+	Elapsed time (from first episode): 9515.97s
+	Total rewards -263
+	Total steps: 200
+	Current epsilon: 0.1467
+	Total penalties: 7
+	w: [-12.33334508   1.20445673  27.21870253  10.03644822  -1.06405007
+   5.48115832   1.34755825   1.3504442    1.35043585   1.35319671
+  -7.65136318  -6.95176129  -0.07105818]
+
+Episode# 199000/300000 (6405 successful)
+	Elapsed time (from first episode): 9569.48s
+	Total rewards -317
+	Total steps: 200
+	Current epsilon: 0.1453
+	Total penalties: 13
+	w: [-12.29921313   1.31597716  27.27133571  10.02513299  -1.09517531
+   5.48986682   1.34636015   1.33664076   1.33852065   1.3422483
+  -7.65482943  -6.87629795  -0.07694812]
+
+Episode# 200000/300000 (6428 successful)
+	Elapsed time (from first episode): 9623.40s
+	Total rewards -254
+	Total steps: 200
+	Current epsilon: 0.1440
+	Total penalties: 6
+	w: [-12.29007204   1.25935817  27.30847669  10.01833762  -1.06476867
+   5.47437548   1.35977635   1.34987712   1.34957259   1.34979621
+  -7.65344107  -6.91379762  -0.04533213]
+
+Episode# 201000/300000 (6467 successful)
+	Elapsed time (from first episode): 9676.99s
+	Total rewards -308
+	Total steps: 200
+	Current epsilon: 0.1426
+	Total penalties: 12
+	w: [-12.31156162   1.34559435  27.36950009  10.0110932   -1.09105491
+   5.48995608   1.33407503   1.32958791   1.32923101   1.32984745
+  -7.65670383  -6.84574357  -0.10416967]
+
+Episode# 202000/300000 (6491 successful)
+	Elapsed time (from first episode): 9730.89s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.1413
+	Total penalties: 4
+	w: [-12.30709697   1.27637718  27.4058751   10.0073367   -1.07040963
+   5.47859759   1.3461418    1.38197339   1.36873335   1.36253916
+  -7.6446136   -6.99001545  -0.10985994]
+
+Episode# 203000/300000 (6502 successful)
+	Elapsed time (from first episode): 9785.09s
+	Total rewards -227
+	Total steps: 200
+	Current epsilon: 0.1400
+	Total penalties: 3
+	w: [-12.30353632   1.33878026  27.42318227  10.0023145   -1.10368585
+   5.43036748   1.3536979    1.34694276   1.34674626   1.34699272
+  -7.6448626   -6.92119773  -0.07424992]
+
+Episode# 204000/300000 (6534 successful)
+	Elapsed time (from first episode): 9839.11s
+	Total rewards -290
+	Total steps: 200
+	Current epsilon: 0.1387
+	Total penalties: 10
+	w: [-12.30527339   1.37733756  27.47231154   9.99892892  -1.10907417
+   5.4313447    1.33766625   1.32965213   1.33061275   1.33101347
+  -7.64541085  -6.85695152  -0.08510823]
+
+Episode# 205000/300000 (6563 successful)
+	Elapsed time (from first episode): 9892.86s
+	Total rewards -272
+	Total steps: 200
+	Current epsilon: 0.1374
+	Total penalties: 8
+	w: [-12.33161316   1.43332366  27.5149154    9.99829515  -1.14902477
+   5.41957857   1.30410831   1.30397592   1.30353378   1.33527356
+  -7.67442906  -6.77222005  -0.10873059]
+
+Episode# 206000/300000 (6576 successful)
+	Elapsed time (from first episode): 9947.11s
+	Total rewards -299
+	Total steps: 200
+	Current epsilon: 0.1362
+	Total penalties: 11
+	w: [-12.31505951   1.44116949  27.53429986  10.00278583  -1.15110689
+   5.37592919   1.3283465    1.31521313   1.31562175   1.31753302
+  -7.67323278  -6.78668552  -0.07106458]
+
+Episode# 207000/300000 (6587 successful)
+	Elapsed time (from first episode): 10001.43s
+	Total rewards -263
+	Total steps: 200
+	Current epsilon: 0.1349
+	Total penalties: 7
+	w: [-12.32316212   1.40962874  27.55083738  10.00829544  -1.15893512
+   5.32321927   1.33508406   1.32357622   1.32348259   1.3298636
+  -7.66113732  -6.84217566  -0.09294513]
+
+Episode# 208000/300000 (6618 successful)
+	Elapsed time (from first episode): 10055.34s
+	Total rewards -254
+	Total steps: 200
+	Current epsilon: 0.1337
+	Total penalties: 6
+	w: [-12.3407087    1.44885791  27.59679518  10.01328485  -1.1667227
+   5.32861029   1.3315336    1.33796357   1.35021266   1.33295084
+  -7.65928467  -6.90222908  -0.15214679]
+
+Episode# 209000/300000 (6647 successful)
+	Elapsed time (from first episode): 10109.35s
+	Total rewards -335
+	Total steps: 200
+	Current epsilon: 0.1325
+	Total penalties: 15
+	w: [-12.29748312   1.33217034  27.64197882  10.01344502  -1.11538822
+   5.32690784   1.36273433   1.34491345   1.34421964   1.34519728
+  -7.6414051   -6.9212871   -0.06976311]
+
+Episode# 210000/300000 (6668 successful)
+	Elapsed time (from first episode): 10163.73s
+	Total rewards -317
+	Total steps: 200
+	Current epsilon: 0.1312
+	Total penalties: 13
+	w: [-12.32859392   1.25491605  27.67349205  10.01027261  -1.09863895
+   5.29707041   1.33333994   1.33911196   1.33059095   1.35286237
+  -7.65513135  -6.89751217  -0.11075723]
+
+Episode# 211000/300000 (6686 successful)
+	Elapsed time (from first episode): 10218.08s
+	Total rewards -317
+	Total steps: 200
+	Current epsilon: 0.1300
+	Total penalties: 13
+	w: [-12.30115461   1.2465564   27.70136271  10.00572698  -1.08967579
+   5.28322391   1.37414591   1.34487066   1.34451862   1.34786928
+  -7.63868309  -6.94202038  -0.05675501]
+
+Episode# 212000/300000 (6717 successful)
+	Elapsed time (from first episode): 10271.99s
+	Total rewards -308
+	Total steps: 200
+	Current epsilon: 0.1288
+	Total penalties: 12
+	w: [-12.2987662    1.25802015  27.74834223  10.00205872  -1.09796198
+   5.30042835   1.34821883   1.33337318   1.33295121   1.33402098
+  -7.65266213  -6.86281264  -0.08181368]
+
+Episode# 213000/300000 (6741 successful)
+	Elapsed time (from first episode): 10326.28s
+	Total rewards -335
+	Total steps: 200
+	Current epsilon: 0.1276
+	Total penalties: 15
+	w: [-12.30477262   1.28571829  27.78316015  10.00088343  -1.11201082
+   5.30339904   1.32140902   1.36000757   1.32580902   1.3267697
+  -7.6633698   -6.84354251  -0.08431774]
+
+Episode# 214000/300000 (6761 successful)
+	Elapsed time (from first episode): 10380.79s
+	Total rewards -290
+	Total steps: 200
+	Current epsilon: 0.1265
+	Total penalties: 10
+	w: [-12.31039558   1.25988804  27.81261796   9.99761824  -1.08697373
+   5.2614669    1.32100684   1.32392387   1.31613224   1.3504524
+  -7.66839112  -6.82166419  -0.08268072]
+
+Episode# 215000/300000 (6776 successful)
+	Elapsed time (from first episode): 10435.36s
+	Total rewards -272
+	Total steps: 200
+	Current epsilon: 0.1253
+	Total penalties: 8
+	w: [-12.30879633   1.0846573   27.83503493   9.99761066  -1.03393127
+   5.22337431   1.36617421   1.38158985   1.40818175   1.3867514
+  -7.63504299  -7.08459493  -0.08596422]
+
+Episode# 216000/300000 (6800 successful)
+	Elapsed time (from first episode): 10489.67s
+	Total rewards -281
+	Total steps: 200
+	Current epsilon: 0.1242
+	Total penalties: 9
+	w: [-12.28729511   1.07524846  27.87198609   9.98545521  -1.0168731
+   5.2057676    1.34052259   1.3421819    1.33937987   1.38234511
+  -7.64210338  -6.91776559  -0.07126238]
+
+Episode# 217000/300000 (6827 successful)
+	Elapsed time (from first episode): 10544.13s
+	Total rewards -326
+	Total steps: 200
+	Current epsilon: 0.1230
+	Total penalties: 14
+	w: [-12.28006058   1.10951746  27.91294217   9.97627608  -1.03571687
+   5.20103856   1.33248977   1.34403948   1.32941508   1.34879564
+  -7.65615124  -6.84679369  -0.06861292]
+
+Episode# 218000/300000 (6845 successful)
+	Elapsed time (from first episode): 10598.49s
+	Total rewards -290
+	Total steps: 200
+	Current epsilon: 0.1219
+	Total penalties: 10
+	w: [-12.27389398   1.07466626  27.94019538   9.97099292  -1.00757094
+   5.15674763   1.34517354   1.35276262   1.39037765   1.3555915
+  -7.65143904  -6.93450464  -0.09897652]
+
+Episode# 219000/300000 (6873 successful)
+	Elapsed time (from first episode): 10652.90s
+	Total rewards -254
+	Total steps: 200
+	Current epsilon: 0.1208
+	Total penalties: 6
+	w: [-12.27571692   1.03669274  27.98440213   9.96242486  -0.98609274
+   5.154345     1.36619692   1.36412798   1.36228773   1.36508277
+  -7.63519511  -6.9663616   -0.05400819]
+
+Episode# 220000/300000 (6897 successful)
+	Elapsed time (from first episode): 10707.23s
+	Total rewards -263
+	Total steps: 200
+	Current epsilon: 0.1197
+	Total penalties: 7
+	w: [-12.27982087   1.0084002   28.02083512   9.95193909  -0.96237703
+   5.14259382   1.35150255   1.35551048   1.34846359   1.40041612
+  -7.6420118   -6.9618462   -0.07237592]
+
+Episode# 221000/300000 (6926 successful)
+	Elapsed time (from first episode): 10761.31s
+	Total rewards -263
+	Total steps: 200
+	Current epsilon: 0.1186
+	Total penalties: 7
+	w: [-12.27721275   1.10355669  28.064125     9.9419686   -0.99678723
+   5.14208527   1.35415214   1.34030076   1.33893087   1.34824272
+  -7.64869582  -6.8782878   -0.0709317 ]
+
+Episode# 222000/300000 (6945 successful)
+	Elapsed time (from first episode): 10815.66s
+	Total rewards -299
+	Total steps: 200
+	Current epsilon: 0.1175
+	Total penalties: 11
+	w: [-12.26497724   1.02240209  28.09220577   9.93722658  -0.96908813
+   5.11874469   1.35426112   1.35903673   1.36379652   1.35896088
+  -7.6413109   -6.92786597  -0.11801948]
+
+Episode# 223000/300000 (6970 successful)
+	Elapsed time (from first episode): 10870.08s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.1165
+	Total penalties: 5
+	w: [-12.2598141    0.98789633  28.13048524   9.92956346  -0.96791265
+   5.09772167   1.35321286   1.36950348   1.3559493    1.35564897
+  -7.6415561   -6.92071699  -0.09453191]
+
+Episode# 224000/300000 (6990 successful)
+	Elapsed time (from first episode): 10924.67s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.1154
+	Total penalties: 4
+	w: [-12.24880229   1.05638611  28.16011711   9.92184137  -0.97799162
+   5.06761902   1.33991215   1.34385812   1.35902968   1.34343413
+  -7.65208714  -6.85109362  -0.09718276]
+
+Episode# 225000/300000 (7011 successful)
+	Elapsed time (from first episode): 10979.24s
+	Total rewards -254
+	Total steps: 200
+	Current epsilon: 0.1143
+	Total penalties: 6
+	w: [-12.22814263   1.02098026  28.19197777   9.91761289  -0.95344124
+   5.05771253   1.37118633   1.38572687   1.3712509    1.37142346
+  -7.63726664  -6.95860794  -0.05890033]
+
+Episode# 226000/300000 (7030 successful)
+	Elapsed time (from first episode): 11033.76s
+	Total rewards -263
+	Total steps: 200
+	Current epsilon: 0.1133
+	Total penalties: 7
+	w: [-12.23652315   1.01625809  28.22013921   9.91248659  -0.94737918
+   5.02658246   1.36882695   1.37870014   1.38608344   1.37894463
+  -7.62951777  -6.98770493  -0.08263723]
+
+Episode# 227000/300000 (7049 successful)
+	Elapsed time (from first episode): 11088.34s
+	Total rewards -90
+	Total steps: 84
+	Current epsilon: 0.1123
+	Total penalties: 3
+	w: [-12.22790374   0.97766972  28.2491378    9.90487491  -0.92607981
+   4.99261459   1.37441927   1.38099499   1.3739917    1.37470768
+  -7.62656452  -6.97359724  -0.08032983]
+
+Episode# 228000/300000 (7074 successful)
+	Elapsed time (from first episode): 11142.72s
+	Total rewards -263
+	Total steps: 200
+	Current epsilon: 0.1113
+	Total penalties: 7
+	w: [-12.22268202   1.02514246  28.28668828   9.89654093  -0.94611963
+   4.98878818   1.34599099   1.34731338   1.37051108   1.34804208
+  -7.63871935  -6.86396459  -0.08174647]
+
+Episode# 229000/300000 (7086 successful)
+	Elapsed time (from first episode): 11197.63s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.1103
+	Total penalties: 4
+	w: [-12.22011004   0.92829946  28.30491698   9.89186131  -0.90564526
+   4.94661445   1.3774012    1.38008393   1.4162703    1.3820992
+  -7.62562479  -7.01848425  -0.09204945]
+
+Episode# 230000/300000 (7106 successful)
+	Elapsed time (from first episode): 11252.30s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.1093
+	Total penalties: 5
+	w: [-12.21708077   0.93089203  28.33574332   9.88152133  -0.90756605
+   4.91306066   1.35740099   1.35714403   1.35693571   1.36156102
+  -7.63059831  -6.8876686   -0.12013799]
+
+Episode# 231000/300000 (7124 successful)
+	Elapsed time (from first episode): 11306.97s
+	Total rewards -308
+	Total steps: 200
+	Current epsilon: 0.1083
+	Total penalties: 12
+	w: [-12.19893656   0.97767833  28.36257838   9.87365512  -0.92059956
+   4.88155552   1.3616572    1.35220893   1.35170405   1.35241549
+  -7.63746185  -6.84760477  -0.09704699]
+
+Episode# 232000/300000 (7141 successful)
+	Elapsed time (from first episode): 11361.83s
+	Total rewards -317
+	Total steps: 200
+	Current epsilon: 0.1073
+	Total penalties: 13
+	w: [-12.18543334   0.9490141   28.38818275   9.8682003   -0.90406063
+   4.84447548   1.37352924   1.3647865    1.36502456   1.3650222
+  -7.63236995  -6.88957027  -0.03774576]
+
+Episode# 233000/300000 (7164 successful)
+	Elapsed time (from first episode): 11416.52s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.1063
+	Total penalties: 5
+	w: [-12.20840893   1.03012976  28.42204544   9.8612601   -0.93638322
+   4.84247813   1.3499285    1.34989194   1.34977708   1.34991814
+  -7.6433735   -6.83269547  -0.0791761 ]
+
+Episode# 234000/300000 (7183 successful)
+	Elapsed time (from first episode): 11471.31s
+	Total rewards -227
+	Total steps: 200
+	Current epsilon: 0.1054
+	Total penalties: 3
+	w: [-12.19904759   1.05900474  28.4497965    9.85859892  -0.93523442
+   4.8261036    1.34499388   1.34510525   1.34503182   1.34508294
+  -7.63979414  -6.80761172  -0.06126953]
+
+Episode# 235000/300000 (7199 successful)
+	Elapsed time (from first episode): 11526.12s
+	Total rewards -254
+	Total steps: 200
+	Current epsilon: 0.1044
+	Total penalties: 6
+	w: [-12.20218507   1.0212392   28.47284662   9.85578349  -0.91911566
+   4.79440187   1.34979508   1.35828766   1.4063262    1.35446311
+  -7.64073078  -6.89847073  -0.09380271]
+
+Episode# 236000/300000 (7215 successful)
+	Elapsed time (from first episode): 11581.21s
+	Total rewards -317
+	Total steps: 200
+	Current epsilon: 0.1035
+	Total penalties: 13
+	w: [-12.1974271    0.97737012  28.4971896    9.85179638  -0.88619334
+   4.76165429   1.38088537   1.37146154   1.37171166   1.37173563
+  -7.6172104   -6.94415528  -0.06547214]
+
+Episode# 237000/300000 (7236 successful)
+	Elapsed time (from first episode): 11636.24s
+	Total rewards -254
+	Total steps: 200
+	Current epsilon: 0.1025
+	Total penalties: 6
+	w: [-12.20119671   1.00178847  28.52809468   9.84593145  -0.91104451
+   4.75373055   1.36411491   1.36249426   1.3594569    1.36728228
+  -7.62713721  -6.89555224  -0.07935238]
+
+Episode# 238000/300000 (7257 successful)
+	Elapsed time (from first episode): 11690.85s
+	Total rewards -281
+	Total steps: 200
+	Current epsilon: 0.1016
+	Total penalties: 9
+	w: [-12.21309701   1.00342387  28.55824032   9.84293312  -0.91891278
+   4.7472739    1.36407572   1.36155397   1.35407748   1.38664239
+  -7.63508183  -6.91250912  -0.08805813]
+
+Episode# 239000/300000 (7274 successful)
+	Elapsed time (from first episode): 11745.88s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.1007
+	Total penalties: 4
+	w: [-12.17749766   0.99917601  28.5832778    9.83947746  -0.89605849
+   4.72175269   1.36514856   1.35725234   1.35740437   1.35826742
+  -7.63436391  -6.84935083  -0.05923504]
+
+Episode# 240000/300000 (7291 successful)
+	Elapsed time (from first episode): 11800.77s
+	Total rewards -308
+	Total steps: 200
+	Current epsilon: 0.0998
+	Total penalties: 12
+	w: [-12.1990159    0.96358329  28.60807299   9.83697386  -0.89466456
+   4.68136939   1.36353618   1.378827     1.39630004   1.36632289
+  -7.63399272  -6.93815368  -0.08713267]
+
+Episode# 241000/300000 (7301 successful)
+	Elapsed time (from first episode): 11855.94s
+	Total rewards -263
+	Total steps: 200
+	Current epsilon: 0.0989
+	Total penalties: 7
+	w: [-12.18389273   0.91269932  28.62344217   9.83469172  -0.86317382
+   4.63938105   1.39235705   1.38989083   1.39075535   1.39339545
+  -7.61235205  -7.00608374  -0.07304602]
+
+Episode# 242000/300000 (7323 successful)
+	Elapsed time (from first episode): 11910.84s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.0980
+	Total penalties: 5
+	w: [-12.16617035   0.91295566  28.65682712   9.82762855  -0.85378489
+   4.62525871   1.37743275   1.38773622   1.37713662   1.38248032
+  -7.61339373  -6.94570693  -0.07214202]
+
+Episode# 243000/300000 (7347 successful)
+	Elapsed time (from first episode): 11965.77s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.0972
+	Total penalties: 4
+	w: [-12.18193536   0.96445286  28.69214857   9.82145872  -0.87687013
+   4.63023439   1.37309213   1.36915204   1.3654635    1.37319794
+  -7.62153786  -6.90944748  -0.08232337]
+
+Episode# 244000/300000 (7358 successful)
+	Elapsed time (from first episode): 12020.97s
+	Total rewards -263
+	Total steps: 200
+	Current epsilon: 0.0963
+	Total penalties: 7
+	w: [-1.21354759e+01  9.48368770e-01  2.87083219e+01  9.81813626e+00
+ -8.64100469e-01  4.59834792e+00  1.37666604e+00  1.37802018e+00
+  1.37667136e+00  1.37661679e+00 -7.61855538e+00 -6.89303931e+00
+ -6.56837696e-03]
+
+Episode# 245000/300000 (7367 successful)
+	Elapsed time (from first episode): 12076.13s
+	Total rewards -263
+	Total steps: 200
+	Current epsilon: 0.0954
+	Total penalties: 7
+	w: [-12.14826443   0.82511296  28.72197037   9.81238898  -0.81747021
+   4.52922313   1.37713442   1.37716248   1.38771545   1.37769553
+  -7.61752323  -6.91859346  -0.07762412]
+
+Episode# 246000/300000 (7391 successful)
+	Elapsed time (from first episode): 12130.94s
+	Total rewards -299
+	Total steps: 200
+	Current epsilon: 0.0946
+	Total penalties: 11
+	w: [-12.15590478   0.86875339  28.75797385   9.80202898  -0.82724045
+   4.51664484   1.35372221   1.35356936   1.35873651   1.35386749
+  -7.63129033  -6.81265439  -0.11695601]
+
+Episode# 247000/300000 (7400 successful)
+	Elapsed time (from first episode): 12186.36s
+	Total rewards -299
+	Total steps: 200
+	Current epsilon: 0.0937
+	Total penalties: 11
+	w: [-12.14583099   0.81726552  28.77182243   9.79595628  -0.80358442
+   4.46829316   1.39162532   1.37815372   1.37825744   1.37868735
+  -7.62263403  -6.91806518  -0.05434876]
+
+Episode# 248000/300000 (7423 successful)
+	Elapsed time (from first episode): 12241.35s
+	Total rewards -272
+	Total steps: 200
+	Current epsilon: 0.0929
+	Total penalties: 8
+	w: [-12.1485543    0.87557125  28.80605991   9.78623037  -0.81843428
+   4.47554869   1.35259923   1.35496003   1.36047758   1.36041067
+  -7.62759379  -6.8175524   -0.06333691]
+
+Episode# 249000/300000 (7430 successful)
+	Elapsed time (from first episode): 12296.73s
+	Total rewards -258
+	Total steps: 198
+	Current epsilon: 0.0921
+	Total penalties: 9
+	w: [-12.14423818   0.75405278  28.81720187   9.78247408  -0.76836608
+   4.42661878   1.3957918    1.40464959   1.39832848   1.3994875
+  -7.60626561  -7.00437433  -0.0315093 ]
+
+Episode# 250000/300000 (7445 successful)
+	Elapsed time (from first episode): 12351.76s
+	Total rewards -254
+	Total steps: 200
+	Current epsilon: 0.0913
+	Total penalties: 6
+	w: [-12.14905654   0.74653943  28.84060897   9.77286104  -0.76874403
+   4.3938028    1.38346219   1.38612714   1.38341904   1.38342787
+  -7.60929793  -6.94433923  -0.07794543]
+
+Episode# 251000/300000 (7465 successful)
+	Elapsed time (from first episode): 12406.67s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.0905
+	Total penalties: 5
+	w: [-1.21208658e+01  8.54286494e-01  2.88708186e+01  9.76417026e+00
+ -7.96173195e-01  4.39910312e+00  1.36954897e+00  1.36961572e+00
+  1.37352423e+00  1.36957294e+00 -7.62204244e+00 -6.84922957e+00
+ -2.19807725e-02]
+
+Episode# 252000/300000 (7484 successful)
+	Elapsed time (from first episode): 12461.72s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.0897
+	Total penalties: 5
+	w: [-12.16451274   0.89763395  28.89879739   9.75999799  -0.81991861
+   4.37429586   1.35364157   1.35465978   1.38409058   1.35437986
+  -7.63062783  -6.84880107  -0.06861799]
+
+Episode# 253000/300000 (7492 successful)
+	Elapsed time (from first episode): 12517.06s
+	Total rewards -263
+	Total steps: 200
+	Current epsilon: 0.0889
+	Total penalties: 7
+	w: [-12.16417034   0.83080945  28.91101817   9.75812233  -0.78828859
+   4.33375478   1.38051184   1.39001427   1.38127557   1.38104285
+  -7.61600855  -6.94915071  -0.04906916]
+
+Episode# 254000/300000 (7508 successful)
+	Elapsed time (from first episode): 12572.25s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.0881
+	Total penalties: 4
+	w: [-12.15496215   0.8610216   28.93497657   9.75315476  -0.79612775
+   4.31161078   1.37158492   1.37191587   1.37147904   1.38134446
+  -7.61971693  -6.8997139   -0.03371159]
+
+Episode# 255000/300000 (7524 successful)
+	Elapsed time (from first episode): 12627.33s
+	Total rewards -209
+	Total steps: 200
+	Current epsilon: 0.0873
+	Total penalties: 1
+	w: [-12.15448717   0.82775521  28.95883824   9.75010188  -0.78652999
+   4.29793972   1.37299435   1.3784725    1.3815387    1.37790972
+  -7.61838443  -6.91516239  -0.05085839]
+
+Episode# 256000/300000 (7542 successful)
+	Elapsed time (from first episode): 12682.42s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.0865
+	Total penalties: 4
+	w: [-12.14417127   0.86879623  28.98546781   9.74538106  -0.79751798
+   4.28121539   1.38219518   1.36138744   1.36186331   1.36236843
+  -7.62738606  -6.85274396  -0.05892963]
+
+Episode# 257000/300000 (7560 successful)
+	Elapsed time (from first episode): 12737.29s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.0858
+	Total penalties: 5
+	w: [-12.14193521   0.90276086  29.01169365   9.74227555  -0.80198057
+   4.27216473   1.35787234   1.3689077    1.35870147   1.3583865
+  -7.62547814  -6.82846947  -0.08822623]
+
+Episode# 258000/300000 (7575 successful)
+	Elapsed time (from first episode): 12792.56s
+	Total rewards -254
+	Total steps: 200
+	Current epsilon: 0.0850
+	Total penalties: 6
+	w: [-12.13381128   0.91178622  29.03339795   9.73940204  -0.80978479
+   4.25625473   1.3885999    1.353519     1.35411178   1.35476652
+  -7.63338819  -6.81956467  -0.05987401]
+
+Episode# 259000/300000 (7587 successful)
+	Elapsed time (from first episode): 12848.20s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.0843
+	Total penalties: 4
+	w: [-12.1510025    0.86689119  29.05084324   9.7394241   -0.80401094
+   4.22043424   1.37727542   1.38031052   1.36768733   1.39794254
+  -7.62581697  -6.91654573  -0.08765515]
+
+Episode# 260000/300000 (7609 successful)
+	Elapsed time (from first episode): 12903.38s
+	Total rewards -263
+	Total steps: 200
+	Current epsilon: 0.0835
+	Total penalties: 7
+	w: [-12.14125573   0.86607358  29.08373831   9.73807827  -0.80343492
+   4.22983802   1.37670665   1.37460538   1.3746225    1.37462544
+  -7.60893407  -6.90102601  -0.11468532]
+
+Episode# 261000/300000 (7613 successful)
+	Elapsed time (from first episode): 12959.03s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.0828
+	Total penalties: 5
+	w: [-12.11725874   0.73293509  29.08983883   9.73674337  -0.74225631
+   4.18734612   1.40339577   1.41420048   1.44514603   1.41650475
+  -7.59285824  -7.07179191  -0.06885045]
+
+Episode# 262000/300000 (7633 successful)
+	Elapsed time (from first episode): 13014.39s
+	Total rewards -227
+	Total steps: 200
+	Current epsilon: 0.0821
+	Total penalties: 3
+	w: [-12.11416845   0.77317466  29.12047252   9.7284894   -0.749675
+   4.17020632   1.38140195   1.38137859   1.37872044   1.3854053
+  -7.60421687  -6.90500224  -0.07428587]
+
+Episode# 263000/300000 (7644 successful)
+	Elapsed time (from first episode): 13069.85s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.0814
+	Total penalties: 5
+	w: [-12.11144782   0.78366663  29.13702757   9.72390942  -0.76587425
+   4.13178463   1.38422535   1.39030456   1.38103064   1.38647013
+  -7.61031312  -6.91130976  -0.07259518]
+
+Episode# 264000/300000 (7649 successful)
+	Elapsed time (from first episode): 13125.56s
+	Total rewards -263
+	Total steps: 200
+	Current epsilon: 0.0806
+	Total penalties: 7
+	w: [-12.1046387    0.76427096  29.14438237   9.72186454  -0.75376968
+   4.08760326   1.39740442   1.39880594   1.39224789   1.41832288
+  -7.60272292  -6.9768413   -0.05699002]
+
+Episode# 265000/300000 (7671 successful)
+	Elapsed time (from first episode): 13180.64s
+	Total rewards -272
+	Total steps: 200
+	Current epsilon: 0.0799
+	Total penalties: 8
+	w: [-12.11286685   0.78339658  29.17781586   9.71832156  -0.76282255
+   4.0718149    1.38199842   1.38181985   1.38114901   1.40574059
+  -7.60766384  -6.92405527  -0.07094455]
+
+Episode# 266000/300000 (7675 successful)
+	Elapsed time (from first episode): 13236.25s
+	Total rewards -272
+	Total steps: 200
+	Current epsilon: 0.0792
+	Total penalties: 8
+	w: [-12.10030943   0.68378046  29.18396878   9.71683975  -0.72655677
+   4.03158896   1.40591033   1.4173153    1.43479171   1.40995991
+  -7.59139248  -7.04503858  -0.05281137]
+
+Episode# 267000/300000 (7687 successful)
+	Elapsed time (from first episode): 13291.74s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.0786
+	Total penalties: 5
+	w: [-12.08355248   0.70473221  29.20299186   9.710992    -0.71602349
+   4.00149614   1.42820789   1.40099067   1.40083764   1.40167135
+  -7.593022    -6.99038241  -0.03419778]
+
+Episode# 268000/300000 (7701 successful)
+	Elapsed time (from first episode): 13347.09s
+	Total rewards -67
+	Total steps: 61
+	Current epsilon: 0.0779
+	Total penalties: 3
+	w: [-12.08487575   0.72884592  29.22469176   9.70564661  -0.73645107
+   3.98429453   1.39328392   1.39386565   1.40015743   1.39387557
+  -7.59814407  -6.93605862  -0.03951549]
+
+Episode# 269000/300000 (7705 successful)
+	Elapsed time (from first episode): 13402.72s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.0772
+	Total penalties: 4
+	w: [-12.0946797    0.64915135  29.23089778   9.70333915  -0.70533339
+   3.92811034   1.40773244   1.41042903   1.43561877   1.41218232
+  -7.58921042  -7.03957623  -0.05903717]
+
+Episode# 270000/300000 (7714 successful)
+	Elapsed time (from first episode): 13458.26s
+	Total rewards -254
+	Total steps: 200
+	Current epsilon: 0.0765
+	Total penalties: 6
+	w: [-12.08880676   0.61506594  29.2454301    9.69799096  -0.67796443
+   3.8959953    1.41859523   1.42019008   1.43871456   1.42023084
+  -7.58039728  -7.07428458  -0.06249507]
+
+Episode# 271000/300000 (7722 successful)
+	Elapsed time (from first episode): 13513.80s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.0759
+	Total penalties: 4
+	w: [-12.07869442   0.60398849  29.25859342   9.69205104  -0.65989565
+   3.86280591   1.4275722    1.42554602   1.42546784   1.42591366
+  -7.5727121   -7.07862643  -0.04618589]
+
+Episode# 272000/300000 (7757 successful)
+	Elapsed time (from first episode): 13568.70s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.0752
+	Total penalties: 5
+	w: [-12.08130374   0.74821642  29.31251453   9.68170638  -0.70501626
+   3.91119857   1.38218106   1.37984299   1.37721328   1.41664955
+  -7.59696993  -6.90836506  -0.05699354]
+
+Episode# 273000/300000 (7771 successful)
+	Elapsed time (from first episode): 13623.94s
+	Total rewards -254
+	Total steps: 200
+	Current epsilon: 0.0746
+	Total penalties: 6
+	w: [-12.05725608   0.7714869   29.33370894   9.67635462  -0.71257769
+   3.90336988   1.38580135   1.3857992    1.38415437   1.38574132
+  -7.60049928  -6.86639741  -0.03237866]
+
+Episode# 274000/300000 (7777 successful)
+	Elapsed time (from first episode): 13679.66s
+	Total rewards -227
+	Total steps: 200
+	Current epsilon: 0.0739
+	Total penalties: 3
+	w: [-12.0740857    0.68496776  29.34274315   9.67255029  -0.68328762
+   3.86197163   1.38771366   1.39482711   1.41611119   1.39557127
+  -7.60276422  -6.93368909  -0.06207182]
+
+Episode# 275000/300000 (7777 successful)
+	Elapsed time (from first episode): 13735.50s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.0733
+	Total penalties: 4
+	w: [-12.07328851   0.57732559  29.34274315   9.66982896  -0.63548226
+   3.80448656   1.42010445   1.42938412   1.44406679   1.42882265
+  -7.57889084  -7.08492007  -0.05946875]
+
+Episode# 276000/300000 (7792 successful)
+	Elapsed time (from first episode): 13791.05s
+	Total rewards -227
+	Total steps: 200
+	Current epsilon: 0.0727
+	Total penalties: 3
+	w: [-12.07450332   0.63133232  29.36715353   9.66243065  -0.64044571
+   3.80684709   1.41894815   1.41935932   1.41928768   1.42326268
+  -7.57207566  -7.05142986  -0.04367198]
+
+Episode# 277000/300000 (7808 successful)
+	Elapsed time (from first episode): 13846.43s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.0720
+	Total penalties: 5
+	w: [-12.07269415   0.68511245  29.39230344   9.65420964  -0.66250724
+   3.79578256   1.39740892   1.39730748   1.39741933   1.39741485
+  -7.58396079  -6.94642832  -0.04945673]
+
+Episode# 278000/300000 (7820 successful)
+	Elapsed time (from first episode): 13902.14s
+	Total rewards -209
+	Total steps: 200
+	Current epsilon: 0.0714
+	Total penalties: 1
+	w: [-12.06035074   0.67683654  29.41078457   9.6494006   -0.65146471
+   3.76638553   1.40020501   1.40624589   1.43549631   1.40531434
+  -7.59004883  -6.98570784  -0.04565822]
+
+Episode# 279000/300000 (7835 successful)
+	Elapsed time (from first episode): 13957.78s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.0708
+	Total penalties: 5
+	w: [-12.07650873   0.6872255   29.4343145    9.64304985  -0.65451234
+   3.74858123   1.39714704   1.39730874   1.40218832   1.39715365
+  -7.59551667  -6.94293419  -0.06431977]
+
+Episode# 280000/300000 (7839 successful)
+	Elapsed time (from first episode): 14013.52s
+	Total rewards -218
+	Total steps: 200
+	Current epsilon: 0.0702
+	Total penalties: 2
+	w: [-12.06542318   0.59704843  29.44066439   9.63823041  -0.61646452
+   3.70325745   1.41098382   1.41252009   1.43370304   1.41257943
+  -7.59181077  -7.01154317  -0.04201268]
+
+Episode# 281000/300000 (7853 successful)
+	Elapsed time (from first episode): 14068.97s
+	Total rewards -227
+	Total steps: 200
+	Current epsilon: 0.0696
+	Total penalties: 3
+	w: [-12.06330412   0.61467792  29.4628963    9.63174507  -0.62129204
+   3.68139166   1.40671307   1.40562214   1.40509098   1.44499888
+  -7.59280412  -7.00106946  -0.03739257]
+
+Episode# 282000/300000 (7873 successful)
+	Elapsed time (from first episode): 14124.43s
+	Total rewards -209
+	Total steps: 200
+	Current epsilon: 0.0690
+	Total penalties: 1
+	w: [-12.07747573   0.65686131  29.49429975   9.62540949  -0.63669233
+   3.67142354   1.39515068   1.39629151   1.40701599   1.3969524
+  -7.59806111  -6.94296957  -0.06442793]
+
+Episode# 283000/300000 (7875 successful)
+	Elapsed time (from first episode): 14180.50s
+	Total rewards -209
+	Total steps: 200
+	Current epsilon: 0.0684
+	Total penalties: 1
+	w: [-1.20507458e+01  5.78804473e-01  2.94975608e+01  9.62276837e+00
+ -5.98603391e-01  3.62865499e+00  1.41892200e+00  1.42916651e+00
+  1.44696330e+00  1.42720896e+00 -7.57971172e+00 -7.06143921e+00
+ -2.03350676e-02]
+
+Episode# 284000/300000 (7885 successful)
+	Elapsed time (from first episode): 14236.47s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.0678
+	Total penalties: 4
+	w: [-12.05377633   0.57234597  29.51390723   9.61713731  -0.5964824
+   3.6006193    1.42356367   1.42938384   1.42395933   1.4249136
+  -7.57604192  -7.04769924  -0.04007159]
+
+Episode# 285000/300000 (7897 successful)
+	Elapsed time (from first episode): 14292.16s
+	Total rewards -200
+	Total steps: 200
+	Current epsilon: 0.0673
+	Total penalties: 0
+	w: [-12.0588383    0.56417235  29.53314064   9.61115498  -0.58538932
+   3.57820263   1.41919583   1.42000331   1.44449385   1.42943209
+  -7.57798374  -7.06212404  -0.0622413 ]
+
+Episode# 286000/300000 (7916 successful)
+	Elapsed time (from first episode): 14347.67s
+	Total rewards -218
+	Total steps: 200
+	Current epsilon: 0.0667
+	Total penalties: 2
+	w: [-12.05268518   0.59192857  29.56392411   9.60460825  -0.59289961
+   3.5706512    1.41022946   1.4101138    1.41250576   1.41007444
+  -7.57975631  -6.98399671  -0.04093268]
+
+Episode# 287000/300000 (7921 successful)
+	Elapsed time (from first episode): 14403.60s
+	Total rewards -227
+	Total steps: 200
+	Current epsilon: 0.0661
+	Total penalties: 3
+	w: [-12.05697204   0.55780266  29.57208347   9.60059509  -0.5710799
+   3.53506612   1.42426895   1.42821035   1.42810857   1.43440778
+  -7.57342682  -7.06668524  -0.04018434]
+
+Episode# 288000/300000 (7931 successful)
+	Elapsed time (from first episode): 14459.39s
+	Total rewards -272
+	Total steps: 200
+	Current epsilon: 0.0656
+	Total penalties: 8
+	w: [-12.039345     0.56993545  29.58812141   9.59484835  -0.57026236
+   3.51959474   1.42353239   1.42616407   1.44828085   1.42662402
+  -7.57425343  -7.05783728  -0.03369093]
+
+Episode# 289000/300000 (7939 successful)
+	Elapsed time (from first episode): 14515.27s
+	Total rewards -218
+	Total steps: 200
+	Current epsilon: 0.0650
+	Total penalties: 2
+	w: [-12.03875595   0.54618078  29.6012805    9.588949    -0.55774576
+   3.49504229   1.42867175   1.42869049   1.43670277   1.42927281
+  -7.57123608  -7.05900207  -0.04449064]
+
+Episode# 290000/300000 (7939 successful)
+	Elapsed time (from first episode): 14571.19s
+	Total rewards -227
+	Total steps: 200
+	Current epsilon: 0.0645
+	Total penalties: 3
+	w: [-12.04409995   0.46851305  29.6012805    9.58400807  -0.52811622
+   3.43880521   1.44055808   1.44302411   1.4428481    1.45113873
+  -7.56405614  -7.12575722  -0.04082834]
+
+Episode# 291000/300000 (7948 successful)
+	Elapsed time (from first episode): 14627.24s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.0639
+	Total penalties: 4
+	w: [-1.20307713e+01  5.08653336e-01  2.96164343e+01  9.57611443e+00
+ -5.29771158e-01  3.42061635e+00  1.43240314e+00  1.43253146e+00
+  1.43630350e+00  1.43238430e+00 -7.56636151e+00 -7.06617653e+00
+  1.97013541e-02]
+
+Episode# 292000/300000 (7958 successful)
+	Elapsed time (from first episode): 14682.96s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.0634
+	Total penalties: 4
+	w: [-1.20331097e+01  5.13257522e-01  2.96329256e+01  9.56933380e+00
+ -5.25628501e-01  3.39339352e+00  1.42642429e+00  1.43056277e+00
+  1.43065570e+00  1.43765566e+00 -7.57063887e+00 -7.05591366e+00
+ -2.53476803e-02]
+
+Episode# 293000/300000 (7972 successful)
+	Elapsed time (from first episode): 14738.57s
+	Total rewards -263
+	Total steps: 200
+	Current epsilon: 0.0629
+	Total penalties: 7
+	w: [-1.20219764e+01  5.70225833e-01  2.96557411e+01  9.56280949e+00
+ -5.30797958e-01  3.39568342e+00  1.42331571e+00  1.42747622e+00
+  1.42722200e+00  1.43417064e+00 -7.57081595e+00 -7.03148938e+00
+ -2.42341647e-02]
+
+Episode# 294000/300000 (7997 successful)
+	Elapsed time (from first episode): 14793.97s
+	Total rewards -272
+	Total steps: 200
+	Current epsilon: 0.0623
+	Total penalties: 8
+	w: [-12.03023665   0.63588767  29.69579788   9.554366    -0.55706901
+   3.41383793   1.40299466   1.39938524   1.39923599   1.39964608
+  -7.58310374  -6.91653926  -0.03728302]
+
+Episode# 295000/300000 (8015 successful)
+	Elapsed time (from first episode): 14849.44s
+	Total rewards -245
+	Total steps: 200
+	Current epsilon: 0.0618
+	Total penalties: 5
+	w: [-12.01395927   0.67919307  29.72356234   9.54953393  -0.57217146
+   3.41883556   1.39689979   1.40974545   1.39510282   1.40362775
+  -7.59331     -6.89416948  -0.03962432]
+
+Episode# 296000/300000 (8029 successful)
+	Elapsed time (from first episode): 14905.49s
+	Total rewards -227
+	Total steps: 200
+	Current epsilon: 0.0613
+	Total penalties: 3
+	w: [-12.00007129   0.67763027  29.74531546   9.54631596  -0.57042934
+   3.41411763   1.4037166    1.40399947   1.41009396   1.40390416
+  -7.59357425  -6.89635561  -0.0501926 ]
+
+Episode# 297000/300000 (8041 successful)
+	Elapsed time (from first episode): 14961.23s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.0608
+	Total penalties: 4
+	w: [-11.99628157   0.63983498  29.76373506   9.54382453  -0.56768089
+   3.3935914    1.40542958   1.4168954    1.40204941   1.43683698
+  -7.59122615  -6.93441118  -0.04582038]
+
+Episode# 298000/300000 (8041 successful)
+	Elapsed time (from first episode): 15017.66s
+	Total rewards -236
+	Total steps: 200
+	Current epsilon: 0.0603
+	Total penalties: 4
+	w: [-12.00461105   0.56236647  29.76373506   9.54323066  -0.54893738
+   3.3382317    1.43119945   1.43569414   1.42345363   1.46449353
+  -7.57439949  -7.0531967   -0.0386591 ]
+
+Episode# 299000/300000 (8054 successful)
+	Elapsed time (from first episode): 15073.35s
+	Total rewards -227
+	Total steps: 200
+	Current epsilon: 0.0598
+	Total penalties: 3
+	w: [-11.99999131   0.57458275  29.78456009   9.54024766  -0.55650517
+   3.32758116   1.42173148   1.42172547   1.42157243   1.42447784
+  -7.57358994  -6.98405297  -0.0459893 ]
+
