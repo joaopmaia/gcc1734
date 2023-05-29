@@ -1,8 +1,28 @@
 '''
-see http://alborz-geramifard.com/Files/13FTML-RLTutorial.pdf
-see https://stats.stackexchange.com/questions/291551/how-to-deal-with-increasing-action-space-in-td-learning-using-linear-function-ap
-see https://medium.com/@anirbans17/reinforcement-learning-for-taxi-v2-edd7c5b76869
-see https://danieltakeshi.github.io/2016/10/31/going-deeper-into-reinforcement-learning-understanding-q-learning-and-linear-function-approximation/
+The provided code defines a class called TaxiFeatureExtractor that extends the FeatureExtractor class. 
+
+- Actions: This is an auxiliary class defines the actions available in the Taxi environment. 
+  Each action is represented by an integer value.
+
+- TaxiFeatureExtractor: This class implements feature extraction for the Taxi environment. 
+  It is designed to extract features from the Taxi environment that can be used in reinforcement
+  learning algorithms, such as Q-learning with linear function approximation. It defines several 
+  methods to extract different features based on the state and action.
+
+  About the methods f0 to f7. These methods define different features based on the state and action. 
+  Each method computes a specific feature and returns its value. 
+  These features capture different aspects of the environment, such as the distance between the taxi and the passenger, 
+  correctness of passenger boarding/unboarding, distance to the origin/destination, and collision detection.
+
+Note that some parts of the code are commented out, indicating possible alternative 
+implementations or previous versions. You can uncomment and modify these sections as needed.
+
+References:
+ - http://alborz-geramifard.com/Files/13FTML-RLTutorial.pdf
+ - https://stats.stackexchange.com/questions/291551/how-to-deal-with-increasing-action-space-in-td-learning-using-linear-function-ap
+ - https://medium.com/@anirbans17/reinforcement-learning-for-taxi-v2-edd7c5b76869
+ - https://danieltakeshi.github.io/2016/10/31/going-deeper-into-reinforcement-learning-understanding-q-learning-and-linear-function-approximation/
+ - https://gibberblot.github.io/rl-notes/single-agent/function-approximation.html
 '''
 
 import numpy as np
@@ -40,6 +60,10 @@ class TaxiFeatureExtractor(FeatureExtractor):
   }
 
   def __init__(self, env):
+    '''
+    Initializes the TaxiFeatureExtractor object. 
+    It adds feature extraction methods to the features_list attribute.
+    '''
     self.env = env
     self.features_list.append(self.f0)
     self.features_list.append(self.f1)
@@ -51,21 +75,40 @@ class TaxiFeatureExtractor(FeatureExtractor):
     self.features_list.append(self.f7)
 
   def get_num_features(self):
+    '''
+    Returns the number of features extracted by the feature extractor.
+    '''
     return len(self.features_list)
 
   def get_num_actions(self):
+    '''
+    Returns the number of actions available in the environment.
+    '''
     return len(self.get_actions())
 
   def get_action_one_hot_encoded(self, action):
+    '''
+    Returns the one-hot encoded representation of an action.
+    '''
     return self.__actions_one_hot_encoding[action]
 
   def get_terminal_states(self):
+    '''
+    Returns a list of terminal states in the environment.
+    '''
     return [0, 85, 410, 475]
   
   def get_actions(self):
+    '''
+    Returns a list of available actions in the environment.
+    '''
     return [Actions.DOWN, Actions.UP, Actions.RIGHT, Actions.LEFT, Actions.PICK, Actions.DROP]
   
   def get_features(self, state, action):
+    '''
+    Takes a state and an action as input and returns the feature vector for that state-action pair. 
+    It calls the feature extraction methods and constructs the feature vector.
+    '''
     feature_vector = np.zeros(len(self.features_list))
     for index, feature in enumerate(self.features_list):
       feature_vector[index] = feature(state, action)
@@ -114,10 +157,10 @@ class TaxiFeatureExtractor(FeatureExtractor):
     dist = self.__manhattanDistance(taxi_location, passenger_location)
     return 1 / (dist + 1) 
 
-  '''
-  This feature indicates when the passenger is correctly unboarded.
-  '''
   def f2(self, state, action):
+    '''
+    This feature indicates when the passenger is correctly unboarded.
+    '''
     l, c, p, d = self.env.unwrapped.decode(state)
     passenger_is_onboard = (p == 4)
     if passenger_is_onboard:
@@ -129,10 +172,10 @@ class TaxiFeatureExtractor(FeatureExtractor):
           return 1.0
     return 0.0
 
-  '''
-  This feature indicates when the passenger is correctly boarded.
-  '''
   def f3(self, state, action):
+    '''
+    This feature indicates when the passenger is correctly boarded.
+    '''
     l, c, p, d = self.env.unwrapped.decode(state)
     assert p <= 4
     passenger_is_onboard = (p == 4)
@@ -145,11 +188,11 @@ class TaxiFeatureExtractor(FeatureExtractor):
           return 1.0
     return 0.0
 
-  '''
-  This feature computes the reciprocal distance from the taxi to the 
-  origin when the passenger is not boarded.
-  '''
   def f4(self, state, action):
+    '''
+    This feature computes the reciprocal distance from the taxi to the 
+    origin when the passenger is not boarded.
+    '''
     l, c, p, d = self.env.unwrapped.decode(state)
     passenger_is_onboard = (p == 4)
     if not passenger_is_onboard:
@@ -174,15 +217,15 @@ class TaxiFeatureExtractor(FeatureExtractor):
   #     return 1 / (dist + 1)
   #   else:
   #     return 0.0
-  '''
-  This feature computes the reciprocal distance from the passenger to the 
-  destination.
-  '''
   def f5(self, state, action):
+    '''
+    This feature computes the reciprocal distance from the passenger to the 
+    destination.
+    '''
     l, c, p, d = self.env.unwrapped.decode(state)
 
     dest_loc = self.env.unwrapped.locs[d]
-    if p == 4: # passenger is boaded
+    if p == 4: # passenger is boarded
       passenger_location = (l,c)
     elif p < 4:
       passenger_location = special_locations_dict[p]
@@ -190,10 +233,10 @@ class TaxiFeatureExtractor(FeatureExtractor):
     return 1 / (dist + 1)
 
 
-  '''
-  This feature is active when the passenger is incorrectly (un)boarded.
-  '''
   def f6(self, state, action):
+    '''
+    This feature is active when the passenger is incorrectly (un)boarded.
+    '''
     l, c, p, d = self.env.unwrapped.decode(state)
     assert p <= 4
     passenger_is_onboard = (p == 4)
@@ -238,7 +281,11 @@ class TaxiFeatureExtractor(FeatureExtractor):
                     ((l == 4) and (c == 3) and (action == Actions.LEFT))
     return border_bump or internal_bump
 
-  def __manhattanDistance(self, xy1, xy2):
+  @staticmethod
+  def __manhattanDistance(xy1, xy2):
+    '''
+    Computes the Manhattan distance between two points.
+    '''
     return abs(xy1[0] - xy2[0]) + abs(xy1[1] - xy2[1])
 
 # import gymnasium as gym
