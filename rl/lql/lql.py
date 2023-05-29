@@ -85,7 +85,7 @@ class QLearningAgentLinear:
        difference = -100
     if difference > 100:
        difference = 100
-    features = self.ftrans.get_features_as_array(state, action)
+    features = self.get_features_as_array(state, action)
     self.w = self.w + self.learning_rate * difference * features
 
   def train(self, num_episodes: int):
