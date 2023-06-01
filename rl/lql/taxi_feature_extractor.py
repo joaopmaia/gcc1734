@@ -23,6 +23,7 @@ References:
  - https://medium.com/@anirbans17/reinforcement-learning-for-taxi-v2-edd7c5b76869
  - https://danieltakeshi.github.io/2016/10/31/going-deeper-into-reinforcement-learning-understanding-q-learning-and-linear-function-approximation/
  - https://gibberblot.github.io/rl-notes/single-agent/function-approximation.html
+ - http://alborz-geramifard.com/Files/13FTML-RLTutorial.pdf
 '''
 
 import numpy as np
@@ -78,7 +79,8 @@ class TaxiFeatureExtractor(FeatureExtractor):
     '''
     Returns the number of features extracted by the feature extractor.
     '''
-    return len(self.features_list)
+    return len(self.features_list) + self.get_num_actions()
+    # return len(self.features_list)
 
   def get_num_actions(self):
     '''
@@ -112,6 +114,13 @@ class TaxiFeatureExtractor(FeatureExtractor):
     feature_vector = np.zeros(len(self.features_list))
     for index, feature in enumerate(self.features_list):
       feature_vector[index] = feature(state, action)
+
+    # constant feature corresponding to the bias term
+    # feature_vector[0] = 1.0
+
+    action_vector = self.get_action_one_hot_encoded(action)
+    feature_vector = np.concatenate([feature_vector, action_vector])
+
     return feature_vector
 
   # def get_features(self, state, action):
@@ -150,8 +159,17 @@ class TaxiFeatureExtractor(FeatureExtractor):
     '''
     l, c, p, _ = self.env.unwrapped.decode(state)
     taxi_location = (l, c)
-    if p == 4: # passenger is boaded
-      passenger_location = taxi_location
+    if p == 4: # passenger is boarded
+      # if (not self.f7(state, action)):
+      #   if action == Actions.DOWN:
+      #     l += 1
+      #   elif action == Actions.UP:
+      #     l -= 1
+      #   elif action == Actions.RIGHT:
+      #     c += 1
+      #   elif action == Actions.LEFT:
+      #     c -= 1
+      passenger_location = (l,c)
     elif p < 4:
       passenger_location = special_locations_dict[p]
     dist = self.__manhattanDistance(taxi_location, passenger_location)
@@ -195,6 +213,17 @@ class TaxiFeatureExtractor(FeatureExtractor):
     '''
     l, c, p, d = self.env.unwrapped.decode(state)
     passenger_is_onboard = (p == 4)
+
+    # if (not passenger_is_onboard) and (not self.f7(state, action)):
+    #   if action == Actions.DOWN:
+    #     l += 1
+    #   elif action == Actions.UP:
+    #     l -= 1
+    #   elif action == Actions.RIGHT:
+    #     c += 1
+    #   elif action == Actions.LEFT:
+    #     c -= 1
+
     if not passenger_is_onboard:
       taxi_loc = (l, c)
       origin_loc = self.env.unwrapped.locs[p]
@@ -223,6 +252,18 @@ class TaxiFeatureExtractor(FeatureExtractor):
     destination.
     '''
     l, c, p, d = self.env.unwrapped.decode(state)
+
+    passenger_is_onboard = (p == 4)
+
+    # if passenger_is_onboard and (not self.f7(state, action)):
+    #   if action == Actions.DOWN:
+    #     l += 1
+    #   elif action == Actions.UP:
+    #     l -= 1
+    #   elif action == Actions.RIGHT:
+    #     c += 1
+    #   elif action == Actions.LEFT:
+    #     c -= 1
 
     dest_loc = self.env.unwrapped.locs[d]
     if p == 4: # passenger is boarded

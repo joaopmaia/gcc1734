@@ -20,7 +20,7 @@ class QLearningAgentLinear:
     env_name = env.unwrapped.spec.id
     self.fex = feature_extractors_dict[env_name](env)
 
-    self.w = np.random.rand(self.fex.get_num_features() + self.fex.get_num_actions() + 1)
+    self.w = np.random.rand(self.fex.get_num_features() + 1)
     # self.w = np.random.rand(43)
     
     self.steps = 0
@@ -59,18 +59,10 @@ class QLearningAgentLinear:
     feature_vector = self.fex.get_features(state, action)
     feature_vector = feature_vector.reshape(1, -1)
     feature_vector = feature_vector.flatten()    
-    
-    # constant feature corresponding to the bias term
-    feature_vector[0] = 1.0
-
-    action_vector = self.fex.get_action_one_hot_encoded(action)
-    feature_vector = np.concatenate([feature_vector, action_vector])
-
     steps_feature = np.array([np.log10(self.steps+1)])
     feature_vector = np.concatenate([feature_vector, steps_feature])
-
     return feature_vector
-    
+
   def get_qvalue(self, state, action):
     features = self.get_features(state, action)
     return np.dot(self.w, features)
