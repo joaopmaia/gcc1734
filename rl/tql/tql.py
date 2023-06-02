@@ -83,8 +83,11 @@ class QLearningAgentTabular:
         end_time = timer()  # Record the end time
         execution_time = end_time - start_time
         n_actions = len(rewards_in_episode)
-        print(f"Stats for episode {episode}/{num_episodes}:\n \tn_actions = {n_actions}\n \tmean_reward = {mean_reward:#.2f}\n \texecution_time = {execution_time:.2f}s")
-        print("\tTotal penalties: %d" % total_penalties)
+        print(f"Stats for episode {episode}/{num_episodes}:") 
+        print(f"\tNumber of actions: {n_actions}")
+        print(f"\tMean reward: {mean_reward:#.2f}")
+        print(f"\tExecution time: {execution_time:.2f}s")
+        print(f"\tTotal penalties: {total_penalties}")
         start_time = end_time
 
     return rewards_per_episode
