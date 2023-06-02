@@ -51,6 +51,8 @@ class QLearningAgentTabular:
 
       rewards_in_episode = []
       
+      total_penalties = 0
+
       while not (terminated or truncated):
           
         action = self.choose_action(state)
@@ -82,6 +84,7 @@ class QLearningAgentTabular:
         execution_time = end_time - start_time
         n_actions = len(rewards_in_episode)
         print(f"Stats for episode {episode}/{num_episodes}:\n \tn_actions = {n_actions}\n \tmean_reward = {mean_reward:#.2f}\n \texecution_time = {execution_time:.2f}s")
+        print("\tTotal penalties: %d" % total_penalties)
         start_time = end_time
 
     return rewards_per_episode

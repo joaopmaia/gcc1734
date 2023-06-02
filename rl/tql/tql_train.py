@@ -3,7 +3,7 @@ import argparse
 import gymnasium as gym
 import matplotlib.pyplot as plt
 from scipy.signal import savgol_filter
-from rl.tql.tql import QLearningAgentTabular
+from tql import QLearningAgentTabular
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
