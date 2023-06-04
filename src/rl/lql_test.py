@@ -10,14 +10,12 @@ if __name__ == "__main__":
 
     agent = QLearningAgentLinear.load_agent(args.env_name + "-lql-agent.pkl")
 
-    total_actions, total_penalties = 0, 0
-    total_success = 0
+    total_actions, total_rewards = 0, 0
 
     for episode in range(args.num_episodes):
 
         state, _ = agent.env.reset()
-        actions = 0
-        penalties = 0
+        num_actions = 0
         reward = 0
         
         terminated = False
@@ -26,21 +24,14 @@ if __name__ == "__main__":
         while not (terminated or truncated):
             action = agent.policy(state)
             state, reward, terminated, truncated, info = agent.env.step(action)
+            num_actions += 1
 
-            if reward == +20:
-                total_success += 1
-
-            if reward == -10:
-                penalties += 1
-
-            actions += 1
-
-        total_penalties += penalties
-        total_actions += actions
+        print(num_actions)
+        total_rewards += reward
+        total_actions += num_actions
 
 
     print("***Results***********************")
-    print("Percent successful episodes: {}".format(total_success / args.num_of_episodes))
-    print("Average number of actions per episode: {}".format(total_actions / args.num_of_episodes))
-    print("Average penalty per episode: {}".format(total_penalties / args.num_of_episodes))
+    print("Average episode length: {}".format(total_actions / args.num_episodes))
+    print("Average rewards per episode: {}".format(total_rewards / args.num_episodes))
     print("**********************************")

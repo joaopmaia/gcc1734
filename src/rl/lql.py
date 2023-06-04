@@ -1,27 +1,33 @@
 from timeit import default_timer as timer
 import pickle
-import gymnasium as gym
 import numpy as np
-from feature_transformer import FeatureTransformer
+from environment import Environment
+
 from taxi_feature_extractor import TaxiFeatureExtractor
+from blackjack_feature_extractor import BlackjackFeatureExtractor
 
 feature_extractors_dict = {
+  "Blackjack-v1": BlackjackFeatureExtractor,
   "Taxi-v3": TaxiFeatureExtractor
 }
 
 class QLearningAgentLinear:
 
   def __init__(self, 
-               env, 
+               gym_env: Environment, 
                epsilon_decay_rate, 
                learning_rate, 
                gamma):
-    self.env = env
-    env_name = env.unwrapped.spec.id
-    self.fex = feature_extractors_dict[env_name](env)
+    self.env = gym_env
+    env_name = self.env.get_id()
+    print(gym_env)
+    print(gym_env.env)
+
+    print("Calling fex constructor...")
+    print(feature_extractors_dict[env_name])
+    self.fex = feature_extractors_dict[env_name](gym_env.env)
 
     self.w = np.random.rand(self.fex.get_num_features() + 1)
-    # self.w = np.random.rand(43)
     
     self.steps = 0
 
@@ -37,7 +43,7 @@ class QLearningAgentLinear:
     exploration_tradeoff = np.random.uniform(0, 1)
     if is_in_exploration_mode and exploration_tradeoff < self.epsilon:
       # exploration
-      action = self.env.action_space.sample()    
+      action = self.env.get_random_action()    
     else:
       action = self.policy(state)
     return action
@@ -57,6 +63,7 @@ class QLearningAgentLinear:
 
   def get_features(self, state, action):
     feature_vector = self.fex.get_features(state, action)
+    # print(feature_vector.shape)
     feature_vector = feature_vector.reshape(1, -1)
     feature_vector = feature_vector.flatten()    
     steps_feature = np.array([np.log10(self.steps+1)])
@@ -65,12 +72,14 @@ class QLearningAgentLinear:
 
   def get_qvalue(self, state, action):
     features = self.get_features(state, action)
+    # print(self.w.shape)
+    # print(features.shape)
     return np.dot(self.w, features)
 
   def __get_action_and_value(self, state):
     max_qvalue = float("-inf")
     best_action = 0
-    for action in range(self.env.action_space.n):
+    for action in range(self.env.get_num_actions()):
       q_value  = self.get_qvalue(state, action)
       if q_value > max_qvalue:
         max_qvalue = q_value
@@ -79,7 +88,7 @@ class QLearningAgentLinear:
 
   def update(self, state, action, reward, next_state):
     next_state_value = self.get_value(next_state)
-    if next_state in self.fex.get_terminal_states():
+    if self.fex.is_terminal_state(next_state):
       next_state_value = 0
       # print(f"Value of terminal state: {next_state_value}")
     # print('Weights before:', self.get_weights())
@@ -141,8 +150,8 @@ class QLearningAgentLinear:
             np.exp(-self.epsilon_decay_rate * episode)
           self.epsilon_history.append(self.epsilon)
           if terminated:
-            assert reward == +20
-            assert new_state in [0, 85, 410, 475]
+            # assert reward == +20
+            # assert new_state in [0, 85, 410, 475]
             successful_episodes += 1
         
         state = new_state

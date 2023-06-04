@@ -5,6 +5,14 @@ import matplotlib.pyplot as plt
 from scipy.signal import savgol_filter
 from gymnasium.wrappers import TimeLimit
 
+from taxi_environment import TaxiEnvironment
+from blackjack_environment import BlackjackEnvironment
+
+environment_dict = {
+    "Blackjack-v1": BlackjackEnvironment,
+    "Taxi-v3": TaxiEnvironment
+}
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--num_episodes", type=int, default=10000, help="Number of episodes")
@@ -24,14 +32,11 @@ if __name__ == "__main__":
 
     env = gym.make(env_name)
     env = TimeLimit(env, max_episode_steps=args.max_steps)
+    env = environment_dict[env_name](env)
 
     agent = QLearningAgentLinear(env, learning_rate = learning_rate, epsilon_decay_rate = epsilon_decay_rate, gamma = gamma)
     penalties_per_episode, rewards_per_episode, cumulative_successful_episodes = agent.train(num_episodes)
     agent.save(args.env_name + "-lql-agent.pkl")
-
-    # labels = ["student 1", "student 2"]    
-    # # Add title to subplot
-    # fig.suptitle(' Student marks in different subjects ', fontsize=30)
 
     plt.subplot(2, 2, 1)
     plt.plot(savgol_filter(penalties_per_episode, 111, 2))

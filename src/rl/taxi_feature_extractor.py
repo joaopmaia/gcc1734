@@ -49,8 +49,6 @@ class Actions:
   DROP = 5
 
 class TaxiFeatureExtractor(FeatureExtractor):
-  features_list = []
-
   __actions_one_hot_encoding = {
     Actions.DOWN:   np.array([1,0,0,0,0,0]), 
     Actions.UP:     np.array([0,1,0,0,0,0]), 
@@ -66,6 +64,7 @@ class TaxiFeatureExtractor(FeatureExtractor):
     It adds feature extraction methods to the features_list attribute.
     '''
     self.env = env
+    self.features_list = []
     self.features_list.append(self.f0)
     self.features_list.append(self.f1)
     self.features_list.append(self.f2)
@@ -80,7 +79,6 @@ class TaxiFeatureExtractor(FeatureExtractor):
     Returns the number of features extracted by the feature extractor.
     '''
     return len(self.features_list) + self.get_num_actions()
-    # return len(self.features_list)
 
   def get_num_actions(self):
     '''
@@ -94,11 +92,9 @@ class TaxiFeatureExtractor(FeatureExtractor):
     '''
     return self.__actions_one_hot_encoding[action]
 
-  def get_terminal_states(self):
-    '''
-    Returns a list of terminal states in the environment.
-    '''
-    return [0, 85, 410, 475]
+  def is_terminal_state(self, state):
+    assert type(state) == int
+    return state in [0, 85, 410, 475]
   
   def get_actions(self):
     '''
@@ -111,15 +107,22 @@ class TaxiFeatureExtractor(FeatureExtractor):
     Takes a state and an action as input and returns the feature vector for that state-action pair. 
     It calls the feature extraction methods and constructs the feature vector.
     '''
+    # print("feature_vector.shape")
+
     feature_vector = np.zeros(len(self.features_list))
+    # print(feature_vector.shape)
+
     for index, feature in enumerate(self.features_list):
       feature_vector[index] = feature(state, action)
 
+    # print(feature_vector.shape)
     # constant feature corresponding to the bias term
     # feature_vector[0] = 1.0
 
     action_vector = self.get_action_one_hot_encoded(action)
     feature_vector = np.concatenate([feature_vector, action_vector])
+
+    # print(feature_vector.shape)
 
     return feature_vector
 
@@ -160,15 +163,6 @@ class TaxiFeatureExtractor(FeatureExtractor):
     l, c, p, _ = self.env.unwrapped.decode(state)
     taxi_location = (l, c)
     if p == 4: # passenger is boarded
-      # if (not self.f7(state, action)):
-      #   if action == Actions.DOWN:
-      #     l += 1
-      #   elif action == Actions.UP:
-      #     l -= 1
-      #   elif action == Actions.RIGHT:
-      #     c += 1
-      #   elif action == Actions.LEFT:
-      #     c -= 1
       passenger_location = (l,c)
     elif p < 4:
       passenger_location = special_locations_dict[p]
@@ -214,16 +208,6 @@ class TaxiFeatureExtractor(FeatureExtractor):
     l, c, p, d = self.env.unwrapped.decode(state)
     passenger_is_onboard = (p == 4)
 
-    # if (not passenger_is_onboard) and (not self.f7(state, action)):
-    #   if action == Actions.DOWN:
-    #     l += 1
-    #   elif action == Actions.UP:
-    #     l -= 1
-    #   elif action == Actions.RIGHT:
-    #     c += 1
-    #   elif action == Actions.LEFT:
-    #     c -= 1
-
     if not passenger_is_onboard:
       taxi_loc = (l, c)
       origin_loc = self.env.unwrapped.locs[p]
@@ -255,16 +239,6 @@ class TaxiFeatureExtractor(FeatureExtractor):
 
     passenger_is_onboard = (p == 4)
 
-    # if passenger_is_onboard and (not self.f7(state, action)):
-    #   if action == Actions.DOWN:
-    #     l += 1
-    #   elif action == Actions.UP:
-    #     l -= 1
-    #   elif action == Actions.RIGHT:
-    #     c += 1
-    #   elif action == Actions.LEFT:
-    #     c -= 1
-
     dest_loc = self.env.unwrapped.locs[d]
     if p == 4: # passenger is boarded
       passenger_location = (l,c)
@@ -283,18 +257,12 @@ class TaxiFeatureExtractor(FeatureExtractor):
     passenger_is_onboard = (p == 4)
     taxi_loc = (l, c)
 
-    # print(f"taxi_loc: {taxi_loc}")
-    # print(f"passenger_is_onboard: {passenger_is_onboard}")
-    # print(f"p: {p}")
-
     if passenger_is_onboard:
       dest_loc = self.env.unwrapped.locs[d]
-      # print(f"dest_loc: {dest_loc}")
       if (action != Actions.DROP) and (taxi_loc == dest_loc):
         return 1.0
     else:
       boarding_loc = self.env.unwrapped.locs[p]
-      # print(f"boarding_loc: {boarding_loc}")
       if (action != Actions.PICK) and (taxi_loc == boarding_loc):
         return 1.0
     

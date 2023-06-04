@@ -5,6 +5,14 @@ import matplotlib.pyplot as plt
 from scipy.signal import savgol_filter
 from tql import QLearningAgentTabular
 
+from taxi_environment import TaxiEnvironment
+from blackjack_environment import BlackjackEnvironment
+
+environment_dict = {
+    "Blackjack-v1": BlackjackEnvironment,
+    "Taxi-v3": TaxiEnvironment
+}
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--num_episodes", type=int, default=60000, help="Number of episodes")
@@ -21,6 +29,9 @@ if __name__ == "__main__":
     gamma = args.gamma
 
     env = gym.make(env_name).env
+
+    env = environment_dict[env_name](env)
+
     agent = QLearningAgentTabular(
         env=env,
         decay_rate=decay_rate,

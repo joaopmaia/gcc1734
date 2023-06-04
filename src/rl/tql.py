@@ -1,16 +1,20 @@
 from timeit import default_timer as timer
 import numpy as np
 import pickle
+from environment import Environment
 
 class QLearningAgentTabular:
 
   def __init__(self, 
-               env, 
+               env: Environment, 
                decay_rate, 
                learning_rate, 
                gamma):
     self.env = env
-    self.q_table = np.zeros((env.observation_space.n, env.action_space.n))
+
+    self.q_table = np.zeros((env.get_num_states(), env.get_num_actions()))
+    print(f"self.q_table.shape: {self.q_table.shape}")
+    # self.q_table = np.zeros((env.observation_space.n, env.action_space.n))
     self.epsilon = 1.0
     self.max_epsilon = 1.0
     self.min_epsilon = 0.01
@@ -21,13 +25,15 @@ class QLearningAgentTabular:
     
   def choose_action(self, state, is_in_exploration_mode=True):
     exploration_tradeoff = np.random.uniform(0, 1)
-    
+
     if is_in_exploration_mode and exploration_tradeoff < self.epsilon:
       # exploration
-      return np.random.randint(self.env.action_space.n)    
+      action = np.random.randint(self.env.get_num_actions())    
     else:
       # exploitation (taking the biggest Q value for this state)
-      return np.argmax(self.q_table[state, :])
+      action = np.argmax(self.q_table[state, :])
+    
+    return action
 
   def update(self, state, action, reward, next_state):
     '''
@@ -41,13 +47,15 @@ class QLearningAgentTabular:
     rewards_per_episode = []
 
     start_time = timer()  # Record the start time
-    
+
     for episode in range(num_episodes):
   
       terminated = False
       truncated = False
 
       state, _ = self.env.reset()
+      state_id = self.env.get_state_id(state)
+      state = state_id
 
       rewards_in_episode = []
       
@@ -55,10 +63,13 @@ class QLearningAgentTabular:
 
       while not (terminated or truncated):
           
+        # print(f"state: {state}")
         action = self.choose_action(state)
 
         # transição
         new_state, reward, terminated, truncated, info = self.env.step(action)
+        new_state_id = self.env.get_state_id(new_state)
+        new_state = new_state_id
         assert (not truncated)
 
         if reward == -10:
@@ -71,7 +82,7 @@ class QLearningAgentTabular:
           self.epsilon = self.min_epsilon + (self.max_epsilon - self.min_epsilon) * \
             np.exp(-self.decay_rate * episode)
           self.epsilons_.append(self.epsilon)
-        
+
         state = new_state
             
         rewards_in_episode.append(reward)
