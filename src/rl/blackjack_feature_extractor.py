@@ -82,7 +82,6 @@ class BlackjackFeatureExtractor(FeatureExtractor):
     return 1.0
 
   def f1(self, state, action):
-    player_current_sum = state[0]
-    return 1 / player_current_sum 
+    return 0 
 
 
