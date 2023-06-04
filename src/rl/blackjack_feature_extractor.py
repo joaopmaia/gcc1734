@@ -26,7 +26,6 @@ class BlackjackFeatureExtractor(FeatureExtractor):
     Returns the number of features extracted by the feature extractor.
     '''
     return len(self.features_list) + self.get_num_actions()
-    # return len(self.features_list)
 
   def get_num_actions(self):
     '''
@@ -40,15 +39,7 @@ class BlackjackFeatureExtractor(FeatureExtractor):
     '''
     return self.__actions_one_hot_encoding[action]
 
-  # def get_terminal_states(self):
-  #   '''
-  #   Returns a list of terminal states in the environment.
-  #   '''
-  #   return [0, 85, 410, 475]
-
   def is_terminal_state(self, state):
-    # print(state)
-    # temp = self.env.id_to_state_dict[state]
     if state[2] == True:
       return True
     elif state[0] > 21:
