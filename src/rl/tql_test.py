@@ -10,13 +10,12 @@ if __name__ == "__main__":
 
     agent = QLearningAgentTabular.load_agent(args.env_name + "-tql-agent.pkl")
 
-    total_actions = 0.0
-    total_success = 0.0
+    total_actions, total_rewards = 0, 0
 
     for episode in range(args.num_episodes):
 
         state, _ = agent.env.reset()
-        actions = 0
+        num_actions = 0
         reward = 0
         
         terminated = False
@@ -25,15 +24,12 @@ if __name__ == "__main__":
         while not (terminated or truncated):
             action = agent.choose_action(state, is_in_exploration_mode=False)
             state, reward, terminated, truncated, info = agent.env.step(action)
+            num_actions += 1
 
-            if terminated:
-                total_success += 1
-
-            actions += 1
-
-        total_actions += actions
+        total_rewards += reward
+        total_actions += num_actions
 
     print("***Results***********************")
-    print("Percent successful episodes: {}".format(total_success / args.num_episodes))
-    print("Average number of actions per episode: {}".format(total_actions / args.num_episodes))
+    print(f"Average episode length: {total_actions / args.num_episodes}")
+    print(f"Average rewards: {total_rewards / args.num_episodes}")
     print("**********************************")

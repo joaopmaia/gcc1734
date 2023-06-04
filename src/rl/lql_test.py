@@ -29,8 +29,7 @@ if __name__ == "__main__":
         total_rewards += reward
         total_actions += num_actions
 
-
     print("***Results***********************")
-    print("Average episode length: {}".format(total_actions / args.num_episodes))
-    print("Average rewards per episode: {}".format(total_rewards / args.num_episodes))
+    print(f"Average episode length: {total_actions / args.num_episodes}")
+    print(f"Average rewards: {total_rewards / args.num_episodes}")
     print("**********************************")
