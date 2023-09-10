@@ -10,17 +10,17 @@ class TwoJarsState:
     This class represents a configuration of the two jars.
     """
 
-    def __init__( self, capacitys ):
+    def __init__( self, volumes ):
         """
           Constructs a new configuration.
 
-        The configuration of the two jars is stored in a 2-tuple. 
+        The configuration of the two jars is stored in a dict. 
          - The first position stores the amount of water in the first jar (with capacity 4l).
          - The second position stores the amount of water in the second jar (with capacity 3l).
-
-        Both jars ware initially empty.
         """
-        self.jars = (capacitys[0], capacitys[1])
+        self.volumes = {"J4": volumes[0], "J3": volumes[1]}
+        assert (self.volumes["J4"] >= 0 and self.volumes["J4"] <= 4)
+        assert (self.volumes["J3"] >= 0 and self.volumes["J3"] <= 3)
 
     def isGoal( self ):
         """
@@ -83,8 +83,7 @@ class TwoJarsState:
             Overloads '==' such that two pairs of jars with the same volume of water
           are equal.
 
-          >>> TwoJarsState((0, 1)) == \
-              TwoJarsState((1, 0)).result('left')
+          >>> TwoJarsState((0, 1)) == TwoJarsState((1, 0)).result('pourJ4intoJ3')
           True
         """
         "*** YOUR CODE HERE ***"
@@ -116,7 +115,7 @@ class TwoJarsSearchProblem(search.SearchProblem):
         self.start_state = start_state
 
     def getStartState(self):
-        return start_state
+        return self.start_state
 
     def isGoalState(self,state):
         return state.isGoal()
@@ -162,32 +161,20 @@ def createRandomTwoJarsState(moves=10):
       Creates a random state by applying a series 
       of 'moves' random moves to a solved state.
     """
-    volume_of_J3 = randint(0, 4)
+    volume_of_J3 = randint(0, 3)
     a_state = TwoJarsState((2,volume_of_J3))
     for i in range(moves):
         # Execute a random legal move
         a_state = a_state.result(random.sample(a_state.legalMoves(), 1)[0])
     return a_state
 
-def main():
+if __name__ == '__main__':
     start_state = createRandomTwoJarsState(8)
-    print('A random initial state:')
-    print(start_state)
-
-    return
-
+    print(f'Initial state: {start_state}')
     problem = TwoJarsSearchProblem(start_state)
     path = search.breadthFirstSearch(problem)
-    print('BFS found a path of %d moves: %s' % (len(path), str(path)))
-    curr = start_state
-    i = 1
-    for a in path:
-        curr = curr.result(a)
-        print('After %d move%s: %s' % (i, ("", "s")[i>1], a))
-        print(curr)
+    if len(path) > 0 or start_state.isGoal():
+        print('Found a plan with %d actions: %s' % (len(path), str(path)))
+    else:
+        print('Could not find a plan.')
 
-        input("Press return for the next state...")   # wait for key stroke
-        i += 1
-
-if __name__ == '__main__':
-    main()
