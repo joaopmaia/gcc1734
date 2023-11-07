@@ -63,7 +63,6 @@ class QLearningAgentLinear:
 
   def get_features(self, state, action):
     feature_vector = self.fex.get_features(state, action)
-    # print(feature_vector.shape)
     feature_vector = feature_vector.reshape(1, -1)
     feature_vector = feature_vector.flatten()    
     steps_feature = np.array([np.log10(self.steps+1)])
@@ -72,8 +71,6 @@ class QLearningAgentLinear:
 
   def get_qvalue(self, state, action):
     features = self.get_features(state, action)
-    # print(self.w.shape)
-    # print(features.shape)
     return np.dot(self.w, features)
 
   def __get_action_and_value(self, state):
@@ -90,23 +87,13 @@ class QLearningAgentLinear:
     next_state_value = self.get_value(next_state)
     if self.fex.is_terminal_state(next_state):
       next_state_value = 0
-      # print(f"Value of terminal state: {next_state_value}")
-    # print('Weights before:', self.get_weights())
     difference = (reward + (self.gamma * next_state_value)) - self.get_qvalue(state, action)
-    # print('Q(s,a):', self.get_qvalue(state, action))
-    # print('max Q(s,a):', self.get_value(next_state))
-    # print('reward:', reward)
-    # print('difference:', difference)
     if difference < -100:
        difference = -100
     if difference > 100:
        difference = 100
     features = self.get_features(state, action)
     new_w = self.w + self.learning_rate * difference * features
-    # if next_state in [0, 85, 410, 475]:
-    #   print("Features:\n", features)
-    #   print("Old w:\n", self.w)
-    #   print("New w:\n", new_w)
     self.w = new_w
 
   def train(self, num_episodes: int):
