@@ -15,12 +15,6 @@ class QLearningAgentTileCoding:
     print(gym_env)
     print(gym_env.env)
 
-    print("Calling fex constructor...")
-    print(feature_extractors_dict[env_name])
-    self.fex = feature_extractors_dict[env_name](gym_env.env)
-
-    self.w = np.random.rand(self.fex.get_num_features() + 1)
-    
     self.steps = 0
 
     self.epsilon = .5
@@ -30,6 +24,10 @@ class QLearningAgentTileCoding:
     self.learning_rate = learning_rate
     self.gamma = gamma 
     self.epsilon_history = []
+
+    self.tile = Tilecoder(7,14)                                # Definition of tiles (7x (14x14))
+    self.theta = np.random.uniform(-0.001, 0, size=(tile.n))   # Parameters for FA (7x (14x14)) = 1.372 parameters
+
 
   def choose_action(self, state, is_in_exploration_mode = True):
     exploration_tradeoff = np.random.uniform(0, 1)
@@ -54,12 +52,7 @@ class QLearningAgentTileCoding:
     return q_values
 
   def get_features(self, state, action):
-    feature_vector = self.fex.get_features(state, action)
-    feature_vector = feature_vector.reshape(1, -1)
-    feature_vector = feature_vector.flatten()    
-    steps_feature = np.array([np.log10(self.steps+1)])
-    feature_vector = np.concatenate([feature_vector, steps_feature])
-    return feature_vector
+    return self.tile.getFeatures(state)
 
   def get_qvalue(self, state, action):
     features = self.get_features(state, action)
@@ -77,8 +70,6 @@ class QLearningAgentTileCoding:
 
   def update(self, state, action, reward, next_state):
     next_state_value = self.get_value(next_state)
-    if self.fex.is_terminal_state(next_state):
-      next_state_value = 0
     difference = (reward + (self.gamma * next_state_value)) - self.get_qvalue(state, action)
     features = self.get_features(state, action)
     new_w = self.w + self.learning_rate * difference * features
