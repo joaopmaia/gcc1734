@@ -18,9 +18,9 @@ class TwoJarsState:
          - The first position stores the amount of water in the first jar (with capacity 4l).
          - The second position stores the amount of water in the second jar (with capacity 3l).
         """
-        self.volumes = {"J4": volumes[0], "J3": volumes[1]}
-        assert (self.volumes["J4"] >= 0 and self.volumes["J4"] <= 4)
-        assert (self.volumes["J3"] >= 0 and self.volumes["J3"] <= 3)
+        self.jars = {"J4": volumes[0], "J3": volumes[1]}
+        assert (self.jars["J4"] >= 0 and self.jars["J4"] <= 4)
+        assert (self.jars["J3"] >= 0 and self.jars["J3"] <= 3)
 
     def isGoal( self ):
         """
@@ -170,11 +170,18 @@ def createRandomTwoJarsState(moves=10):
 
 if __name__ == '__main__':
     start_state = createRandomTwoJarsState(8)
-    print(f'Initial state: {start_state}')
+    print('A random initial state:')
+    print(start_state)
+
     problem = TwoJarsSearchProblem(start_state)
     path = search.breadthFirstSearch(problem)
-    if len(path) > 0 or start_state.isGoal():
-        print('Found a plan with %d actions: %s' % (len(path), str(path)))
-    else:
-        print('Could not find a plan.')
+    print('BFS found a path of %d moves: %s' % (len(path), str(path)))
+    curr = start_state
+    i = 1
+    for a in path:
+        curr = curr.result(a)
+        print('After %d move%s: %s' % (i, ("", "s")[i>1], a))
+        print(curr)
 
+        input("Press return for the next state...")   # wait for key stroke
+        i += 1
