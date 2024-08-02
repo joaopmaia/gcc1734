@@ -14,3 +14,6 @@ src/__pycache__/util.cpython-310.pyc
 src/__pycache__/util.cpython-310.pyc
 src/__pycache__/globals.cpython-310.pyc
 src/__pycache__/util.cpython-310.pyc
+src/rl/__pycache__/blackjack_environment.cpython-310.pyc
+*.pkl
+*.png
