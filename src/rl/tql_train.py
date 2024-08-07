@@ -15,7 +15,7 @@ environment_dict = {
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--num_episodes", type=int, default=60000, help="Number of episodes")
+    parser.add_argument("--num_episodes", type=int, default=6000, help="Number of episodes")
     parser.add_argument("--env_name", type=str, default="Taxi-v3", help="Environment name")
     parser.add_argument("--decay_rate", type=float, default=0.0001, help="Decay rate")
     parser.add_argument("--learning_rate", type=float, default=0.7, help="Learning rate")

@@ -72,8 +72,8 @@ class QLearningAgentTabular:
         new_state = new_state_id
         assert (not truncated)
 
-        if reward == -10:
-            total_penalties += 1
+        if reward < 0:
+            total_penalties += reward
 
         self.update(state, action, reward, new_state)
 
@@ -87,16 +87,16 @@ class QLearningAgentTabular:
             
         rewards_in_episode.append(reward)
 
-      mean_reward = np.mean(rewards_in_episode)
-      rewards_per_episode.append(mean_reward)
+      sum_rewards = np.sum(rewards_in_episode)
+      rewards_per_episode.append(sum_rewards)
 
-      if episode % 1000 == 0:
+      if episode % 100 == 0:
         end_time = timer()  # Record the end time
         execution_time = end_time - start_time
         n_actions = len(rewards_in_episode)
         print(f"Stats for episode {episode}/{num_episodes}:") 
         print(f"\tNumber of actions: {n_actions}")
-        print(f"\tMean reward: {mean_reward:#.2f}")
+        print(f"\tTotal reward: {sum_rewards:#.2f}")
         print(f"\tExecution time: {execution_time:.2f}s")
         print(f"\tTotal penalties: {total_penalties}")
         start_time = end_time
@@ -104,7 +104,7 @@ class QLearningAgentTabular:
     return rewards_per_episode
 
   def save(self, filename):
-    # open a file, where you ant to store the data
+    # open a file, where you want to store the data
     file = open(filename, 'wb')
 
     # dump information to that file

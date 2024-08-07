@@ -25,8 +25,8 @@ if __name__ == "__main__":
             action = agent.choose_action(state, is_in_exploration_mode=False)
             state, reward, terminated, truncated, info = agent.env.step(action)
             num_actions += 1
+            total_rewards += reward
 
-        total_rewards += reward
         total_actions += num_actions
 
     print("***Results***********************")
