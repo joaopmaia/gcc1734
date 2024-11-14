@@ -10,17 +10,17 @@ class TwoJarsState:
     This class represents a configuration of the two jars.
     """
 
-    def __init__( self, volumes ):
+    def __init__( self, capacitys ):
         """
           Constructs a new configuration.
 
-        The configuration of the two jars is stored in a dict. 
+        The configuration of the two jars is stored in a 2-tuple. 
          - The first position stores the amount of water in the first jar (with capacity 4l).
          - The second position stores the amount of water in the second jar (with capacity 3l).
+
+        Both jars ware initially empty.
         """
-        self.jars = {"J4": volumes[0], "J3": volumes[1]}
-        assert (self.jars["J4"] >= 0 and self.jars["J4"] <= 4)
-        assert (self.jars["J3"] >= 0 and self.jars["J3"] <= 3)
+        self.jars = (capacitys[0], capacitys[1])
 
     def isGoal( self ):
         """
@@ -40,7 +40,10 @@ class TwoJarsState:
         False
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        if self.jars[0] == 2 or self.jars[1] == 2:
+            return True
+        return False
+
 
     def legalMoves( self ):
         """
@@ -61,7 +64,22 @@ class TwoJarsState:
         ['fillJ4', 'pourJ3intoJ4', 'emptyJ3', 'emptyJ4']
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        moves = []
+        j4, j3 = self.jars
+        if(j3 < 3):
+            moves.append('fillJ3')
+        if(j3 > 0):
+            moves.append('emptyJ3')
+        if(j4 < 4):
+            moves.append('fillJ4')
+        if(j4 > 0):
+            moves.append('emptyJ4')
+        if(j3 > 0 and j4 < 4):
+            moves.append('pourJ3intoJ4')
+        if(j3 < 3 and j4 > 0):
+            moves.append('pourJ4intoJ3')
+        
+        return moves
 
     def result(self, move):
         """
@@ -75,7 +93,38 @@ class TwoJarsState:
         it returns a new object.
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        
+        j4, j3 = self.jars
+        nj4,nj3 = self.jars
+        if(move == 'fillJ3'):
+            nj3 = 3
+        elif(move == 'emptyJ3'):
+            nj3 = 0
+        elif(move == 'fillJ4'):
+            nj4 = 4
+        elif(move == 'emptyJ4'):
+            nj4 = 0
+        elif(move == 'pourJ3intoJ4'):
+            if(4-j4<=j3):
+                nj3 = j3 - (4 - j4)
+            else:
+                nj3 = 0
+            if(j4 + j3 < 4):
+                nj4 = j4 + j3
+            else:
+                nj4 = 4
+        elif(move == 'pourJ4intoJ3'):
+            if(3-j3<=j4):
+                nj4 = j4 - (3 - j3)
+            else:
+                nj4 = 0
+            if(j3 + j4 < 3):
+                nj3 = j3 + j4
+            else:
+                nj3 = 3
+
+        return TwoJarsState((nj4,nj3))
+
 
     # Utilities for comparison and display
     def __eq__(self, other):
@@ -83,11 +132,14 @@ class TwoJarsState:
             Overloads '==' such that two pairs of jars with the same volume of water
           are equal.
 
-          >>> TwoJarsState((0, 1)) == TwoJarsState((1, 0)).result('pourJ4intoJ3')
+          >>> TwoJarsState((0, 1)) == \
+              TwoJarsState((1, 0)).result('left')
           True
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        if self.jars[0] in other.jars or self.jars[1] in other.jars:
+            return True
+        return False
 
     def __hash__(self):
         return hash(str(self.jars))
@@ -97,7 +149,16 @@ class TwoJarsState:
           Returns a display string for the maze
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        j4,j3 = self.jars
+        text = []
+        text.append('J3:')
+        j3Total = ('#' * j3)
+        text.append(j3Total+'\n')
+        text.append('J4:')
+        j4Total = ('#' * j4)
+        text.append(j4Total)
+
+        return ''.join(text)
 
     def __str__(self):
         return self.__getAsciiString()
@@ -136,6 +197,9 @@ class TwoJarsSearchProblem(search.SearchProblem):
         return state.legalMoves()
 
     def getActionCost(self, state, action, next_state):
+
+
+        
         assert next_state == state.result(action), (
             "getActionCost() called on incorrect next state.")
         return 1
@@ -161,14 +225,14 @@ def createRandomTwoJarsState(moves=10):
       Creates a random state by applying a series 
       of 'moves' random moves to a solved state.
     """
-    volume_of_J3 = randint(0, 3)
+    volume_of_J3 = randint(0, 4)
     a_state = TwoJarsState((2,volume_of_J3))
     for i in range(moves):
         # Execute a random legal move
         a_state = a_state.result(random.sample(a_state.legalMoves(), 1)[0])
     return a_state
 
-if __name__ == '__main__':
+def main():
     start_state = createRandomTwoJarsState(8)
     print('A random initial state:')
     print(start_state)
@@ -185,3 +249,6 @@ if __name__ == '__main__':
 
         input("Press return for the next state...")   # wait for key stroke
         i += 1
+
+if __name__ == '__main__':
+    main()

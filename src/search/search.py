@@ -89,6 +89,36 @@ class SearchProblem:
         util.raiseNotDefined()
 
 
+def getStartNode(problem):
+
+    node = {'STATE':problem.getStartState(),'PATH-COST':0}
+
+    return node
+
+def getChildNode(sucessor,parent_node):
+
+    child_node = {'STATE': sucessor[0],
+
+                'ACTION': sucessor[1],
+
+                'PARENT': parent_node,
+
+                'PATH-COST': parent_node['PATH-COST'] + sucessor[2]}
+
+    return child_node
+    
+def getActionSequence(node):
+
+    actions = []
+
+    while node['PATH-COST'] > 0:
+
+        actions.insert(0,node['ACTION'])
+
+        node = node['PARENT']
+
+    return actions
+
 def tinyMazeSearch(problem):
     """
     Returns a sequence of moves that solves tinyMaze.  For any other maze, the
@@ -100,25 +130,52 @@ def tinyMazeSearch(problem):
     return  [s, s, w, s, w, w, s, w]
 
 def depthFirstSearch(problem):
-    """
-    Search the deepest nodes in the search tree first.
+    node = getStartNode(problem)
+    frontier = util.Stack()
+    frontier.push(node)
 
-    Your search algorithm needs to return a list of actions that reaches the
-    goal. Make sure to implement a graph search algorithm.
+    closed = set()
 
-    To get started, you might want to try some of these simple commands to
-    understand the search problem that is being passed in:
+    while not frontier.isEmpty():
+        node = frontier.pop()
 
-    print("Start:", problem.getStartState())
-    print("Is the start a goal?", problem.isGoalState(problem.getStartState()))
-    """
-    "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+        if node['STATE'] in closed:
+            continue
+
+        closed.add(node['STATE'])
+
+        if problem.isGoalState(node['STATE']):
+            return getActionSequence(node)
+
+        for sucessor in problem.expand(node['STATE']):
+            child_node = getChildNode(sucessor, node)
+            frontier.push(child_node)
+
+    return []
 
 def breadthFirstSearch(problem):
-    """Search the shallowest nodes in the search tree first."""
-    "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    node = getStartNode(problem)
+    frontier = util.Queue()
+    frontier.push(node)
+
+    closed = set()
+
+    while not frontier.isEmpty():
+        node = frontier.pop()
+
+        if node['STATE'] in closed:
+            continue
+
+        closed.add(node['STATE'])
+
+        if problem.isGoalState(node['STATE']):
+            return getActionSequence(node)
+
+        for sucessor in problem.expand(node['STATE']):
+            child_node = getChildNode(sucessor, node)
+            frontier.push(child_node)
+
+    return []
 
 def nullHeuristic(state, problem=None):
     """
@@ -128,12 +185,70 @@ def nullHeuristic(state, problem=None):
     return 0
 
 def aStarSearch(problem, heuristic=nullHeuristic):
-    """Search the node that has the lowest combined cost and heuristic first."""
-    "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    node = getStartNode(problem)
+    fn_total_cost_for_node = lambda a_node: a_node['PATH-COST'] + heuristic(a_node['STATE'], problem=problem)
 
+    frontier = util.PriorityQueueWithFunction(fn_total_cost_for_node)
+    frontier.push(node)
+
+    explored = set()
+
+    while not frontier.isEmpty():
+        node = frontier.pop()        
+
+        if node['STATE'] in explored:
+            continue        
+
+        explored.add(node['STATE'])
+
+        if problem.isGoalState(node['STATE']): 
+          return getActionSequence(node)
+
+        successors = problem.expand(node['STATE'])
+
+        for sucessor in successors:
+            child_node = getChildNode(sucessor, node)
+            frontier.push(child_node)
+
+    return []
+
+def iterativeDeepeningSearch(problem):
+
+    startNode = getStartNode(problem)
+
+    def depthLimitedSearch(problem,limit):
+        return recursiveDLS(startNode, problem, limit)
+
+    def recursiveDLS(node, problem, limit):
+        if problem.isGoalState(node['STATE']):
+            return getActionSequence(node)
+        elif limit == 0:
+            return "Cutoff"
+        cutoff = False
+        for sucessor in  problem.expand(node['STATE']):
+            if sucessor[0] not in closed:
+                child = getChildNode(sucessor, node)
+                closed.add(child['STATE'])
+                result = recursiveDLS(child, problem, limit-1)
+                if result != None:
+                    return result
+                if result == "Cutoff":
+                    cutoff = True
+        if cutoff == True:
+            return "Cutoff"
+        return None
+
+    dpt = 0
+    while True:
+        closed = set()
+        result = depthLimitedSearch(problem,dpt)
+        if result is not None:
+            if(result != "Cutoff"):
+                return result
+        dpt +=1
 
 # Abbreviations
 bfs = breadthFirstSearch
 dfs = depthFirstSearch
 astar = aStarSearch
+ids = iterativeDeepeningSearch
