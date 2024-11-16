@@ -213,39 +213,36 @@ def aStarSearch(problem, heuristic=nullHeuristic):
     return []
 
 def iterativeDeepeningSearch(problem):
+    def depthLimitedSearch(problem, limit):
+        return recursiveDLS(getStartNode(problem), problem, limit, set())
 
-    startNode = getStartNode(problem)
-
-    def depthLimitedSearch(problem,limit):
-        return recursiveDLS(startNode, problem, limit)
-
-    def recursiveDLS(node, problem, limit):
+    def recursiveDLS(node, problem, limit, closed):
+        # Check if the current node is the goal state
         if problem.isGoalState(node['STATE']):
             return getActionSequence(node)
-        elif limit == 0:
+        if limit == 0:
             return "Cutoff"
+        
         cutoff = False
-        for sucessor in  problem.expand(node['STATE']):
-            if sucessor[0] not in closed:
-                child = getChildNode(sucessor, node)
+        for successor in problem.expand(node['STATE']):
+            state = successor[0]
+            if state not in closed:
+                child = getChildNode(successor, node)
                 closed.add(child['STATE'])
-                result = recursiveDLS(child, problem, limit-1)
-                if result != None:
+                result = recursiveDLS(child, problem, limit - 1, closed)
+                if result:
                     return result
                 if result == "Cutoff":
                     cutoff = True
-        if cutoff == True:
-            return "Cutoff"
-        return None
+        
+        return "Cutoff" if cutoff else None
 
-    dpt = 0
+    depth = 0
     while True:
-        closed = set()
-        result = depthLimitedSearch(problem,dpt)
-        if result is not None:
-            if(result != "Cutoff"):
-                return result
-        dpt +=1
+        result = depthLimitedSearch(problem, depth)
+        if result not in (None, "Cutoff"):
+            return result
+        depth += 1
 
 # Abbreviations
 bfs = breadthFirstSearch
