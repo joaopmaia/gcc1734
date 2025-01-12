@@ -73,7 +73,64 @@ class BlackjackFeatureExtractor(FeatureExtractor):
     return 1.0
 
   def f1(self, state, action):
-    # Implemente esta e outras features que achar adequadas.
-    return 0 
+    '''
+    Verifica a pontuação da mão do player.
+    '''
+    player_sum = state[0]
 
+    if player_sum > 21:
+      return 0.0
+    else:
+      return player_sum / 21
+    
+  def f2(self, state, action):
+    '''
+    Stick c/ valor alto
+    '''
+    player_sum = state[0]
 
+    if action == Actions.STICK:
+      return player_sum / 21
+  
+  def f3(self, state, action):
+    '''
+    Verifica se deu stick com 21
+    '''
+    player_sum = state[0]
+
+    if player_sum == 21 and action == Actions.STICK:
+      return 1.0
+    else:
+      return 0.0
+  
+  def f4(self, state, action):
+    '''
+    Hit com valor alto
+    '''
+    player_sum = state[0]
+
+    if action == Actions.HIT:
+      return (21 - player_sum) / 21
+    
+  def f5(self, state, action):
+    '''
+    Stick com soma abaixo de 17
+    '''
+    player_sum = state[0]
+
+    if player_sum <= 17 and action == Actions.STICK:
+      return 0.0
+    else:
+      return 1.0
+    
+  def f6(self, state, action):
+    '''
+    Soma menor que o dealer
+    '''
+    player_sum = state[0]
+    dealer_sum = state[1]
+
+    if player_sum < dealer_sum and action == Actions.STICK:
+      return 0.0
+    else:
+      return 1.0
