@@ -7,10 +7,14 @@ from gymnasium.wrappers import TimeLimit
 
 from taxi_environment import TaxiEnvironment
 from blackjack_environment import BlackjackEnvironment
+from frozenlake_environment import FrozenLakeEnvironment
+from cliffwalking_environment import CliffWalkingEnvironment
 
 environment_dict = {
     "Blackjack-v1": BlackjackEnvironment,
-    "Taxi-v3": TaxiEnvironment
+    "Taxi-v3": TaxiEnvironment,
+    "FrozenLake-v1": FrozenLakeEnvironment,
+    "CliffWalking-v0": CliffWalkingEnvironment
 }
 
 if __name__ == "__main__":
