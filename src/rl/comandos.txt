@@ -1,7 +1,9 @@
+python3 tql_train.py --num_episodes 60000 --env_name Taxi-v3
+python3 tql_train.py --num_episodes 60000 --env_name Blackjack-v1
 python3 tql_train.py --num_episodes 60000 --env_name CliffWalking-v0
-python3 tql_train.py --num_episodes 60000 --env_name CliffWalking-v0
-python3 tql_train.py --num_episodes 60000 --env_name CliffWalking-v0
+python3 tql_train.py --num_episodes 60000 --env_name FrozenLake-v1
 
+python3 tql_test.py --num_episodes 60 --env_name Taxi-v3
+python3 tql_test.py --num_episodes 60 --env_name Blackjack-v1
 python3 tql_test.py --num_episodes 60 --env_name CliffWalking-v0
-python3 tql_test.py --num_episodes 60 --env_name CliffWalking-v0
-python3 tql_test.py --num_episodes 60 --env_name CliffWalking-v0
+python3 tql_test.py --num_episodes 60 --env_name FrozenLake-v1
